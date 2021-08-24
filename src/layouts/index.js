@@ -1,4 +1,4 @@
-import { Menu } from 'components';
+import { MenuBar } from 'templates';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
@@ -8,7 +8,7 @@ const MainLayout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
     <header>
-      <Menu />
+      <MenuBar />
     </header>
     <main>{children}</main>
     <footer>footer</footer>

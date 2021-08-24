@@ -25,6 +25,7 @@
     "react/no-unescaped-entities": 0,
     "import/prefer-default-export": 0,
     "react/require-default-props": 0,
-    "arrow-body-style": 0
+    "arrow-body-style": 0,
+    "react/jsx-props-no-spreading": 0
   }
 }
