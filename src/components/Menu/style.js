@@ -1,10 +1,67 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const MenuContainer = styled.div`
   position: fixed;
   z-index: 1;
-  box-shadow: 0 0 6px;
+  box-shadow: 0 0 3px lightgray;
   height: 60px;
   width: 100%;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Logo = styled.div``;
+
+export const MenuButton = styled.div`
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  & span {
+    transition: all 0.3s;
+    position: relative;
+    display: block;
+    width: 27px;
+    height: 2px;
+    background-color: ${({ theme: { colors } }) => colors.blue};
+    &::before {
+      content: '';
+      transition: all 0.3s;
+      position: absolute;
+      bottom: 7px;
+      right: 0;
+      width: 19px;
+      height: 2px;
+      background-color: black;
+    }
+    &::after {
+      content: '';
+      transition: all 0.3s;
+      position: absolute;
+      top: 7px;
+      right: 0;
+      width: 19px;
+      height: 2px;
+      background-color: black;
+    }
+    ${({ isClicked }) =>
+      isClicked &&
+      css`
+        background-color: white;
+        &::before {
+          transform: rotate(-45deg);
+          bottom: 0;
+          width: 23px;
+        }
+        &::after {
+          transform: rotate(45deg);
+          top: 0;
+          width: 23px;
+          background-color: ${({ theme: { colors } }) => colors.blue};
+        }
+      `}
+  }
 `;
