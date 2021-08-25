@@ -12,7 +12,7 @@ const MenuBar = () => {
       <Wrapper>
         <FlexContainer>
           <Logo />
-          <Navigation isClicked={isClicked} />
+          <Navigation isClicked={isClicked} onClick={handleClick} />
           <MenuButton isClicked={isClicked} onClick={handleClick} />
         </FlexContainer>
       </Wrapper>
