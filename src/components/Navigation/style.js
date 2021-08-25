@@ -7,7 +7,7 @@ export const Navigation = styled.nav`
   width: 100%;
   height: 0;
   background-color: ${({ theme: { colors } }) => colors.blue};
-  transition: all 0.5s 0.3s;
+  transition: all 0.5s;
   overflow: hidden;
   ${({ isClicked }) =>
     isClicked &&
@@ -24,11 +24,28 @@ export const Navigation = styled.nav`
       width: 90%;
       margin: 0 auto;
       margin-bottom: 10px;
+      opacity: 0;
+      transition: all 0.3s;
+      ${({ isClicked }) =>
+        isClicked &&
+        css`
+          opacity: 1;
+          &:nth-child(1) {
+            transition-delay: 0.3s;
+          }
+          &:nth-child(2) {
+            transition-delay: 0.45s;
+          }
+          &:nth-child(3) {
+            transition-delay: 0.6s;
+          }
+        `};
       &:last-child {
         margin-bottom: 0;
       }
       & a {
         display: block;
+        box-shadow: 0 0 3px ${({ theme: { colors } }) => colors.gray.dark};
         height: 70px;
         background-color: white;
         line-height: 70px;
