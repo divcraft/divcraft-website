@@ -1,18 +1,27 @@
-import { Link } from 'gatsby';
 import React from 'react';
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import { SectionContainer, Content, Title, SubTitle } from './style';
 
 const Banner = () => {
   return (
-    <section>
-      <div>
-        <h1>Pomagamy młodym biznesom rozwinąć się w sieci</h1>
-        <h2>
+    <SectionContainer>
+      <StaticImage
+        src="../../images/main-bg-mobile.jpg"
+        alt="banner"
+        style={{
+          gridArea: '1/1',
+        }}
+      />
+      <Content>
+        <Title>Pomagamy młodym biznesom rozwinąć się w sieci</Title>
+        <SubTitle>
           Stwórzmy razem stronę internetową, która nada nowy wymiar twojej
           firmie
-        </h2>
+        </SubTitle>
         <Link to="/portfolio">Zobacz portfolio</Link>
-      </div>
-    </section>
+      </Content>
+    </SectionContainer>
   );
 };
 
