@@ -1,11 +1,12 @@
 import React from 'react';
 import Layout from 'layouts';
-import { Banner } from 'templates';
+import { Banner, IntroductionSection } from 'templates';
 
 const HomePage = () => {
   return (
     <Layout>
       <Banner />
+      <IntroductionSection />
     </Layout>
   );
 };

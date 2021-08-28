@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  display: grid;
   background-color: ${({ theme: { colors } }) => colors.blue};
   background-image: url('/backgrounds/main-bg-mobile.jpg');
   background-size: cover;
@@ -24,7 +23,7 @@ export const Content = styled.div`
     align-items: flex-start;
     justify-content: center;
     width: 42%;
-    height: 40vw;
+    height: 32vw;
     transform: translateY(-10px);
   }
 `;
