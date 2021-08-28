@@ -6,6 +6,9 @@ export const MenuButton = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
+  @media (min-width: 768px) {
+    display: none;
+  }
   & span {
     transition: all 0.3s;
     position: relative;
