@@ -39,7 +39,7 @@ module.exports = {
         displayName: true,
       },
     },
-    'gatsby-plugin-layout',
+    // 'gatsby-plugin-layout',
     'gatsby-plugin-root-import',
   ],
 };

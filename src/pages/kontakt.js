@@ -1,5 +1,12 @@
 import React from 'react';
+import Layout from 'layouts';
 
-const HomePage = () => <div>kontakt</div>;
+const ContactPage = () => {
+  return (
+    <Layout>
+      <div>kontakt</div>
+    </Layout>
+  );
+};
 
-export default HomePage;
+export default ContactPage;

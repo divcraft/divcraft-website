@@ -1,5 +1,12 @@
 import React from 'react';
+import Layout from 'layouts';
 
-const HomePage = () => <div>portfolio</div>;
+const PortfolioPage = () => {
+  return (
+    <Layout>
+      <div>portfolio</div>
+    </Layout>
+  );
+};
 
-export default HomePage;
+export default PortfolioPage;

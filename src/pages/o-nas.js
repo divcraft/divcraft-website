@@ -1,5 +1,12 @@
 import React from 'react';
+import Layout from 'layouts';
 
-const HomePage = () => <div>o nas</div>;
+const AboutPage = () => {
+  return (
+    <Layout>
+      <div>o nas</div>
+    </Layout>
+  );
+};
 
-export default HomePage;
+export default AboutPage;
