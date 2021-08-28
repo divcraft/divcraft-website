@@ -41,5 +41,20 @@ module.exports = {
     },
     // 'gatsby-plugin-layout',
     'gatsby-plugin-root-import',
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Raleway`,
+            variants: [`400`],
+          },
+          {
+            family: `Roboto`,
+            variants: [`300`],
+          },
+        ],
+      },
+    },
   ],
 };
