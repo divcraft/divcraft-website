@@ -3,13 +3,19 @@ import { normalize } from 'styled-normalize';
 
 export const GlobalStyle = createGlobalStyle`
    ${normalize}
-   body {
-      font-family: 'Poppins', sans-serif;
-   };
    * {
-      box-sizing: border-box;
+     box-sizing: border-box;
+   };
+   h1, h2 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
       line-height: 1.5;  
-   }
+    };
+    p, a {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      line-height: 1.5;  
+   };
 `;
 
 export const theme = {
