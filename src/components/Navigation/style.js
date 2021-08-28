@@ -6,7 +6,7 @@ export const Navigation = styled.nav`
   left: 0;
   width: 100%;
   height: 0;
-  background-color: ${({ theme: { colors } }) => colors.blue};
+  background-color: rgba(53, 106, 140, 0.9);
   transition: all 0.5s;
   overflow: hidden;
   ${({ isClicked }) =>
@@ -45,12 +45,13 @@ export const Navigation = styled.nav`
       }
       & a {
         display: block;
-        box-shadow: 0 0 3px ${({ theme: { colors } }) => colors.gray.dark};
+        box-shadow: 0 0 3px ${({ theme: { colors } }) => colors.gray.light};
         height: 70px;
         background-color: white;
         line-height: 70px;
         text-decoration: none;
         color: ${({ theme: { colors } }) => colors.blue};
+        font-size: 20px;
         &:hover,
         &.active {
           background-color: ${({ theme: { colors } }) => colors.yellow};
