@@ -1,6 +1,11 @@
 import React from 'react';
 import Layout from 'layouts';
-import { Banner, IntroductionSection, ServicesSection } from 'templates';
+import {
+  Banner,
+  IntroductionSection,
+  ServicesSection,
+  TechnologiesSection,
+} from 'templates';
 
 const HomePage = () => {
   return (
@@ -8,6 +13,7 @@ const HomePage = () => {
       <Banner />
       <IntroductionSection />
       <ServicesSection />
+      <TechnologiesSection />
     </Layout>
   );
 };

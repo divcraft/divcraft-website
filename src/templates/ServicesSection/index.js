@@ -1,11 +1,11 @@
 import React from 'react';
-import { Wrapper, TitleHeader, Paragraph } from 'components';
+import { Wrapper, TitleHeader, Paragraph, Image } from 'components';
 import {
   SectionContainer,
   BackgroundImage,
-  Image,
   List,
   ListItem,
+  ContentContainer,
 } from './style';
 
 const ServicesSection = () => {
@@ -20,7 +20,7 @@ const ServicesSection = () => {
                   src="/illustrations/design-image.svg"
                   alt="grafika strony"
                 />
-                <div>
+                <ContentContainer>
                   <TitleHeader color="yellow">
                     Oryginalny projekt graficzny
                   </TitleHeader>
@@ -32,14 +32,14 @@ const ServicesSection = () => {
                     master-builder of human happiness. No one rejects, dislikes,
                     or avoids pleasure itself.
                   </Paragraph>
-                </div>
+                </ContentContainer>
               </ListItem>
               <ListItem>
                 <Image
                   src="/illustrations/content-image.svg"
                   alt="edycja treści"
                 />
-                <div>
+                <ContentContainer>
                   <TitleHeader color="yellow">
                     Dynamiczna edycja treści
                   </TitleHeader>
@@ -51,14 +51,14 @@ const ServicesSection = () => {
                     master-builder of human happiness. No one rejects, dislikes,
                     or avoids pleasure itself.
                   </Paragraph>
-                </div>
+                </ContentContainer>
               </ListItem>
               <ListItem>
                 <Image
                   src="/illustrations/time-image.svg"
                   alt="wczytywanie strony"
                 />
-                <div>
+                <ContentContainer>
                   <TitleHeader color="yellow">
                     Wysoka prędkość wczytywania
                   </TitleHeader>
@@ -70,14 +70,14 @@ const ServicesSection = () => {
                     master-builder of human happiness. No one rejects, dislikes,
                     or avoids pleasure itself.
                   </Paragraph>
-                </div>
+                </ContentContainer>
               </ListItem>
               <ListItem>
                 <Image
                   src="/illustrations/analytics-image.svg"
                   alt="analiza danych"
                 />
-                <div>
+                <ContentContainer>
                   <TitleHeader color="yellow">
                     Dostęp do narzędzi analitycznych
                   </TitleHeader>
@@ -89,7 +89,7 @@ const ServicesSection = () => {
                     master-builder of human happiness. No one rejects, dislikes,
                     or avoids pleasure itself.
                   </Paragraph>
-                </div>
+                </ContentContainer>
               </ListItem>
             </List>
           </Wrapper>

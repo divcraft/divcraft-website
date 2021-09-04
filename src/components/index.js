@@ -5,3 +5,4 @@ export { default as TitleHeader } from './TitleHeader';
 export { default as Paragraph } from './Paragraph';
 export * from './Wrapper';
 export * from './LinkButton';
+export * from './Image';

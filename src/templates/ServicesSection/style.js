@@ -7,7 +7,7 @@ export const SectionContainer = styled.section`
 `;
 
 export const BackgroundImage = styled.div`
-  padding: 30px 0;
+  padding: 80px 0;
   height: 100%;
   background-image: url('/backgrounds/services-bg.png');
   background-position: center;
@@ -16,13 +16,10 @@ export const BackgroundImage = styled.div`
   background-repeat: repeat-x;
 `;
 
-export const Image = styled.img`
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
+export const ContentContainer = styled.div`
+  margin-top: 15px;
   @media (min-width: 900px) {
-    width: 50%;
-    margin-bottom: 0;
+    margin-top: 0;
   }
 `;
 
@@ -33,11 +30,16 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   @media (min-width: 900px) {
-    margin: 70px 0;
     display: flex;
     align-items: flex-start;
+    & img {
+      width: 50%;
+    }
     & > div {
       width: 50%;
       padding: 0 5%;
