@@ -6,6 +6,7 @@ import {
   ServicesSection,
   TechnologiesSection,
   ProfitsSection,
+  HomeContactSection,
 } from 'templates';
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
       <ServicesSection />
       <TechnologiesSection />
       <ProfitsSection />
+      <HomeContactSection />
     </Layout>
   );
 };
