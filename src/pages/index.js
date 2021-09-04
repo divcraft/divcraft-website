@@ -5,6 +5,7 @@ import {
   IntroductionSection,
   ServicesSection,
   TechnologiesSection,
+  ProfitsSection,
 } from 'templates';
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
       <IntroductionSection />
       <ServicesSection />
       <TechnologiesSection />
+      <ProfitsSection />
     </Layout>
   );
 };

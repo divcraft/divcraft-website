@@ -36,7 +36,7 @@ export const ListItem = styled.li`
   }
   @media (min-width: 900px) {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     & img {
       width: 50%;
     }
