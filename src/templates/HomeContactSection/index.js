@@ -8,7 +8,7 @@ const HomeContactSection = () => {
       <Wrapper>
         <GridContainer>
           <TitleHeader color="blue">
-            Chcesz dowiedzieć się czegoś czego nie znalazłeś na naszej stronie?
+            Chcesz dowiedzieć się czegoś, czego nie znalazłeś na naszej stronie?
           </TitleHeader>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi

@@ -1,8 +1,8 @@
-import { MenuBar } from 'templates';
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from 'utils';
+import { MenuBar, Footer } from 'templates';
 import { Header, OverflowWrapper } from './style';
 
 const MainLayout = ({ children }) => (
@@ -13,7 +13,7 @@ const MainLayout = ({ children }) => (
         <MenuBar />
       </Header>
       <main>{children}</main>
-      {/* <footer>footer</footer> */}
+      <Footer />
     </OverflowWrapper>
   </ThemeProvider>
 );
