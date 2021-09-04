@@ -7,7 +7,7 @@ const TitleHeader = ({ color, children }) => {
 };
 
 TitleHeader.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.string.isRequired,
   children: PropTypes.string,
 };
 

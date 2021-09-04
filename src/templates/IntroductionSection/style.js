@@ -5,7 +5,7 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
@@ -26,8 +26,10 @@ export const Container = styled.div`
 
 export const Image = styled.img`
   width: 100%;
+  padding: 5% 10%;
   grid-area: img;
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
+    padding: 20px;
     margin-top: 50px;
   }
 `;
