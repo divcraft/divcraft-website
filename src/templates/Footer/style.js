@@ -31,12 +31,12 @@ export const LinkContainer = styled.div`
 
 export const LogoContainer = styled.span`
   display: inline-block;
-  border-bottom: solid 1px ${({ theme: { colors } }) => colors.gray.light};
+  border-bottom: solid 1px ${({ theme: { colors } }) => colors.gray.dark};
   padding-bottom: 5px;
   margin-bottom: 5px;
   @media (min-width: 768px) {
     border-bottom: none;
-    border-right: solid 1px ${({ theme: { colors } }) => colors.gray.light};
+    border-right: solid 1px ${({ theme: { colors } }) => colors.gray.dark};
     padding-bottom: 0;
     margin-bottom: 0;
     margin-right: 30px;
