@@ -1,10 +1,16 @@
 import React from 'react';
 import { Wrapper, TitleHeader, Image } from 'components';
-import { TitleAligner, TileContainer, Tile, IconTitle } from './style';
+import {
+  SectionContainer,
+  TitleAligner,
+  TileContainer,
+  Tile,
+  IconTitle,
+} from './style';
 
 const TechnologiesSection = () => {
   return (
-    <section>
+    <SectionContainer>
       <Wrapper>
         <TitleAligner>
           <TitleHeader color="black">
@@ -41,7 +47,7 @@ const TechnologiesSection = () => {
           </Tile>
         </TileContainer>
       </Wrapper>
-    </section>
+    </SectionContainer>
   );
 };
 

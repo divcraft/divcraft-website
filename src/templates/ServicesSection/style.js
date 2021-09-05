@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  background: ${({ theme: { colors } }) => colors.blue};
-  background: linear-gradient(#5b90b2, #254a62);
+  background-color: ${({ theme: { colors } }) => colors.blue};
   padding: 0;
 `;
 
@@ -39,6 +38,7 @@ export const ListItem = styled.li`
     align-items: center;
     & img {
       width: 50%;
+      padding: 0 20px;
     }
     & > div {
       width: 50%;

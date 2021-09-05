@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  padding-top: 0;
+  padding-top: 1px;
+  background: linear-gradient(45deg, white, #cce1ff);
+  @media (min-width: 900px) {
+    padding-top: 0;
+  }
 `;
 
 export const Container = styled.div`

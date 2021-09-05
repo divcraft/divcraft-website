@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const SectionContainer = styled.section`
+  padding: 70px 0;
+  background: linear-gradient(45deg, white, #cce1ff);
+`;
+
 export const TitleAligner = styled.div`
   text-align: center;
 `;
@@ -18,6 +23,7 @@ export const TileContainer = styled.div`
 `;
 
 export const Tile = styled.div`
+  background-color: white;
   padding: 15px;
   box-shadow: 0 3px 6px gray;
   display: flex;
