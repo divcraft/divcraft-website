@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
 export const theme = {
   colors: {
     gray: {
-      light: '#707070',
+      light: '#ECECEC',
       dark: '#545454',
     },
     blue: '#356A8C',

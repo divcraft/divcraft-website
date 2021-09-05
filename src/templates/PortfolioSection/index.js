@@ -1,7 +1,14 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Wrapper, TitleHeader } from 'components';
+import { Wrapper, TitleHeader, Image } from 'components';
 import portfolioContent from 'api/portfolioData';
+import {
+  SectionContainer,
+  ArticleContainer,
+  LinkTitle,
+  ImageContainer,
+  LinkButton,
+} from './style';
 
 const PortfolioSection = () => {
   const {
@@ -31,24 +38,28 @@ const PortfolioSection = () => {
     };
   });
   const portfolio = portfolioData.map(item => (
-    <div key={item.url}>
-      <a href={item.url} target="_blank" rel="noreferrer">
-        {item.name}
-      </a>
-      <img src={item.src} alt={item.name} srcSet={item.srcSet} />
+    <ArticleContainer key={item.url}>
+      <LinkTitle>
+        <a href={item.url} target="_blank" rel="noreferrer">
+          {item.name}
+        </a>
+      </LinkTitle>
+      <ImageContainer>
+        <Image src={item.src} alt={item.name} srcSet={item.srcSet} />
+      </ImageContainer>
       <p>{item.description}</p>
-      <a href={item.url} target="_blank" rel="noreferrer">
+      <LinkButton href={item.url} target="_blank" rel="noreferrer">
         Zobacz stronę
-      </a>
-    </div>
+      </LinkButton>
+    </ArticleContainer>
   ));
   return (
-    <section>
+    <SectionContainer>
       <Wrapper>
         <TitleHeader color="blue">Wykonane przez nas projekty</TitleHeader>
         {portfolio}
       </Wrapper>
-    </section>
+    </SectionContainer>
   );
 };
 
