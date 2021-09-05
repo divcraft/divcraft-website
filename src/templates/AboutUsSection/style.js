@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  padding-top: 30px;
+  padding: 30px 0 20px;
 `;
 
 export const UserContainer = styled.div`

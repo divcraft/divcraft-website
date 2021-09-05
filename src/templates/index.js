@@ -8,3 +8,4 @@ export { default as HomeContactSection } from './HomeContactSection';
 export { default as Footer } from './Footer';
 export { default as PortfolioSection } from './PortfolioSection';
 export { default as AboutUsSection } from './AboutUsSection';
+export { default as OurPhilosophySection } from './OurPhilosophySection';
