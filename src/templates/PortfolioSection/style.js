@@ -85,7 +85,7 @@ export const ImageContainer = styled.div`
     transition: all ease-in-out 0.3s;
   }
   &:hover img {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 `;
 

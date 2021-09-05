@@ -7,3 +7,4 @@ export { default as ProfitsSection } from './ProfitsSection';
 export { default as HomeContactSection } from './HomeContactSection';
 export { default as Footer } from './Footer';
 export { default as PortfolioSection } from './PortfolioSection';
+export { default as AboutUsSection } from './AboutUsSection';
