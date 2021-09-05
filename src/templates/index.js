@@ -10,3 +10,4 @@ export { default as PortfolioSection } from './PortfolioSection';
 export { default as AboutUsSection } from './AboutUsSection';
 export { default as OurPhilosophySection } from './OurPhilosophySection';
 export { default as HowWeWorkSection } from './HowWeWorkSection';
+export { default as ContactSection } from './ContactSection';
