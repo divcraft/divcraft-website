@@ -5,6 +5,7 @@ export const SectionContainer = styled.section`
 `;
 
 export const FormContainer = styled.div`
+  padding-top: 30px;
   background-color: ${({ theme: { colors } }) => colors.gray.light};
   @media (min-width: 768px) {
     padding: 30px 0 50px;

@@ -7,6 +7,7 @@ export const SectionContainer = styled.section`
 export const ContactTileContainer = styled.div`
   display: grid;
   grid-gap: 10px;
+  margin-top: 25px;
   margin-bottom: 40px;
   @media (min-width: 900px) {
     grid-template-columns: 1fr 1fr;
