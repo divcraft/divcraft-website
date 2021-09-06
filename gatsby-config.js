@@ -47,7 +47,7 @@ module.exports = {
         fonts: [
           {
             family: `Raleway`,
-            variants: [`400`],
+            variants: [`400`, `600`],
           },
           {
             family: `Roboto`,

@@ -1,21 +1,27 @@
 import React from 'react';
 import { Wrapper, LinkButton } from 'components';
-import { SectionContainer, Content, Title, SubTitle } from './style';
+import {
+  SectionContainer,
+  ContentContainer,
+  Title,
+  SubTitle,
+  ButtonContainer,
+} from './style';
 
 const Banner = () => {
   return (
     <SectionContainer>
       <Wrapper>
-        <Content>
-          <div>
-            <Title>Pomagamy młodym biznesom rozwinąć się w sieci</Title>
-            <SubTitle>
-              Stwórzmy razem stronę internetową, która nada nowy wymiar twojej
-              firmie
-            </SubTitle>
-          </div>
-          <LinkButton to="/portfolio">Zobacz portfolio</LinkButton>
-        </Content>
+        <ContentContainer>
+          <Title>Pomagamy młodym biznesom rozwinąć się w sieci</Title>
+          <SubTitle>
+            Stwórzmy razem stronę internetową, która nada nowy wymiar twojej
+            firmie
+          </SubTitle>
+          <ButtonContainer>
+            <LinkButton to="/portfolio">Zobacz portfolio</LinkButton>
+          </ButtonContainer>
+        </ContentContainer>
       </Wrapper>
     </SectionContainer>
   );

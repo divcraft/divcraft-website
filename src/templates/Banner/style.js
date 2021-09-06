@@ -1,62 +1,85 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
+  padding: 0;
   background-color: ${({ theme: { colors } }) => colors.blue};
-  background-image: url('/backgrounds/main-bg-mobile.jpg');
+  background-image: url('/backgrounds/hero-bg-mobile.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   @media (min-width: 768px) {
-    background-image: url('/backgrounds/main-bg-desktop.jpg');
+    background-position: center;
+    background-image: url('/backgrounds/hero-bg-desktop.jpg');
+    height: 430px;
+  }
+  @media (min-width: 1400px) {
+    height: 550px;
   }
 `;
 
-export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 25px;
-  height: 150vw;
+export const ContentContainer = styled.div`
+  padding: 25px 0;
+  height: 160vw;
   max-height: 800px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
   @media (min-width: 768px) {
-    align-items: flex-start;
-    justify-content: center;
-    width: 42%;
-    height: 32vw;
-    transform: translateY(-10px);
+    width: 45%;
+    height: inherit;
+    grid-template-rows: 1fr auto auto auto 1fr;
+    grid-template-areas:
+      '.'
+      'title'
+      'subtitle'
+      'button'
+      '.';
   }
 `;
 
 export const Title = styled.h1`
   color: white;
+  font-weight: 600;
+  font-size: 8vw;
   line-height: 1.25;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-  font-size: calc(24px + 40 * ((100vw - 320px) / 680));
+  padding-bottom: 12px;
   position: relative;
   &::before {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    content: '';
     height: 1px;
     width: 100%;
     background-color: white;
   }
   @media (min-width: 768px) {
-    font-size: calc(20px + 15 * ((100vw - 320px) / 680));
+    grid-area: title;
+    font-size: 32px;
     &::before {
-      width: 320px;
+      width: 70%;
+      max-width: 300px;
     }
   }
 `;
 
 export const SubTitle = styled.h2`
-  margin-bottom: 20px;
   color: ${({ theme: { colors } }) => colors.yellow};
-  font-size: calc(16px + 24 * ((100vw - 320px) / 680));
+  font-size: 6vw;
+  line-height: 1.25;
   @media (min-width: 768px) {
-    font-size: calc(12px + 7 * ((100vw - 320px) / 680));
+    grid-area: subtitle;
+    font-size: 20px;
+    max-width: 360px;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  align-self: flex-end;
+  justify-self: center;
+  @media (min-width: 768px) {
+    grid-area: button;
+    margin-top: 10px;
+    align-self: auto;
+    justify-self: auto;
   }
 `;
