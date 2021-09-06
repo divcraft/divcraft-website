@@ -1,11 +1,12 @@
 import React from 'react';
 import Layout from 'layouts';
-import { ContactSection } from 'templates';
+import { ContactInfoSection, ContactFormSection } from 'templates';
 
 const ContactPage = () => {
   return (
     <Layout>
-      <ContactSection />
+      <ContactInfoSection />
+      <ContactFormSection />
     </Layout>
   );
 };

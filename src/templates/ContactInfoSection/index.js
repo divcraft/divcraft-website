@@ -9,7 +9,7 @@ import {
   Content,
 } from './style';
 
-const ContactSection = () => {
+const ContactInfoSection = () => {
   return (
     <SectionContainer>
       <Wrapper>
@@ -42,4 +42,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContactInfoSection;

@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  padding: 30px 0 20px;
+  padding: 30px 0 0;
 `;
 
 export const ContactTileContainer = styled.div`
   display: grid;
   grid-gap: 10px;
+  margin-bottom: 40px;
   @media (min-width: 900px) {
     grid-template-columns: 1fr 1fr;
   }

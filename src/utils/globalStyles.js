@@ -16,11 +16,11 @@ export const GlobalStyle = createGlobalStyle`
       margin-top: 0;
       margin-bottom: 12px;
     };
-    p, a {
+    p, a, button {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       line-height: 1.5;  
-   };
+    };
     p { 
       font-size: 20px;
       margin-top: 0;
