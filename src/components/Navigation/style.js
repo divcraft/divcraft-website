@@ -68,25 +68,29 @@ export const Navigation = styled.nav`
       }
       & a {
         display: block;
-        box-shadow: 0 0 3px ${({ theme: { colors } }) => colors.gray.light};
+        border: 3px solid ${({ theme: { colors } }) => colors.yellow};
         height: 70px;
-        background-color: white;
-        line-height: 70px;
+        background-color: ${({ theme: { colors } }) => colors.yellow};
+        line-height: 65px;
         text-decoration: none;
-        color: ${({ theme: { colors } }) => colors.blue};
-        font-size: 20px;
+        color: black;
+        font-size: 24px;
+        font-weight: 500;
         &:hover,
         &.active {
-          background-color: ${({ theme: { colors } }) => colors.yellow};
+          background-color: white;
           color: black;
           @media (min-width: 768px) {
             background-color: transparent;
           }
         }
         @media (min-width: 768px) {
-          box-shadow: none;
+          color: ${({ theme: { colors } }) => colors.blue};
+          font-size: 20px;
+          border: none;
           height: auto;
           line-height: inherit;
+          background-color: transparent;
         }
       }
     }

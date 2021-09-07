@@ -16,6 +16,9 @@ export const ArticleContainer = styled.article`
     & p {
       color: white;
     }
+    & > div {
+      box-shadow: 0 3px 6px ${({ theme: { colors } }) => colors.gray.dark};
+    }
   }
   &:nth-child(odd) {
     background-color: ${({ theme: { colors } }) => colors.gray.light};
@@ -24,6 +27,9 @@ export const ArticleContainer = styled.article`
     }
     & p {
       color: black;
+    }
+    & > div {
+      box-shadow: 0 3px 6px #c6c6c6;
     }
   }
   @media (min-width: 1000px) {
@@ -78,11 +84,10 @@ export const ArticleContainer = styled.article`
 `;
 
 export const ImageContainer = styled.div`
-  box-shadow: 0 3px 8px ${({ theme: { colors } }) => colors.gray.dark};
   margin: 15px 0;
   overflow: hidden;
   & img {
-    transition: all ease-in-out 0.3s;
+    transition: transform 0.3s;
   }
   &:hover img {
     transform: scale(1.05);

@@ -16,7 +16,15 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          breakpoints: [768, 1200, 1920],
+          placeholder: 'none',
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -42,18 +50,20 @@ module.exports = {
     // 'gatsby-plugin-layout',
     'gatsby-plugin-root-import',
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Raleway`,
-            variants: [`400`, `600`],
-          },
-          {
-            family: `Roboto`,
-            variants: [`300`],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Raleway`,
+              variants: [`400`, `600`],
+            },
+            {
+              family: `Roboto`,
+              variants: [`300`],
+            },
+          ],
+        },
       },
     },
   ],

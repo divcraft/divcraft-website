@@ -6,13 +6,19 @@ export const SectionContainer = styled.section`
 `;
 
 export const BackgroundImage = styled.div`
-  padding: 80px 0;
+  padding: 50px 0;
   height: 100%;
-  background-image: url('/backgrounds/services-bg.png');
+  background-image: url('/backgrounds/services-bg-768.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat-x;
+  @media (min-width: 768px) {
+    background-image: url('/backgrounds/services-bg-1200.jpg');
+  }
+  @media (min-width: 1200px) {
+    background-image: url('/backgrounds/services-bg-1920.jpg');
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -29,11 +35,12 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   &:last-child {
     margin-bottom: 0;
   }
   @media (min-width: 900px) {
+    margin-bottom: 60px;
     display: flex;
     align-items: center;
     & img {

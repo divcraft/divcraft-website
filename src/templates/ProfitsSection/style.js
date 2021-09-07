@@ -5,13 +5,19 @@ export const SectionContainer = styled.section`
 `;
 
 export const BackgroundImage = styled.div`
-  padding: 70px 0;
-  background-image: url('/backgrounds/profits-bg-mobile.jpg');
+  padding: 50px 0;
+  background-color: ${({ theme: { colors } }) => colors.blue};
+
+  /* background-image: url('/backgrounds/profits-bg-768.jpg');
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   @media (min-width: 768px) {
-    background-image: url('/backgrounds/profits-bg-desktop.jpg');
+    /* background-image: url('/backgrounds/profits-bg-1200.jpg'); */
+  }
+  @media (min-width: 1200px) {
+    /* background-image: url('/backgrounds/profits-bg-1920.jpg'); */
   }
 `;
 

@@ -3,14 +3,18 @@ import styled from 'styled-components';
 export const SectionContainer = styled.section`
   padding: 0;
   background-color: ${({ theme: { colors } }) => colors.blue};
-  background-image: url('/backgrounds/hero-bg-mobile.jpg');
+  background-image: url('/backgrounds/hero-bg-768.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   @media (min-width: 768px) {
     background-position: center;
-    background-image: url('/backgrounds/hero-bg-desktop.jpg');
+    background-image: url('/backgrounds/hero-bg-1200.jpg');
     height: 430px;
+    margin-top: 30px;
+  }
+  @media (min-width: 1200px) {
+    background-image: url('/backgrounds/hero-bg-1920.jpg');
   }
   @media (min-width: 1400px) {
     height: 550px;
