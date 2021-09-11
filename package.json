@@ -6,6 +6,7 @@
   "author": "Tomasz Ogonowski",
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.2",
+    "dotenv": "^10.0.0",
     "gatsby": "^3.11.1",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
     "gatsby-plugin-google-fonts-v2": "^1.0.0",
@@ -16,6 +17,7 @@
     "gatsby-plugin-react-helmet": "^4.11.0",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-plugin-styled-components": "^4.12.0",
+    "gatsby-source-datocms": "^2.6.18",
     "gatsby-source-filesystem": "^3.11.0",
     "gatsby-transformer-sharp": "^3.11.0",
     "prop-types": "^15.7.2",

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Wrapper, TitleHeader, Image, Button } from 'components';
-import portfolioContent from 'api/portfolioData';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { Wrapper, TitleHeader, Button } from 'components';
 import {
   SectionContainer,
   ArticleContainer,
@@ -11,47 +11,44 @@ import {
 
 const PortfolioSection = () => {
   const {
-    allFile: { nodes },
+    allDatoCmsPortfolioItem: { nodes },
   } = useStaticQuery(
     graphql`
-      query PortfolioImageQuery {
-        allFile(filter: { relativePath: { regex: "/portfolio/" } }) {
+      {
+        allDatoCmsPortfolioItem {
           nodes {
-            childrenImageSharp {
-              fluid {
-                src
-                srcSet
-              }
+            linkName
+            link
+            id
+            description
+            image {
+              gatsbyImageData(placeholder: NONE)
             }
           }
         }
       }
     `
   );
-  const reorderedNodes = [nodes[2], nodes[1], nodes[3], nodes[0]];
-  const portfolioData = portfolioContent.map((item, index) => {
-    return {
-      ...item,
-      src: reorderedNodes[index].childrenImageSharp[0].fluid.src,
-      srcSet: reorderedNodes[index].childrenImageSharp[0].fluid.srcSet,
-    };
+  const portfolio = nodes.map(item => {
+    const { id, link, linkName, description, image } = item;
+    const imageProps = getImage(image);
+    return (
+      <ArticleContainer key={id}>
+        <LinkTitle>
+          <a href={link} target="_blank" rel="noreferrer">
+            {linkName}
+          </a>
+        </LinkTitle>
+        <ImageContainer>
+          <GatsbyImage image={imageProps} alt={linkName} />
+        </ImageContainer>
+        <p>{description}</p>
+        <Button href={link} target="_blank" rel="noreferrer" pattern="link">
+          Zobacz stronę
+        </Button>
+      </ArticleContainer>
+    );
   });
-  const portfolio = portfolioData.map(item => (
-    <ArticleContainer key={item.url}>
-      <LinkTitle>
-        <a href={item.url} target="_blank" rel="noreferrer">
-          {item.name}
-        </a>
-      </LinkTitle>
-      <ImageContainer>
-        <Image src={item.src} alt={item.name} srcSet={item.srcSet} />
-      </ImageContainer>
-      <p>{item.description}</p>
-      <Button href={item.url} target="_blank" rel="noreferrer" pattern="link">
-        Zobacz stronę
-      </Button>
-    </ArticleContainer>
-  ));
   return (
     <SectionContainer>
       <Wrapper>

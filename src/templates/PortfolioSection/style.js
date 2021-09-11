@@ -89,10 +89,10 @@ export const ArticleContainer = styled.article`
 export const ImageContainer = styled.div`
   margin: 15px 0;
   overflow: hidden;
-  & img {
+  & > div {
     transition: transform 0.3s;
   }
-  &:hover img {
+  &:hover > div {
     transform: scale(1.05);
   }
 `;
