@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from 'layouts';
 import {
-  Banner,
+  HeroSection,
   IntroductionSection,
   ServicesSection,
   TechnologiesSection,
@@ -12,7 +12,7 @@ import {
 const HomePage = () => {
   return (
     <Layout>
-      <Banner />
+      <HeroSection />
       <IntroductionSection />
       <ServicesSection />
       <TechnologiesSection />

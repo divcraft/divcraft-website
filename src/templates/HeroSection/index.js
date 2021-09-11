@@ -8,7 +8,7 @@ import {
   ButtonContainer,
 } from './style';
 
-const Banner = () => {
+const HeroSection = () => {
   return (
     <SectionContainer>
       <Wrapper>
@@ -29,4 +29,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default HeroSection;
