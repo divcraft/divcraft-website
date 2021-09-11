@@ -11,25 +11,25 @@ export const ArticleContainer = styled.article`
     margin-bottom: 0;
   }
   &:nth-child(even) {
-    background-color: ${({ theme: { colors } }) => colors.blue};
+    background-color: ${({ theme: { colors } }) => colors.blue.regular};
     & h2,
     & p {
       color: white;
     }
     & > div {
-      box-shadow: 0 3px 6px ${({ theme: { colors } }) => colors.gray.dark};
+      box-shadow: ${({ theme: { boxshadow } }) => boxshadow.dark};
     }
   }
   &:nth-child(odd) {
     background-color: ${({ theme: { colors } }) => colors.gray.light};
     & h2 {
-      color: ${({ theme: { colors } }) => colors.blue};
+      color: ${({ theme: { colors } }) => colors.blue.regular};
     }
     & p {
       color: black;
     }
     & > div {
-      box-shadow: 0 3px 6px #c6c6c6;
+      box-shadow: ${({ theme: { boxshadow } }) => boxshadow.light};
     }
   }
   @media (min-width: 1000px) {

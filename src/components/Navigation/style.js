@@ -68,7 +68,7 @@ export const Navigation = styled.nav`
       }
       & a {
         display: block;
-        border: 3px solid ${({ theme: { colors } }) => colors.yellow};
+        border: 3px solid ${({ theme: { colors } }) => colors.yellow.regular};
         height: 70px;
         background-color: white;
         line-height: 65px;
@@ -78,14 +78,14 @@ export const Navigation = styled.nav`
         font-weight: 500;
         &:hover,
         &.active {
-          background-color: ${({ theme: { colors } }) => colors.yellow};
+          background-color: ${({ theme: { colors } }) => colors.yellow.regular};
           color: black;
           @media (min-width: 769px) {
             background-color: transparent;
           }
         }
         @media (min-width: 769px) {
-          color: ${({ theme: { colors } }) => colors.blue};
+          color: ${({ theme: { colors } }) => colors.blue.regular};
           font-size: 20px;
           border: none;
           height: auto;

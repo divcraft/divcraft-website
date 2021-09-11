@@ -27,7 +27,7 @@ export const Form = styled.form`
     margin-top: 3px;
     padding: 10px;
     border: none;
-    box-shadow: 0 3px 6px #c6c6c6;
+    box-shadow: ${({ theme: { boxshadow } }) => boxshadow.light};
   }
   @media (min-width: 769px) {
     width: 50%;
@@ -40,7 +40,7 @@ export const FormItem = styled.div`
 `;
 
 export const FormLabel = styled.label`
-  color: #545454;
+  color: ${({ theme: { colors } }) => colors.gray.dark};
 `;
 
 export const FormInput = styled.input`

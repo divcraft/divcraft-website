@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
   padding: 0;
-  background-color: ${({ theme: { colors } }) => colors.blue};
+  background-color: ${({ theme: { colors } }) => colors.blue.regular};
   background-image: url('/backgrounds/hero-bg-768.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,7 +66,7 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.h2`
-  color: ${({ theme: { colors } }) => colors.yellow};
+  color: ${({ theme: { colors } }) => colors.yellow.regular};
   font-size: 6vw;
   @media (min-width: 769px) {
     grid-area: subtitle;

@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const FooterContainer = styled.footer`
   text-align: center;
   padding: 20px 0;
-  background-color: #3b3b3b;
-  color: ${({ theme: { colors } }) => colors.yellow};
+  background-color: ${({ theme: { colors } }) => colors.gray.darker};
+  color: ${({ theme: { colors } }) => colors.yellow.regular};
   & p {
     font-family: inherit;
     margin: 0;
@@ -13,10 +13,10 @@ export const FooterContainer = styled.footer`
   & a {
     font-family: inherit;
     font-size: 20px;
-    color: ${({ theme: { colors } }) => colors.yellow};
+    color: ${({ theme: { colors } }) => colors.yellow.regular};
     text-decoration: none;
     &:hover {
-      color: #f2d201;
+      color: ${({ theme: { colors } }) => colors.yellow.dark};
     }
   }
 `;

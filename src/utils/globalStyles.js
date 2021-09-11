@@ -37,8 +37,19 @@ export const theme = {
     gray: {
       light: '#ECECEC',
       dark: '#545454',
+      darker: '#3b3b3b',
     },
-    blue: '#356A8C',
-    yellow: '#FFDD00',
+    blue: {
+      regular: '#356A8C',
+      dark: '#395f78',
+    },
+    yellow: {
+      regular: '#FFDD00',
+      dark: '#f2d201',
+    },
+  },
+  boxshadow: {
+    light: '0 3px 6px #c6c6c6',
+    dark: '0 3px 6px #545454',
   },
 };

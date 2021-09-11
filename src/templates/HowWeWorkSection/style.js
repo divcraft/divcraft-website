@@ -31,7 +31,7 @@ export const TileList = styled.ul`
 export const Tile = styled.li`
   padding: 25px;
   background-color: white;
-  box-shadow: 0 3px 6px #c6c6c6;
+  box-shadow: ${({ theme: { boxshadow } }) => boxshadow.light};
   display: grid;
   grid-gap: 10px;
   grid-template-rows: 110px auto;
@@ -58,12 +58,12 @@ export const Tile = styled.li`
 export const TileTitle = styled.h1`
   padding-left: 80px;
   font-size: 24px;
-  color: ${({ theme: { colors } }) => colors.blue};
+  color: ${({ theme: { colors } }) => colors.blue.regular};
   position: relative;
   max-width: 330px;
   display: block;
   &::before {
-    color: ${({ theme: { colors } }) => colors.yellow};
+    color: ${({ theme: { colors } }) => colors.yellow.regular};
     font-size: 120px;
     line-height: 1;
     position: absolute;

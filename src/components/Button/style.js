@@ -7,13 +7,13 @@ const linkStyle = css`
   width: 165px;
   height: 45px;
   color: black;
-  background-color: ${({ theme: { colors } }) => colors.yellow};
+  background-color: ${({ theme: { colors } }) => colors.yellow.regular};
   text-align: center;
   line-height: 45px;
   text-decoration: none;
   border: none;
   &:hover {
-    background-color: #f2d201;
+    background-color: ${({ theme: { colors } }) => colors.yellow.dark};
   }
 `;
 

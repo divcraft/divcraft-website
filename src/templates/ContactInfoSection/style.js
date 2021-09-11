@@ -18,14 +18,14 @@ export const ContactTile = styled.a`
   transition: background-color 0.1s;
   text-decoration: none;
   padding: 10px;
-  background-color: ${({ theme: { colors } }) => colors.blue};
+  background-color: ${({ theme: { colors } }) => colors.blue.regular};
   display: grid;
   grid-template-columns: 70px auto;
   grid-template-areas:
     'iconx desc'
     'iconx contentx';
   &:hover {
-    background-color: #395f78;
+    background-color: ${({ theme: { colors } }) => colors.blue.dark};
   }
   & p {
     margin: 0;
@@ -45,7 +45,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Description = styled.p`
-  color: ${({ theme: { colors } }) => colors.yellow};
+  color: ${({ theme: { colors } }) => colors.yellow.regular};
   grid-area: desc;
   align-self: flex-end;
   font-size: 16px;

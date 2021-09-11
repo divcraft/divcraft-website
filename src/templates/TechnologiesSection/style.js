@@ -25,14 +25,14 @@ export const TileContainer = styled.div`
 export const Tile = styled.div`
   background-color: white;
   padding: 15px;
-  box-shadow: 0 3px 6px gray;
+  box-shadow: ${({ theme: { boxshadow } }) => boxshadow.dark};
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 40vw;
   max-height: 250px;
   &:hover {
-    background-color: ${({ theme: { colors } }) => colors.yellow};
+    background-color: ${({ theme: { colors } }) => colors.yellow.regular};
   }
   & img {
     height: 60%;
@@ -48,7 +48,7 @@ export const IconTitle = styled.h2`
   text-align: center;
   margin: 15px 0 0 0;
   font-size: 16px;
-  color: ${({ theme: { colors } }) => colors.blue};
+  color: ${({ theme: { colors } }) => colors.blue.regular};
   @media (min-width: 769px) {
     margin: 25px 0 0 0;
     font-size: 24px;

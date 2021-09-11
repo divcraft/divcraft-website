@@ -6,7 +6,7 @@ export const SectionContainer = styled.section`
 
 export const BackgroundImage = styled.div`
   padding: 50px 0;
-  background-color: ${({ theme: { colors } }) => colors.blue};
+  background-color: ${({ theme: { colors } }) => colors.blue.regular};
 
   /* background-image: url('/backgrounds/profits-bg-768.jpg');
   background-position: center;

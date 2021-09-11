@@ -68,6 +68,6 @@ export const SpecialityText = styled.p`
 `;
 
 export const BlueText = styled.p`
-  color: ${({ theme: { colors } }) => colors.blue};
+  color: ${({ theme: { colors } }) => colors.blue.regular};
   grid-area: company;
 `;

@@ -15,7 +15,7 @@ export const MenuButton = styled.div`
     display: block;
     width: 27px;
     height: 2px;
-    background-color: ${({ theme: { colors } }) => colors.blue};
+    background-color: ${({ theme: { colors } }) => colors.blue.regular};
     &::before {
       content: '';
       transition: all 0.3s;
@@ -49,7 +49,7 @@ export const MenuButton = styled.div`
           transform: rotate(45deg);
           top: 0;
           width: 23px;
-          background-color: ${({ theme: { colors } }) => colors.blue};
+          background-color: ${({ theme: { colors } }) => colors.blue.regular};
         }
       `}
   }
