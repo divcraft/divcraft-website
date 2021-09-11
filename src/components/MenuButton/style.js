@@ -6,7 +6,7 @@ export const MenuButton = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: none;
   }
   & span {

@@ -22,7 +22,7 @@ export const TileList = styled.ul`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
   }
-  @media (min-width: 900px) {
+  @media (min-width: 901px) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
   }

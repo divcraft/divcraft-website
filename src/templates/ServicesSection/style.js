@@ -13,17 +13,17 @@ export const BackgroundImage = styled.div`
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat-x;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     background-image: url('/backgrounds/services-bg-1200.jpg');
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1201px) {
     background-image: url('/backgrounds/services-bg-1920.jpg');
   }
 `;
 
 export const ContentContainer = styled.div`
   margin-top: 15px;
-  @media (min-width: 900px) {
+  @media (min-width: 901px) {
     margin-top: 0;
   }
 `;
@@ -39,7 +39,7 @@ export const ListItem = styled.li`
   &:last-child {
     margin-bottom: 0;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 901px) {
     margin-bottom: 60px;
     display: flex;
     align-items: center;

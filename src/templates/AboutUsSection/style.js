@@ -16,7 +16,7 @@ export const UserContainer = styled.div`
     text-align: center;
     font-family: 'Raleway', sans-serif;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: auto;
     max-width: none;
     margin: 13px 0 25px;

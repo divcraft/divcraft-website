@@ -23,7 +23,7 @@ export const FooterContainer = styled.footer`
 
 export const LinkContainer = styled.div`
   margin-bottom: 15px;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
     justify-content: center;
   }
@@ -34,7 +34,7 @@ export const LogoContainer = styled.span`
   border-bottom: solid 1px ${({ theme: { colors } }) => colors.gray.dark};
   padding-bottom: 5px;
   margin-bottom: 5px;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     border-bottom: none;
     border-right: solid 1px ${({ theme: { colors } }) => colors.gray.dark};
     padding-bottom: 0;

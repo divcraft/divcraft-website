@@ -7,16 +7,16 @@ export const SectionContainer = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     margin-top: 30px;
     background-position: center;
     background-image: url('/backgrounds/hero-bg-1200.jpg');
     height: 430px;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1201px) {
     background-image: url('/backgrounds/hero-bg-1920.jpg');
   }
-  @media (min-width: 1400px) {
+  @media (min-width: 1401px) {
     height: 550px;
   }
 `;
@@ -27,7 +27,7 @@ export const ContentContainer = styled.div`
   max-height: 800px;
   display: grid;
   grid-template-rows: auto auto 1fr;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 45%;
     height: inherit;
     grid-template-rows: 1fr auto auto auto 1fr;
@@ -56,7 +56,7 @@ export const Title = styled.h1`
     width: 100%;
     background-color: white;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     grid-area: title;
     font-size: 32px;
     &::before {
@@ -70,7 +70,7 @@ export const SubTitle = styled.h2`
   color: ${({ theme: { colors } }) => colors.yellow};
   font-size: 6vw;
   line-height: 1.25;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     grid-area: subtitle;
     font-size: 20px;
     max-width: 360px;
@@ -80,7 +80,7 @@ export const SubTitle = styled.h2`
 export const ButtonContainer = styled.div`
   align-self: flex-end;
   justify-self: center;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     grid-area: button;
     margin-top: 10px;
     align-self: auto;

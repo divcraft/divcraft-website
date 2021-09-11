@@ -7,7 +7,7 @@ export const SectionContainer = styled.section`
 export const FormContainer = styled.div`
   padding-top: 30px;
   background-color: ${({ theme: { colors } }) => colors.gray.light};
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding: 30px 0 50px;
   }
 `;
@@ -15,7 +15,7 @@ export const FormContainer = styled.div`
 export const Form = styled.form`
   width: 100%;
   display: block;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 50%;
     display: inline-block;
   }
@@ -41,7 +41,7 @@ export const FormInput = styled.input`
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 345px;
   }
 `;
@@ -81,7 +81,7 @@ export const FormImageContainer = styled.div`
   margin-left: auto;
   margin-right: 5%;
   transform: translateY(-15px);
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     transform: translateY(-20%);
     padding: 5%;
     width: 50%;

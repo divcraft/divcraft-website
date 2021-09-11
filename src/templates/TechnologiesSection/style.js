@@ -15,7 +15,7 @@ export const TileContainer = styled.div`
   grid-template-columns: repeat(2, calc(50% - 5px));
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     margin-top: 50px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
@@ -39,7 +39,7 @@ export const Tile = styled.div`
     max-height: 100px;
     width: auto;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     height: 25vw;
   }
 `;
@@ -49,7 +49,7 @@ export const IconTitle = styled.h2`
   margin: 15px 0 0 0;
   font-size: 16px;
   color: ${({ theme: { colors } }) => colors.blue};
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     margin: 25px 0 0 0;
     font-size: 24px;
   }

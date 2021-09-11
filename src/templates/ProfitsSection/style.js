@@ -13,23 +13,23 @@ export const BackgroundImage = styled.div`
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; */
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     /* background-image: url('/backgrounds/profits-bg-1200.jpg'); */
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1201px) {
     /* background-image: url('/backgrounds/profits-bg-1920.jpg'); */
   }
 `;
 
 export const FlexContainer = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
     align-items: center;
   }
 `;
 
 export const ImageContainer = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 50%;
   }
 `;
@@ -39,7 +39,7 @@ export const ContentContainer = styled.div`
   @media (min-width: 400px) {
     padding-left: 20%;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 50%;
     margin-top: 0;
     padding: 0 5%;

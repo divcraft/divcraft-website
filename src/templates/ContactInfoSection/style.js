@@ -9,7 +9,7 @@ export const ContactTileContainer = styled.div`
   grid-gap: 10px;
   margin-top: 25px;
   margin-bottom: 40px;
-  @media (min-width: 900px) {
+  @media (min-width: 901px) {
     grid-template-columns: 1fr 1fr;
   }
 `;
@@ -31,7 +31,7 @@ export const ContactTile = styled.a`
     margin: 0;
     padding-left: 10px;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 901px) {
     padding: 20px;
     & p {
       padding-left: 20px;
@@ -55,7 +55,7 @@ export const Content = styled.p`
   color: white;
   grid-area: contentx;
   font-size: 22px;
-  @media (min-width: 900px) {
+  @media (min-width: 901px) {
     font-size: 28px;
   }
 `;

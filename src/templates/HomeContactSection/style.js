@@ -9,7 +9,7 @@ export const GridContainer = styled.div`
   & a {
     margin: auto;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 901px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -40,7 +40,7 @@ export const GridContainer = styled.div`
 
 export const ImageContainer = styled.div`
   padding: 10%;
-  @media (min-width: 900px) {
+  @media (min-width: 901px) {
     padding: 20px;
   }
 `;

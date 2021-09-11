@@ -9,7 +9,7 @@ export const Navigation = styled.nav`
   background-color: rgba(53, 106, 140, 0.9);
   transition: all 0.5s;
   overflow: hidden;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     transition: none;
     position: relative;
     top: auto;
@@ -29,7 +29,7 @@ export const Navigation = styled.nav`
     padding: 0;
     text-align: center;
     margin-top: 30px;
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       display: flex;
       margin-top: 0;
       align-items: center;
@@ -40,7 +40,7 @@ export const Navigation = styled.nav`
       margin-bottom: 10px;
       opacity: 0;
       transition: all 0.3s;
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         opacity: 1;
         transition: none;
         margin-bottom: 0;
@@ -62,7 +62,7 @@ export const Navigation = styled.nav`
         `};
       &:last-child {
         margin-bottom: 0;
-        @media (min-width: 768px) {
+        @media (min-width: 769px) {
           margin-right: 0;
         }
       }
@@ -80,11 +80,11 @@ export const Navigation = styled.nav`
         &.active {
           background-color: ${({ theme: { colors } }) => colors.yellow};
           color: black;
-          @media (min-width: 768px) {
+          @media (min-width: 769px) {
             background-color: transparent;
           }
         }
-        @media (min-width: 768px) {
+        @media (min-width: 769px) {
           color: ${({ theme: { colors } }) => colors.blue};
           font-size: 20px;
           border: none;

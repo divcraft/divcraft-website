@@ -6,7 +6,7 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
-  @media (min-width: 900px) {
+  @media (min-width: 901px) {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr auto auto auto 1fr;
@@ -24,7 +24,7 @@ export const Image = styled.img`
   width: 100%;
   padding: 2% 10%;
   grid-area: img;
-  @media (min-width: 900px) {
+  @media (min-width: 901px) {
     padding: 0;
     align-self: center;
   }
