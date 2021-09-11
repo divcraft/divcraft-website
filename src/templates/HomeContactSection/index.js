@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, TitleHeader, Image, LinkButton } from 'components';
+import { Wrapper, TitleHeader, Image, Button } from 'components';
 import { SectionContainer, GridContainer, ImageContainer } from './style';
 
 const HomeContactSection = () => {
@@ -22,7 +22,9 @@ const HomeContactSection = () => {
               alt="skontaktuj się"
             />
           </ImageContainer>
-          <LinkButton to="/kontakt">Napisz do nas</LinkButton>
+          <Button to="/kontakt" pattern="gatsbyLink">
+            Napisz do nas
+          </Button>
         </GridContainer>
       </Wrapper>
     </SectionContainer>

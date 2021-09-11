@@ -54,23 +54,6 @@ export const FormTextarea = styled.textarea`
   resize: none;
 `;
 
-export const FormButton = styled.button`
-  border: none;
-  cursor: pointer;
-  display: block;
-  width: 165px;
-  height: 45px;
-  color: black;
-  background-color: ${({ theme: { colors } }) => colors.yellow};
-  text-align: center;
-  line-height: 45px;
-  text-decoration: none;
-  margin-top: 15px;
-  &:hover {
-    background-color: #f2d201;
-  }
-`;
-
 export const FormImageContainer = styled.div`
   width: 60%;
   margin-left: auto;

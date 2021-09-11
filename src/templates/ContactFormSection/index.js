@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, Image } from 'components';
+import { Wrapper, Image, Button } from 'components';
 import {
   SectionContainer,
   FormContainer,
@@ -8,7 +8,6 @@ import {
   FormLabel,
   FormInput,
   FormTextarea,
-  FormButton,
   FormImageContainer,
 } from './style';
 
@@ -37,9 +36,13 @@ const ContactFormSection = () => {
               </FormLabel>
             </FormItem>
             <FormItem>
-              <FormButton type="submit" onClick={e => e.preventDefault()}>
+              <Button
+                type="submit"
+                onClick={e => e.preventDefault()}
+                pattern="button"
+              >
                 Wyślij
-              </FormButton>
+              </Button>
             </FormItem>
           </Form>
           <FormImageContainer>

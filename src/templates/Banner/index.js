@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, LinkButton } from 'components';
+import { Wrapper, Button } from 'components';
 import {
   SectionContainer,
   ContentContainer,
@@ -19,7 +19,9 @@ const Banner = () => {
             firmie
           </SubTitle>
           <ButtonContainer>
-            <LinkButton to="/portfolio">Zobacz portfolio</LinkButton>
+            <Button to="/portfolio" pattern="gatsbyLink">
+              Zobacz portfolio
+            </Button>
           </ButtonContainer>
         </ContentContainer>
       </Wrapper>

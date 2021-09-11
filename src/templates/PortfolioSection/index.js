@@ -1,13 +1,12 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Wrapper, TitleHeader, Image } from 'components';
+import { Wrapper, TitleHeader, Image, Button } from 'components';
 import portfolioContent from 'api/portfolioData';
 import {
   SectionContainer,
   ArticleContainer,
   LinkTitle,
   ImageContainer,
-  LinkButton,
 } from './style';
 
 const PortfolioSection = () => {
@@ -48,9 +47,9 @@ const PortfolioSection = () => {
         <Image src={item.src} alt={item.name} srcSet={item.srcSet} />
       </ImageContainer>
       <p>{item.description}</p>
-      <LinkButton href={item.url} target="_blank" rel="noreferrer">
+      <Button href={item.url} target="_blank" rel="noreferrer" pattern="link">
         Zobacz stronę
-      </LinkButton>
+      </Button>
     </ArticleContainer>
   ));
   return (
