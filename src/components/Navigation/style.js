@@ -70,7 +70,7 @@ export const Navigation = styled.nav`
         display: block;
         border: 3px solid ${({ theme: { colors } }) => colors.yellow};
         height: 70px;
-        background-color: ${({ theme: { colors } }) => colors.yellow};
+        background-color: white;
         line-height: 65px;
         text-decoration: none;
         color: black;
@@ -78,7 +78,7 @@ export const Navigation = styled.nav`
         font-weight: 500;
         &:hover,
         &.active {
-          background-color: white;
+          background-color: ${({ theme: { colors } }) => colors.yellow};
           color: black;
           @media (min-width: 768px) {
             background-color: transparent;

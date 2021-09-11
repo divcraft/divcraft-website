@@ -8,10 +8,10 @@ export const SectionContainer = styled.section`
   background-repeat: no-repeat;
   background-position: center top;
   @media (min-width: 768px) {
+    margin-top: 30px;
     background-position: center;
     background-image: url('/backgrounds/hero-bg-1200.jpg');
     height: 430px;
-    margin-top: 30px;
   }
   @media (min-width: 1200px) {
     background-image: url('/backgrounds/hero-bg-1920.jpg');
