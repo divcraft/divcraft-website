@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  padding: 0 0 30px;
+  padding: 30px 0;
+  @media (min-width: 769px) {
+    padding: 0 0 30px;
+  }
 `;
 
 export const UserContainer = styled.div`
