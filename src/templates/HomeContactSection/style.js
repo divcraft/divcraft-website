@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  background: linear-gradient(45deg, white, #cce1ff);
+  background: ${({ theme: { gradient } }) => gradient};
 `;
 
 export const GridContainer = styled.div`

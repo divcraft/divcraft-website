@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
      box-sizing: border-box;
    };
    main { 
-    /* background-color: #f8f8f8;  */
     @media (min-width: 769px) {
     padding-top: 30px;
   } 
@@ -44,6 +43,7 @@ export const GlobalStyle = createGlobalStyle`
 export const theme = {
   colors: {
     gray: {
+      lighter: '#fdfdfd',
       light: '#ECECEC',
       dark: '#545454',
       darker: '#3b3b3b',
@@ -61,4 +61,5 @@ export const theme = {
     light: '0 3px 6px #c6c6c6',
     dark: '0 3px 6px #545454',
   },
+  gradient: 'linear-gradient(135deg, white, #cce1ff)',
 };

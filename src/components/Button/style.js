@@ -12,6 +12,7 @@ const linkStyle = css`
   line-height: 45px;
   text-decoration: none;
   border: none;
+  transition: all 0.2s;
   &:hover {
     background-color: ${({ theme: { colors } }) => colors.yellow.dark};
   }
