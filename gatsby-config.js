@@ -50,20 +50,18 @@ module.exports = {
     // 'gatsby-plugin-layout',
     'gatsby-plugin-root-import',
     {
-      resolve: `gatsby-plugin-webfonts`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
-        fonts: {
-          google: [
-            {
-              family: `Raleway`,
-              variants: [`400`, `600`],
-            },
-            {
-              family: `Roboto`,
-              variants: [`300`],
-            },
-          ],
-        },
+        fonts: [
+          {
+            family: `Raleway`,
+            weights: [`400`, `600`],
+          },
+          {
+            family: `Roboto`,
+            weights: [`300`],
+          },
+        ],
       },
     },
   ],

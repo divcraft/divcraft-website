@@ -22,7 +22,7 @@ const IntroductionSection = () => {
             corrupti nam tenetur labore cupiditate placeat, ullam eligendi!
             Consequuntur exercitationem repellat laboriosam ex, sequi
             voluptates, fugit voluptatem, dolor dolore doloremque
-            necessitatibus.
+            necessitatibus. ąłężźć
           </Paragraph1>
           <Image
             src="illustrations/webdev-image.svg"
