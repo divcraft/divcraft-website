@@ -6,6 +6,12 @@ export const GlobalStyle = createGlobalStyle`
    * {
      box-sizing: border-box;
    };
+   main { 
+    /* background-color: #f8f8f8;  */
+    @media (min-width: 769px) {
+    padding-top: 30px;
+  } 
+   }
    section {
      padding: 50px 0;
    }
@@ -21,14 +27,17 @@ export const GlobalStyle = createGlobalStyle`
       margin-top: 0;
       margin-bottom: 12px;
     };
-    p, a, button {
+    p, a {
       font-weight: 300;
-      line-height: 1.5;  
     };
     p { 
       font-size: 20px;
+      line-height: 1.5;  
       margin-top: 0;
       margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
    };
 `;
 

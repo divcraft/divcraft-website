@@ -40,7 +40,6 @@ export const ListItem = styled.li`
     margin-bottom: 0;
   }
   @media (min-width: 901px) {
-    margin-bottom: 60px;
     display: flex;
     align-items: center;
     & img {

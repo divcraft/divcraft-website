@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  padding-top: 50px;
   background: linear-gradient(45deg, white, #cce1ff);
 `;
 

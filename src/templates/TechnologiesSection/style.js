@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  padding: 50px 0;
   background: linear-gradient(45deg, white, #cce1ff);
 `;
 
@@ -16,7 +15,6 @@ export const TileContainer = styled.div`
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
   @media (min-width: 769px) {
-    margin-top: 50px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
   }
