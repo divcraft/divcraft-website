@@ -29,7 +29,6 @@ export const TileList = styled.ul`
 `;
 
 export const Tile = styled.li`
-  font-family: 'Raleway', sans-serif;
   padding: 25px;
   background-color: white;
   box-shadow: 0 3px 6px #c6c6c6;
@@ -65,7 +64,6 @@ export const TileTitle = styled.h1`
   display: block;
   &::before {
     color: ${({ theme: { colors } }) => colors.yellow};
-    font-family: 'Roboto', sans-serif;
     font-size: 120px;
     line-height: 1;
     position: absolute;
@@ -75,7 +73,6 @@ export const TileTitle = styled.h1`
 `;
 
 export const TileDescription = styled.p`
-  font-family: inherit;
   font-size: 18px;
   justify-self: flex-start;
 `;

@@ -15,6 +15,20 @@ export const FormContainer = styled.div`
 export const Form = styled.form`
   width: 100%;
   display: block;
+  & label,
+  & input,
+  & textarea {
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  & input,
+  & textarea {
+    width: 100%;
+    margin-top: 3px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 3px 6px #c6c6c6;
+  }
   @media (min-width: 769px) {
     width: 50%;
     display: inline-block;
@@ -26,37 +40,18 @@ export const FormItem = styled.div`
 `;
 
 export const FormLabel = styled.label`
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
   color: #545454;
-  line-height: 1.5;
 `;
 
 export const FormInput = styled.input`
-  width: 100%;
-  margin-top: 3px;
-  padding: 10px;
-  border: none;
-  box-shadow: 0 3px 6px #c6c6c6;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
   @media (min-width: 769px) {
-    width: 345px;
+    max-width: 345px;
   }
 `;
 
 export const FormTextarea = styled.textarea`
-  width: 100%;
-  margin-top: 3px;
   height: 340px;
   resize: none;
-  padding: 10px;
-  border: none;
-  box-shadow: 0 3px 6px #c6c6c6;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
 `;
 
 export const FormButton = styled.button`

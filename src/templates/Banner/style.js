@@ -44,7 +44,6 @@ export const Title = styled.h1`
   color: white;
   font-weight: 600;
   font-size: 8vw;
-  line-height: 1.25;
   padding-bottom: 12px;
   position: relative;
   &::before {
@@ -69,7 +68,6 @@ export const Title = styled.h1`
 export const SubTitle = styled.h2`
   color: ${({ theme: { colors } }) => colors.yellow};
   font-size: 6vw;
-  line-height: 1.25;
   @media (min-width: 769px) {
     grid-area: subtitle;
     font-size: 20px;

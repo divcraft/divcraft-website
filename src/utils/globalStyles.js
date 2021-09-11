@@ -9,15 +9,19 @@ export const GlobalStyle = createGlobalStyle`
    section {
      padding: 50px 0;
    }
+   h1, h2, footer * {
+     font-family: 'Raleway', sans-serif;
+   }
+   p, a, h1::before, button, form * {
+    font-family: 'Roboto', sans-serif;
+   } 
    h1, h2 {
-      font-family: 'Raleway', sans-serif;
       font-weight: 400;
-      line-height: 1.5;  
+      line-height: 1.3;  
       margin-top: 0;
       margin-bottom: 12px;
     };
     p, a, button {
-      font-family: 'Roboto', sans-serif;
       font-weight: 300;
       line-height: 1.5;  
     };

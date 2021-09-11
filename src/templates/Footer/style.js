@@ -6,12 +6,12 @@ export const FooterContainer = styled.footer`
   background-color: #3b3b3b;
   color: ${({ theme: { colors } }) => colors.yellow};
   & p {
-    font-family: 'Raleway', sans-serif;
+    font-family: inherit;
     margin: 0;
     font-size: 20px;
   }
   & a {
-    font-family: 'Raleway', sans-serif;
+    font-family: inherit;
     font-size: 20px;
     color: ${({ theme: { colors } }) => colors.yellow};
     text-decoration: none;
