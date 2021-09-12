@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { Wrapper } from 'components';
 import {
   FooterContainer,
@@ -15,17 +15,25 @@ const Footer = () => {
       <Wrapper>
         <LinkContainer>
           <LogoContainer>
-            <Link to="/">www.divcraft.pl</Link>
+            <AniLink to="/" fade>
+              www.divcraft.pl
+            </AniLink>
           </LogoContainer>
           <NavMenu>
             <NavItem>
-              <Link to="/portfolio">portfolio</Link>
+              <AniLink to="/portfolio" fade>
+                portfolio
+              </AniLink>
             </NavItem>
             <NavItem>
-              <Link to="/o-nas">o nas</Link>
+              <AniLink to="/o-nas" fade>
+                o nas
+              </AniLink>
             </NavItem>
             <NavItem>
-              <Link to="/kontakt">kontakt</Link>
+              <AniLink to="/kontakt" fade>
+                kontakt
+              </AniLink>
             </NavItem>
           </NavMenu>
         </LinkContainer>

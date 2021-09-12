@@ -5,7 +5,20 @@ import { GatsbyLinkButton, LinkButton, RegularButton } from './style';
 const Button = ({ pattern, children, ...props }) => {
   if (pattern === 'gatsbyLink')
     return (
-      <GatsbyLinkButton {...props} cover bg="#FFDD00">
+      <GatsbyLinkButton
+        {...props}
+        duration={1.2}
+        cover
+        bg="
+        url(/logos/white-all-vertical-logo.svg)
+        center / 170px auto
+        no-repeat
+        fixed
+        padding-box
+        content-box
+        #395f78
+      "
+      >
         {children}
       </GatsbyLinkButton>
     );
