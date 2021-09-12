@@ -2,10 +2,10 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `divcraft`,
+    description: `Pomagamy młodym biznesom rozwinąć się w sieci`,
+    author: `Tomasz Ogonowski (divcraft)`,
+    siteUrl: `https://www.divcraft.pl/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,7 +22,7 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          breakpoints: [768, 1200, 1920],
+          breakpoints: [400, 768, 1200, 1920],
           placeholder: 'none',
         },
       },
@@ -72,6 +72,11 @@ module.exports = {
         apiToken: process.env.DATOCMS_API_TOKEN,
       },
     },
-    `gatsby-plugin-transition-link`,
+    {
+      resolve: 'gatsby-plugin-transition-link',
+      options: {
+        layout: require.resolve(`./src/layouts`),
+      },
+    },
   ],
 };
