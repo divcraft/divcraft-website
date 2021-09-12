@@ -3,8 +3,10 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `divcraft`,
-    description: `Pomagamy młodym biznesom rozwinąć się w sieci`,
+    description: `Stwórzmy razem stronę internetową, która nada nowy wymiar twojej
+    firmie`,
     author: `Tomasz Ogonowski (divcraft)`,
+    image: `/ogImage.jpg`,
     siteUrl: `https://www.divcraft.pl/`,
   },
   plugins: [

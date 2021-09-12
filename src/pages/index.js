@@ -7,10 +7,12 @@ import {
   ProfitsSection,
   HomeContactSection,
 } from 'templates';
+import { SEO } from 'utils';
 
 const HomePage = () => {
   return (
     <>
+      <SEO title="Strona główna" />
       <HeroSection />
       <IntroductionSection />
       <ServicesSection />
