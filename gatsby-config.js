@@ -72,5 +72,6 @@ module.exports = {
         apiToken: process.env.DATOCMS_API_TOKEN,
       },
     },
+    `gatsby-plugin-transition-link`,
   ],
 };
