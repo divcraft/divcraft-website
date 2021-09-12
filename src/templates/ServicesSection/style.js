@@ -10,8 +10,8 @@ export const BackgroundImage = styled.div`
   height: 100%;
   background-image: url('/backgrounds/services-bg-768.jpg');
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: cover !important;
+  background-attachment: fixed !important;
   background-repeat: repeat;
   @media (min-width: 769px) {
     background-image: url('/backgrounds/services-bg-1200.jpg');

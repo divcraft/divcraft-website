@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
      box-sizing: border-box;
    };
    section {
-     padding: 50px 0;
      background: white;
    }
    h1, h2, footer * {

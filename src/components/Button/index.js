@@ -10,14 +10,14 @@ const Button = ({ pattern, children, ...props }) => {
         duration={1.2}
         cover
         bg="
-        url(/logos/white-all-vertical-logo.svg)
-        center / 170px auto
-        no-repeat
-        fixed
-        padding-box
-        content-box
-        #395f78
-      "
+          url(/logos/white-all-vertical-logo.svg)
+          center / 170px auto
+          no-repeat
+          fixed
+          padding-box
+          content-box
+          #395f78
+        "
       >
         {children}
       </GatsbyLinkButton>
