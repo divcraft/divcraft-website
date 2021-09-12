@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from 'layouts';
 import {
   AboutUsSection,
   OurPhilosophySection,
@@ -8,11 +7,11 @@ import {
 
 const AboutPage = () => {
   return (
-    <Layout>
+    <>
       <AboutUsSection />
       <OurPhilosophySection />
       <HowWeWorkSection />
-    </Layout>
+    </>
   );
 };
 

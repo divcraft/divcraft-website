@@ -6,11 +6,6 @@ export const GlobalStyle = createGlobalStyle`
    * {
      box-sizing: border-box;
    };
-   main { 
-    @media (min-width: 769px) {
-    padding-top: 30px;
-  } 
-   }
    section {
      padding: 50px 0;
    }

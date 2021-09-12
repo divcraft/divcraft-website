@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from 'layouts';
 import {
   HeroSection,
   IntroductionSection,
@@ -11,14 +10,14 @@ import {
 
 const HomePage = () => {
   return (
-    <Layout>
+    <>
       <HeroSection />
       <IntroductionSection />
       <ServicesSection />
       <TechnologiesSection />
       <ProfitsSection />
       <HomeContactSection />
-    </Layout>
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from 'utils';
 import { MenuBar, Footer } from 'templates';
-import { Header, OverflowWrapper } from './style';
+import { Header, Main, OverflowWrapper } from './style';
 
 const MainLayout = ({ children }) => (
   <ThemeProvider theme={theme}>
@@ -12,7 +12,7 @@ const MainLayout = ({ children }) => (
       <Header>
         <MenuBar />
       </Header>
-      <main>{children}</main>
+      <Main>{children}</Main>
       <Footer />
     </OverflowWrapper>
   </ThemeProvider>
