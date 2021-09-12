@@ -23,7 +23,7 @@ export const TileContainer = styled.div`
 export const Tile = styled.div`
   background-color: white;
   padding: 15px;
-  box-shadow: ${({ theme: { boxshadow } }) => boxshadow.dark};
+  box-shadow: ${({ theme: { boxshadow } }) => boxshadow.light};
   display: flex;
   flex-direction: column;
   justify-content: center;

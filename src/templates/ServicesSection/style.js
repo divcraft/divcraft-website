@@ -12,7 +12,7 @@ export const BackgroundImage = styled.div`
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   @media (min-width: 769px) {
     background-image: url('/backgrounds/services-bg-1200.jpg');
   }
