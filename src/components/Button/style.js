@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const linkStyle = css`
   cursor: pointer;
@@ -18,7 +18,7 @@ const linkStyle = css`
   }
 `;
 
-export const GatsbyLinkButton = styled(Link)`
+export const GatsbyLinkButton = styled(AniLink)`
   ${linkStyle}
 `;
 

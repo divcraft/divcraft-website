@@ -4,7 +4,11 @@ import { GatsbyLinkButton, LinkButton, RegularButton } from './style';
 
 const Button = ({ pattern, children, ...props }) => {
   if (pattern === 'gatsbyLink')
-    return <GatsbyLinkButton {...props}>{children}</GatsbyLinkButton>;
+    return (
+      <GatsbyLinkButton {...props} cover bg="#FFDD00">
+        {children}
+      </GatsbyLinkButton>
+    );
   if (pattern === 'link') return <LinkButton {...props}>{children}</LinkButton>;
   if (pattern === 'button')
     return <RegularButton {...props}>{children}</RegularButton>;
