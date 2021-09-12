@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { Navigation as StyledNavigation } from './style';
 
 const Navigation = ({ ...props }) => {
@@ -7,19 +7,37 @@ const Navigation = ({ ...props }) => {
     <StyledNavigation {...props}>
       <ul>
         <li>
-          <Link to="/portfolio" activeClassName="active">
+          <AniLink
+            to="/portfolio"
+            activeClassName="active"
+            swipe
+            direction="down"
+            duration={1.2}
+          >
             portfolio
-          </Link>
+          </AniLink>
         </li>
         <li>
-          <Link to="/o-nas" activeClassName="active">
+          <AniLink
+            to="/o-nas"
+            activeClassName="active"
+            swipe
+            direction="down"
+            duration={1.2}
+          >
             o nas
-          </Link>
+          </AniLink>
         </li>
         <li>
-          <Link to="/kontakt" activeClassName="active">
+          <AniLink
+            to="/kontakt"
+            activeClassName="active"
+            swipe
+            direction="down"
+            duration={1.2}
+          >
             kontakt
-          </Link>
+          </AniLink>
         </li>
       </ul>
     </StyledNavigation>
