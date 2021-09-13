@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const SectionContainer = styled.section`
   padding: 50px 0;
@@ -21,7 +22,7 @@ export const TileContainer = styled.div`
   }
 `;
 
-export const Tile = styled.div`
+export const AniTile = styled(motion.div)`
   background-color: white;
   padding: 15px;
   box-shadow: ${({ theme: { boxshadow } }) => boxshadow.light};
@@ -31,7 +32,8 @@ export const Tile = styled.div`
   height: 40vw;
   max-height: 250px;
   &:hover {
-    background-color: ${({ theme: { colors } }) => colors.yellow.regular};
+    background-color: ${({ theme: { colors } }) =>
+      colors.yellow.regular} !important;
   }
   & img {
     height: 60%;

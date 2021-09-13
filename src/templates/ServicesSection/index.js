@@ -60,7 +60,7 @@ const ServicesSection = () => {
         ref={ref}
         animate={controls}
         initial="hidden"
-        transition={{ duration: 0.8, delay: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
         variants={{
           hidden: {
             opacity: 0,

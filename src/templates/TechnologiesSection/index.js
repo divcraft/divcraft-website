@@ -1,14 +1,83 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
 import { Wrapper, TitleHeader, Image } from 'components';
 import {
   SectionContainer,
   TitleAligner,
   TileContainer,
-  Tile,
+  AniTile,
   IconTitle,
 } from './style';
 
+const technologiesData = [
+  {
+    name: 'HTML, CSS, JS',
+    imgSrc: '/icons/frontend-stack-icon.svg',
+    imgAlt: 'html css js',
+  },
+  {
+    name: 'Gatsby.js',
+    imgSrc: '/icons/gatsby-icon.svg',
+    imgAlt: 'gatsby js',
+  },
+  {
+    name: 'Adobe',
+    imgSrc: '/icons/adobe-icon.svg',
+    imgAlt: 'adobe',
+  },
+  {
+    name: 'Amazon Web Services',
+    imgSrc: '/icons/aws-icon.svg',
+    imgAlt: 'amazon web services',
+  },
+  {
+    name: 'Headless CMS',
+    imgSrc: '/icons/dato-cms-icon.svg',
+    imgAlt: 'headless cms',
+  },
+  {
+    name: 'Google Analytics',
+    imgSrc: '/icons/google-analytics-icon.svg',
+    imgAlt: 'google analytics',
+  },
+];
+
 const TechnologiesSection = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
+  const controls = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+  const technologies = technologiesData.map((item, index) => {
+    return (
+      <AniTile
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        transition={{ duration: 0.4, delay: 0.2 + index * 0.2 }}
+        variants={{
+          hidden: {
+            backgroundColor: '#FFDD00',
+            opacity: 0,
+          },
+          visible: {
+            opacity: 1,
+            transitionEnd: {
+              backgroundColor: 'white',
+            },
+          },
+        }}
+      >
+        <Image src={item.imgSrc} alt={item.imgAlt} />
+        <IconTitle>{item.name}</IconTitle>
+      </AniTile>
+    );
+  });
   return (
     <SectionContainer>
       <Wrapper>
@@ -17,35 +86,7 @@ const TechnologiesSection = () => {
             Technologie wykorzystywane do tworzenia naszych stron
           </TitleHeader>
         </TitleAligner>
-        <TileContainer>
-          <Tile>
-            <Image src="/icons/frontend-stack-icon.svg" alt="html css js" />
-            <IconTitle>HTML, CSS, JS</IconTitle>
-          </Tile>
-          <Tile>
-            <Image src="/icons/gatsby-icon.svg" alt="gatsbyjs" />
-            <IconTitle>Gatsby.js</IconTitle>
-          </Tile>
-          <Tile>
-            <Image src="/icons/adobe-icon.svg" alt="adobe" />
-            <IconTitle>Adobe</IconTitle>
-          </Tile>
-          <Tile>
-            <Image src="/icons/aws-icon.svg" alt="amazon web services" />
-            <IconTitle>Amazon Web Services</IconTitle>
-          </Tile>
-          <Tile>
-            <Image src="/icons/dato-cms-icon.svg" alt="headless cms" />
-            <IconTitle>Headless CMS</IconTitle>
-          </Tile>
-          <Tile>
-            <Image
-              src="/icons/google-analytics-icon.svg"
-              alt="google analytics"
-            />
-            <IconTitle>Google Analytics</IconTitle>
-          </Tile>
-        </TileContainer>
+        <TileContainer>{technologies}</TileContainer>
       </Wrapper>
     </SectionContainer>
   );
