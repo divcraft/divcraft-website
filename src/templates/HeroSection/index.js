@@ -32,13 +32,11 @@ const HeroSection = () => {
             <AniTitle
               initial={{
                 opacity: 0,
-                // x: -50,
               }}
               animate={{
                 opacity: 1,
-                // x: 0
               }}
-              transition={{ ease: 'easeOut', duration: 0.6, delay: 1.2 }}
+              transition={{ ease: 'easeOut', duration: 0.6, delay: 1 }}
             >
               Pomagamy młodym biznesom rozwinąć się w sieci
             </AniTitle>

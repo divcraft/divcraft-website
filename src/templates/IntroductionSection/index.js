@@ -13,7 +13,7 @@ import {
 
 const IntroductionSection = () => {
   const [ref, inView] = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
   });
   const controls = useAnimation();
   useEffect(() => {
@@ -26,7 +26,7 @@ const IntroductionSection = () => {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 0.8, delay: 0.6 }}
+      transition={{ duration: 0.6, delay: 0.6 }}
       variants={{
         hidden: {
           opacity: 0,

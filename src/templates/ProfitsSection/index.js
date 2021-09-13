@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
 import { Wrapper, TitleHeader, Paragraph } from 'components';
 import { StaticImage } from 'gatsby-plugin-image';
 import {
   SectionContainer,
   BackgroundImage,
-  FlexContainer,
+  AniFlexContainer,
   ImageContainer,
   ContentContainer,
   List,
@@ -12,11 +14,33 @@ import {
 } from './style';
 
 const ProfitsSection = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
+  const controls = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
   return (
     <SectionContainer>
       <BackgroundImage>
         <Wrapper>
-          <FlexContainer>
+          <AniFlexContainer
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            variants={{
+              hidden: {
+                opacity: 0,
+              },
+              visible: {
+                opacity: 1,
+              },
+            }}
+          >
             <ImageContainer>
               <StaticImage
                 src="../../images/profits-image.png"
@@ -41,7 +65,7 @@ const ProfitsSection = () => {
                 </ListItem>
               </List>
             </ContentContainer>
-          </FlexContainer>
+          </AniFlexContainer>
         </Wrapper>
       </BackgroundImage>
     </SectionContainer>

@@ -62,14 +62,10 @@ const TechnologiesSection = () => {
         transition={{ duration: 0.4, delay: 0.2 + index * 0.2 }}
         variants={{
           hidden: {
-            backgroundColor: '#FFDD00',
             opacity: 0,
           },
           visible: {
             opacity: 1,
-            transitionEnd: {
-              backgroundColor: 'white',
-            },
           },
         }}
       >

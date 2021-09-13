@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const SectionContainer = styled.section`
+export const AniSectionContainer = styled(motion.section)`
   padding: 50px 0;
   background: ${({ theme: { gradient } }) => gradient};
 `;

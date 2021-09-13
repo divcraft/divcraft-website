@@ -46,7 +46,7 @@ const ServicesSection = () => {
   const services = servicesData.map((item, index) => {
     const { title, description, imgSrc, imgAlt } = item;
     const [ref, inView] = useInView({
-      threshold: 0.5,
+      threshold: 0.3,
     });
     const controls = useAnimation();
     const isOdd = index === 0 || index === 2;
