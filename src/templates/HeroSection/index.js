@@ -22,14 +22,23 @@ const HeroSection = () => {
           y: 0,
         }}
         transition={{
-          ease: 'easeOut',
-          duration: 1,
-          delay: 0.2,
+          ease: 'easeInOut',
+          duration: 0.8,
+          delay: 0.4,
         }}
       >
         <Wrapper>
           <ContentContainer>
-            <AniTitle>Pomagamy młodym biznesom rozwinąć się w sieci</AniTitle>
+            <AniTitle
+              initial={{
+                opacity: 0,
+                x: -50,
+              }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ ease: 'easeOut', duration: 0.6, delay: 1.2 }}
+            >
+              Pomagamy młodym biznesom rozwinąć się w sieci
+            </AniTitle>
             <AniSubTitle
               initial={{
                 opacity: 0,

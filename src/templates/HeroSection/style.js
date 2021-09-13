@@ -80,14 +80,7 @@ const Title = styled(motion.h1)`
 `;
 
 export const AniTitle = ({ children, ...props }) => (
-  <Title
-    initial={{ opacity: 0, x: -50 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ ease: 'easeOut', duration: 0.6, delay: 1 }}
-    {...props}
-  >
-    {children}
-  </Title>
+  <Title {...props}>{children}</Title>
 );
 
 export const SubTitle = styled(motion.h2)`

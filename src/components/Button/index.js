@@ -9,6 +9,7 @@ const Button = ({ pattern, children, ...props }) => {
         {...props}
         duration={1.2}
         cover
+        direction="right"
         bg="
           url(/logos/white-all-vertical-logo.svg)
           center / 170px auto
@@ -16,7 +17,7 @@ const Button = ({ pattern, children, ...props }) => {
           fixed
           padding-box
           content-box
-          #395f78
+          #356A8C
         "
       >
         {children}

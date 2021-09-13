@@ -5,7 +5,7 @@ import { LogoContainer, LogoImg } from './style';
 const Logo = () => {
   return (
     <LogoContainer>
-      <AniLink to="/" paintDrip hex="#395f78" duration={0.8}>
+      <AniLink to="/" paintDrip hex="#356A8C" duration={0.8}>
         <LogoImg src="/logos/logo-main.svg" alt="logo" />
       </AniLink>
     </LogoContainer>
