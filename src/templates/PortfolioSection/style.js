@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
@@ -86,7 +87,7 @@ export const ArticleContainer = styled.article`
   }
 `;
 
-export const ImageContainer = styled.div`
+export const AniImageContainer = styled(motion.div)`
   margin: 15px 0;
   overflow: hidden;
   & > div {

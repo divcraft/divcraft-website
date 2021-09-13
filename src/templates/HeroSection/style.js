@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
@@ -14,7 +12,7 @@ export const SectionContainer = styled.section`
   }
 `;
 
-const BackgroundContainer = styled(motion.div)`
+export const AniBackgroundContainer = styled(motion.div)`
   padding: 0;
   background-color: ${({ theme: { colors } }) => colors.blue.regular};
   background-image: url('/backgrounds/hero-bg-768.jpg');
@@ -30,10 +28,6 @@ const BackgroundContainer = styled(motion.div)`
     background-image: url('/backgrounds/hero-bg-1920.jpg');
   }
 `;
-
-export const AniBackgroundContainer = ({ children, ...props }) => (
-  <BackgroundContainer {...props}>{children}</BackgroundContainer>
-);
 
 export const ContentContainer = styled.div`
   padding: 25px 0;
@@ -54,7 +48,7 @@ export const ContentContainer = styled.div`
   }
 `;
 
-const Title = styled(motion.h1)`
+export const AniTitle = styled(motion.h1)`
   color: white;
   font-weight: 600;
   font-size: 8vw;
@@ -79,11 +73,7 @@ const Title = styled(motion.h1)`
   }
 `;
 
-export const AniTitle = ({ children, ...props }) => (
-  <Title {...props}>{children}</Title>
-);
-
-export const SubTitle = styled(motion.h2)`
+export const AniSubTitle = styled(motion.h2)`
   color: ${({ theme: { colors } }) => colors.yellow.regular};
   font-size: 6vw;
   @media (min-width: 769px) {
@@ -93,11 +83,7 @@ export const SubTitle = styled(motion.h2)`
   }
 `;
 
-export const AniSubTitle = ({ children, ...props }) => (
-  <SubTitle {...props}>{children}</SubTitle>
-);
-
-export const ButtonContainer = styled(motion.div)`
+export const AniButtonContainer = styled(motion.div)`
   align-self: flex-end;
   justify-self: center;
   @media (min-width: 769px) {
@@ -107,7 +93,3 @@ export const ButtonContainer = styled(motion.div)`
     justify-self: auto;
   }
 `;
-
-export const AniButtonContainer = ({ children, ...props }) => (
-  <ButtonContainer {...props}>{children}</ButtonContainer>
-);

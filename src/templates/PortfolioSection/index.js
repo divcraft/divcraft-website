@@ -6,7 +6,7 @@ import {
   SectionContainer,
   ArticleContainer,
   LinkTitle,
-  ImageContainer,
+  AniImageContainer,
 } from './style';
 
 const PortfolioSection = () => {
@@ -39,9 +39,21 @@ const PortfolioSection = () => {
             {linkName}
           </a>
         </LinkTitle>
-        <ImageContainer>
+        <AniImageContainer
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            ease: 'easeOut',
+            duration: 1.2,
+            delay: 0.6,
+          }}
+        >
           <GatsbyImage image={imageProps} alt={linkName} />
-        </ImageContainer>
+        </AniImageContainer>
         <p>{description}</p>
         <Button href={link} target="_blank" rel="noreferrer" pattern="link">
           Zobacz stronę
