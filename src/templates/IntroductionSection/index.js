@@ -1,8 +1,8 @@
 import React from 'react';
 import { Wrapper, TitleHeader } from 'components';
 import {
-  Section,
-  Container,
+  AniSectionContainer,
+  ContentContainer,
   Image,
   TitleContainer,
   Paragraph1,
@@ -11,9 +11,21 @@ import {
 
 const IntroductionSection = () => {
   return (
-    <Section>
+    <AniSectionContainer
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      transition={{
+        ease: 'easeOut',
+        duration: 0.6,
+        delay: 2,
+      }}
+    >
       <Wrapper>
-        <Container>
+        <ContentContainer>
           <TitleContainer>
             <TitleHeader color="blue">Strony internetowe na miarę</TitleHeader>
           </TitleContainer>
@@ -35,9 +47,9 @@ const IntroductionSection = () => {
             voluptates, fugit voluptatem, dolor dolore doloremque
             necessitatibus.dd
           </Paragraph2>
-        </Container>
+        </ContentContainer>
       </Wrapper>
-    </Section>
+    </AniSectionContainer>
   );
 };
 

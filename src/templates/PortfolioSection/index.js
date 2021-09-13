@@ -49,7 +49,7 @@ const PortfolioSection = () => {
           transition={{
             ease: 'easeOut',
             duration: 1.2,
-            delay: 0.6,
+            delay: 0.4,
           }}
         >
           <GatsbyImage image={imageProps} alt={linkName} />

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const SectionContainer = styled.section`
   min-height: 512px;
   @media (min-width: 769px) {
-    min-height: none;
+    min-height: auto;
     height: 430px;
   }
   @media (min-width: 1401px) {
@@ -21,10 +21,12 @@ export const AniBackgroundContainer = styled(motion.div)`
   background-position: center top;
   height: inherit;
   @media (min-width: 769px) {
+    height: inherit;
     background-position: center;
     background-image: url('/backgrounds/hero-bg-1200.jpg');
   }
   @media (min-width: 1201px) {
+    height: inherit;
     background-image: url('/backgrounds/hero-bg-1920.jpg');
   }
 `;

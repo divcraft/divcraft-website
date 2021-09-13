@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Section = styled.section`
+export const AniSectionContainer = styled(motion.section)`
   padding: 50px 0;
   background: ${({ theme: { gradient } }) => gradient};
 `;
 
-export const Container = styled.div`
+export const ContentContainer = styled.div`
   @media (min-width: 901px) {
     display: grid;
     grid-template-columns: 50% 50%;
