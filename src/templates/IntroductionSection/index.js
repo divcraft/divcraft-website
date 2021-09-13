@@ -21,7 +21,7 @@ const IntroductionSection = () => {
       transition={{
         ease: 'easeOut',
         duration: 0.6,
-        delay: 2,
+        delay: 1.8,
       }}
     >
       <Wrapper>

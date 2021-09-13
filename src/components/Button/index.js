@@ -7,7 +7,7 @@ const Button = ({ pattern, children, ...props }) => {
     return (
       <GatsbyLinkButton
         {...props}
-        duration={1.2}
+        duration={1.3}
         cover
         direction="right"
         bg="

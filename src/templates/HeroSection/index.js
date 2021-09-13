@@ -67,7 +67,7 @@ const HeroSection = () => {
               transition={{
                 ease: 'easeOut',
                 duration: 0.6,
-                delay: 1.6,
+                delay: 1.4,
               }}
             >
               <Button to="/portfolio" pattern="gatsbyLink">
