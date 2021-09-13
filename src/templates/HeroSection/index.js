@@ -32,9 +32,12 @@ const HeroSection = () => {
             <AniTitle
               initial={{
                 opacity: 0,
-                x: -50,
+                // x: -50,
               }}
-              animate={{ opacity: 1, x: 0 }}
+              animate={{
+                opacity: 1,
+                // x: 0
+              }}
               transition={{ ease: 'easeOut', duration: 0.6, delay: 1.2 }}
             >
               Pomagamy młodym biznesom rozwinąć się w sieci
@@ -42,11 +45,9 @@ const HeroSection = () => {
             <AniSubTitle
               initial={{
                 opacity: 0,
-                x: -50,
               }}
               animate={{
                 opacity: 1,
-                x: 0,
               }}
               transition={{
                 ease: 'easeOut',
@@ -67,7 +68,7 @@ const HeroSection = () => {
               transition={{
                 ease: 'easeOut',
                 duration: 0.6,
-                delay: 1.4,
+                delay: 1.6,
               }}
             >
               <Button to="/portfolio" pattern="gatsbyLink">

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
 import { Wrapper, TitleHeader } from 'components';
 import {
   AniSectionContainer,
@@ -10,18 +12,28 @@ import {
 } from './style';
 
 const IntroductionSection = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
+  const controls = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
   return (
     <AniSectionContainer
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        opacity: 1,
-      }}
-      transition={{
-        ease: 'easeOut',
-        duration: 0.6,
-        delay: 1.8,
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      transition={{ duration: 0.8, delay: 0.4 }}
+      variants={{
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+        },
       }}
     >
       <Wrapper>

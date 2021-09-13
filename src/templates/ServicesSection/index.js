@@ -45,7 +45,9 @@ const servicesData = [
 const ServicesSection = () => {
   const services = servicesData.map((item, index) => {
     const { title, description, imgSrc, imgAlt } = item;
-    const [ref, inView] = useInView();
+    const [ref, inView] = useInView({
+      threshold: 0.5,
+    });
     const controls = useAnimation();
     const isOdd = index === 0 || index === 2;
     useEffect(() => {
@@ -58,7 +60,7 @@ const ServicesSection = () => {
         ref={ref}
         animate={controls}
         initial="hidden"
-        transition={{ duration: 0.6, delay: 0.4 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
         variants={{
           hidden: {
             opacity: 0,
