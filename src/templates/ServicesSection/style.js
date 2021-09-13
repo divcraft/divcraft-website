@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const SectionContainer = styled.section`
   background-color: ${({ theme: { colors } }) => colors.blue.regular};
@@ -28,13 +29,20 @@ export const ContentContainer = styled.div`
   }
 `;
 
+export const ImageContainer = styled.span`
+  display: block;
+  @media (min-width: 769px) {
+    width: 50%;
+  }
+`;
+
 export const List = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
 `;
 
-export const ListItem = styled.li`
+export const AniListItem = styled(motion.li)`
   margin-bottom: 50px;
   &:last-child {
     margin-bottom: 0;
@@ -43,7 +51,7 @@ export const ListItem = styled.li`
     display: flex;
     align-items: center;
     & img {
-      width: 50%;
+      width: 100%;
       padding: 0 20px;
     }
     & > div {
