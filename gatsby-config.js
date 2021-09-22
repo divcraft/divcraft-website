@@ -10,6 +10,15 @@ module.exports = {
     siteUrl: `https://www.divcraft.pl/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.GOOGLE_ANALYTICS_ID],
+        pluginConfig: {
+          head: false,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
