@@ -56,4 +56,7 @@ export const theme = {
     dark: '0 3px 6px #545454',
   },
   gradient: 'linear-gradient(135deg, white, #cce1ff)',
+  gradients: {
+    dark: 'linear-gradient(135deg, #565656, #202020)',
+  },
 };
