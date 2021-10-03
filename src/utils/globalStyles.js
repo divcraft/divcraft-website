@@ -10,19 +10,16 @@ export const GlobalStyle = createGlobalStyle`
      background: white;
    }
    h1, h2, footer * {
-     font-family: 'Raleway', sans-serif;
+     font-family: 'Gibson', sans-serif;
    }
    p, a, h1::before, button, form * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
    } 
    h1, h2 {
-      font-weight: 400;
-      line-height: 1.3;  
+      font-weight: 300;
+      line-height: 1.15;  
       margin-top: 0;
       margin-bottom: 12px;
-    };
-    p, a {
-      font-weight: 300;
     };
     p { 
       font-size: 20px;
@@ -38,18 +35,20 @@ export const GlobalStyle = createGlobalStyle`
 export const theme = {
   colors: {
     gray: {
-      lighter: '#fdfdfd',
-      light: '#ECECEC',
-      dark: '#545454',
+      lighter: '#fdfdfd', // deprecated in v2
+      light: '#ececec',
+      dark: '#565656',
       darker: '#3b3b3b',
+      darkest: '#202020',
     },
     blue: {
-      regular: '#356A8C',
-      dark: '#395f78',
+      sky: '#f3faff',
+      regular: '#2578b8',
+      dark: '#22689e',
     },
     yellow: {
-      regular: '#FFDD00',
-      dark: '#f2d201',
+      regular: '#fcc049',
+      dark: '#ffb82a',
     },
   },
   boxshadow: {

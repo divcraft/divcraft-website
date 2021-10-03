@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          breakpoints: [400, 768, 1200, 1920],
+          breakpoints: [400, 800, 1200, 1920],
           placeholder: 'none',
         },
       },
@@ -63,18 +63,11 @@ module.exports = {
     // 'gatsby-plugin-layout',
     'gatsby-plugin-root-import',
     {
-      resolve: `gatsby-plugin-google-fonts-v2`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          {
-            family: `Raleway`,
-            weights: [`400`, `600`],
-          },
-          {
-            family: `Roboto`,
-            weights: [`300`],
-          },
-        ],
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
       },
     },
     {
