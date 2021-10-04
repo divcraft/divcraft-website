@@ -46,6 +46,15 @@ export const ContentContainer = styled.div`
   }
 `;
 
+const dropImage = keyframes`
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
+
 const moveCloud = keyframes`
   0% {
     transform: translateX(50vw);
@@ -78,6 +87,13 @@ export const ImageContainer = styled.div`
   @media (min-width: 769px) {
     grid-area: imgx;
     margin-top: -40px;
+  }
+`;
+
+export const AnimationContainer = styled.div`
+  overflow: hidden;
+  & > div {
+    animation: ${dropImage} 1.4s 0.8s cubic-bezier(0.44, 1.55, 0.12, 0.74) both;
   }
 `;
 

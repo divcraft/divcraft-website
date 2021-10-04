@@ -6,6 +6,7 @@ import {
   AniBackgroundContainer,
   ContentContainer,
   ImageContainer,
+  AnimationContainer,
   AniTitle,
   AniSubTitle,
   AniButtonContainer,
@@ -19,10 +20,12 @@ const HeroSection = () => {
           <ContentContainer>
             <AniTitle>Pomagamy młodym biznesom rozwinąć się w sieci</AniTitle>
             <ImageContainer>
-              <StaticImage
-                src="../../images/hero-image.svg"
-                alt="Stwórzmy razem stronę internetową"
-              />
+              <AnimationContainer>
+                <StaticImage
+                  src="../../images/hero-image.svg"
+                  alt="Stwórzmy razem stronę internetową"
+                />
+              </AnimationContainer>
             </ImageContainer>
             <AniSubTitle>
               Stwórzmy razem stronę internetową, która nada nowy wymiar twojej
