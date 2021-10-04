@@ -2,7 +2,7 @@ import React from 'react'; // ,{ useEffect }
 import { StaticImage } from 'gatsby-plugin-image';
 // import { useInView } from 'react-intersection-observer';
 // import { useAnimation } from 'framer-motion';
-import { Wrapper, TitleHeader } from 'components';
+import { Wrapper, TitleHeader, CornerLines } from 'components';
 import {
   AniSectionContainer,
   ContentContainer,
@@ -24,17 +24,20 @@ const IntroductionSection = () => {
   // }, [controls, inView]);
   return (
     <AniSectionContainer>
+      <CornerLines pattern="top" />
       <Wrapper>
         <ContentContainer>
           <TitleContainer>
-            <TitleHeader color="blue">Strony internetowe na miarę</TitleHeader>
+            <TitleHeader color="blue">
+              Strona internetowa dla Twojej firmy
+            </TitleHeader>
           </TitleContainer>
           <Paragraph1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            corrupti nam tenetur labore cupiditate placeat, ullam eligendi!
-            Consequuntur exercitationem repellat laboriosam ex, sequi
-            voluptates, fugit voluptatem, dolor dolore doloremque
-            necessitatibus. ąłężźć
+            Strony internetowe firm to praktyczne narzędzia do zdobywania
+            klientów. Przez 24h na dobę, 7 dni w tygodniu i całymi latami budują
+            wizerunek przedsiębiorcy, ułatwiają sprzedaż usług, pozwalając
+            wygrać z konkurencją. Ale taki potencjał mają tylko profesjonalnie
+            wykonane serwisy.
           </Paragraph1>
           <ImageContainer>
             <StaticImage
@@ -43,14 +46,16 @@ const IntroductionSection = () => {
             />
           </ImageContainer>
           <Paragraph2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            corrupti nam tenetur labore cupiditate placeat, ullam eligendi!
-            Consequuntur exercitationem repellat laboriosam ex, sequi
-            voluptates, fugit voluptatem, dolor dolore doloremque
-            necessitatibus.dd
+            W <strong>divcraft</strong> tworzymy strony internetowe idealnie
+            dopasowane do Zleceniodawców. Po to, aby Twoja strona była
+            funkcjonalnym narzędziem marketingowym. Unikalny projekt graficzny
+            wyróżnia Cię na tle konkurencji. Zaawansowany UX design zapewnia
+            wygodę obsługi. Czy tak wyobrażasz sobie stronę internetową Twojej
+            firmy?
           </Paragraph2>
         </ContentContainer>
       </Wrapper>
+      <CornerLines pattern="bottom" />
     </AniSectionContainer>
   );
 };
