@@ -14,9 +14,6 @@ export const Main = styled.main`
   & * {
     scrollbar-width: none;
   }
-  @media (min-width: 769px) {
-    margin-top: 90px;
-  }
 `;
 
 export const OverflowWrapper = styled.div`

@@ -7,7 +7,7 @@ export const Navigation = styled.nav`
   width: 100%;
   height: 0;
   background-color: rgba(37, 120, 184, 0.9);
-  transition: all 0.5s;
+  transition: height 0.5s;
   overflow: hidden;
   @media (min-width: 769px) {
     transition: none;

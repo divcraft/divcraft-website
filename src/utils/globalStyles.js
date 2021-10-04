@@ -17,11 +17,12 @@ export const GlobalStyle = createGlobalStyle`
    } 
    h1, h2 {
       font-weight: 300;
-      line-height: 1.15;  
+      line-height: 1.25;  
       margin-top: 0;
       margin-bottom: 12px;
     };
     p { 
+      color: #3b3b3b;
       font-size: 20px;
       line-height: 1.5;  
       margin-top: 0;
@@ -48,7 +49,7 @@ export const theme = {
     },
     yellow: {
       regular: '#fcc049',
-      dark: '#ffb82a',
+      dark: '#f8b225',
     },
   },
   boxshadow: {

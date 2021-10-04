@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          breakpoints: [400, 800, 1200, 1920],
+          breakpoints: [400, 800, 1400, 1920],
           placeholder: 'none',
         },
       },
