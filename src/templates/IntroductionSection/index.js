@@ -1,41 +1,29 @@
-import React, { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { useAnimation } from 'framer-motion';
+import React from 'react'; // ,{ useEffect }
+import { StaticImage } from 'gatsby-plugin-image';
+// import { useInView } from 'react-intersection-observer';
+// import { useAnimation } from 'framer-motion';
 import { Wrapper, TitleHeader } from 'components';
 import {
   AniSectionContainer,
   ContentContainer,
-  Image,
+  ImageContainer,
   TitleContainer,
   Paragraph1,
   Paragraph2,
 } from './style';
 
 const IntroductionSection = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.3,
-  });
-  const controls = useAnimation();
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
+  // const [ref, inView] = useInView({
+  //   threshold: 0.3,
+  // });
+  // const controls = useAnimation();
+  // useEffect(() => {
+  //   if (inView) {
+  //     controls.start('visible');
+  //   }
+  // }, [controls, inView]);
   return (
-    <AniSectionContainer
-      ref={ref}
-      animate={controls}
-      initial="hidden"
-      transition={{ duration: 0.6, delay: 0.6 }}
-      variants={{
-        hidden: {
-          opacity: 0,
-        },
-        visible: {
-          opacity: 1,
-        },
-      }}
-    >
+    <AniSectionContainer>
       <Wrapper>
         <ContentContainer>
           <TitleContainer>
@@ -48,10 +36,12 @@ const IntroductionSection = () => {
             voluptates, fugit voluptatem, dolor dolore doloremque
             necessitatibus. ąłężźć
           </Paragraph1>
-          <Image
-            src="illustrations/webdev-image.svg"
-            alt="makieta strony www"
-          />
+          <ImageContainer>
+            <StaticImage
+              src="../../images/introduction-image.jpg"
+              alt="nowoczesne strony www"
+            />
+          </ImageContainer>
           <Paragraph2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
             corrupti nam tenetur labore cupiditate placeat, ullam eligendi!
