@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
    };
    section {
      background: white;
+     position: relative;
    }
    h1, h2, footer * {
      font-family: 'Gibson', sans-serif;

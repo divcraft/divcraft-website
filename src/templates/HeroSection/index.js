@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Wrapper, Button } from 'components';
+import { Wrapper, Button, SectionBar } from 'components';
 import {
   SectionContainer,
   AniBackgroundContainer,
@@ -39,6 +39,7 @@ const HeroSection = () => {
           </ContentContainer>
         </Wrapper>
       </AniBackgroundContainer>
+      <SectionBar pattern="bottom" />
     </SectionContainer>
   );
 };
