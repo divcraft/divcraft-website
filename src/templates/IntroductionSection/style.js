@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 export const AniSectionContainer = styled(motion.section)`
   padding: 50px 0;
   background-color: ${({ theme: { colors } }) => colors.blue.sky};
+  @media (min-width: 901px) {
+    padding: 100px 0;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -45,12 +48,21 @@ export const ImageContainer = styled.div`
 
 export const TitleContainer = styled.div`
   grid-area: title;
+  @media (min-width: 901px) {
+    padding-right: 10%;
+  }
 `;
 
 export const Paragraph1 = styled.p`
   grid-area: par1;
+  @media (min-width: 901px) {
+    padding-right: 10%;
+  }
 `;
 
 export const Paragraph2 = styled.p`
   grid-area: par2;
+  @media (min-width: 901px) {
+    padding-right: 10%;
+  }
 `;

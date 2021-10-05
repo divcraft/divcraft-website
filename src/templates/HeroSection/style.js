@@ -36,7 +36,7 @@ export const ContentContainer = styled.div`
   grid-template-rows: auto auto 1fr;
   @media (min-width: 769px) {
     grid-template-rows: 1fr auto auto auto 1fr;
-    grid-template-columns: 1fr 55%;
+    grid-template-columns: 1fr 60%;
     grid-template-areas:
       '. imgx'
       'title imgx'
@@ -105,6 +105,7 @@ export const AniTitle = styled(motion.h1)`
   color: white;
   font-size: 32px;
   padding-bottom: 30px;
+  line-height: 1.05;
   &::before {
     content: '';
     position: absolute;
@@ -130,9 +131,8 @@ export const AniTitle = styled(motion.h1)`
   }
   @media (min-width: 1000px) {
     font-size: 36px;
-    padding-right: 7vw;
   }
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
     font-size: 48px;
   }
 `;
