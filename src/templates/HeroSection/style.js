@@ -1,16 +1,7 @@
 import { motion } from 'framer-motion';
 import styled, { keyframes } from 'styled-components';
 
-export const SectionContainer = styled.section`
-  /* min-height: 512px;
-  @media (min-width: 769px) {
-    min-height: auto;
-    height: 430px;
-  }
-  @media (min-width: 1401px) {
-    height: 550px;
-  } */
-`;
+export const SectionContainer = styled.section``;
 
 export const AniBackgroundContainer = styled(motion.div)`
   background-color: ${({ theme: { colors } }) => colors.blue.regular};
@@ -57,7 +48,7 @@ const dropImage = keyframes`
 
 const moveCloud = keyframes`
   0% {
-    transform: translateX(50vw);
+    transform: translateX(70vw);
   }
   100% {
     transform: translateX(-100vw);
@@ -140,7 +131,6 @@ export const AniTitle = styled(motion.h1)`
 export const AniSubTitle = styled(motion.h2)`
   color: ${({ theme: { colors } }) => colors.yellow.regular};
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
   font-size: 24px;
   text-align: center;
   margin: 30px 0;

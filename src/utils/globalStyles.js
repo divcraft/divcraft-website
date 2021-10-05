@@ -12,12 +12,16 @@ export const GlobalStyle = createGlobalStyle`
    }
    h1, h2, footer * {
      font-family: 'Gibson', sans-serif;
-   }
-   p, a, h1::before, button, form * {
-    font-family: 'Raleway', sans-serif;
+     font-weight: 200;
+    }
+    p, a, button, form * {
+      font-family: 'Raleway', sans-serif;
+    } 
+    h1::before {
+      font-family: 'Roboto', sans-serif; 
+      font-weight: 300;
    } 
    h1, h2 {
-      font-weight: 300;
       line-height: 1.25;  
       margin-top: 0;
       margin-bottom: 12px;
@@ -41,7 +45,7 @@ export const theme = {
       light: '#ececec',
       dark: '#565656',
       darker: '#3b3b3b',
-      darkest: '#202020',
+      darkest: '#2e2e2e',
     },
     blue: {
       sky: '#f3faff',

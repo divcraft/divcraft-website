@@ -33,7 +33,6 @@ export const Tile = styled.li`
   background-color: white;
   box-shadow: ${({ theme: { boxshadow } }) => boxshadow.light};
   display: grid;
-  grid-gap: 10px;
   grid-template-rows: 110px auto;
   &:nth-child(1) h1::before {
     content: '1';
@@ -67,7 +66,7 @@ export const TileTitle = styled.h1`
     font-size: 120px;
     line-height: 1;
     position: absolute;
-    top: -5px;
+    top: -12px;
     left: 0;
   }
 `;

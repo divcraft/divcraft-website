@@ -1,6 +1,6 @@
 import React from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import { Wrapper } from 'components';
+import { Wrapper, Paragraph } from 'components';
 import {
   FooterContainer,
   LinkContainer,
@@ -37,7 +37,7 @@ const Footer = () => {
             </NavItem>
           </NavMenu>
         </LinkContainer>
-        <p>Wszystkie prawa zastrzeżone ©</p>
+        <Paragraph color="yellow">Wszystkie prawa zastrzeżone ©</Paragraph>
       </Wrapper>
     </FooterContainer>
   );

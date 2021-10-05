@@ -52,6 +52,8 @@ export const Description = styled.p`
 `;
 
 export const Content = styled.p`
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: white;
   grid-area: contentx;
   font-size: 22px;

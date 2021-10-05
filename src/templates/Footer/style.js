@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const FooterContainer = styled.footer`
   text-align: center;
   padding: 20px 0;
-  background-color: ${({ theme: { colors } }) => colors.gray.darker};
+  background-color: ${({ theme: { colors } }) => colors.gray.darkest};
   color: ${({ theme: { colors } }) => colors.yellow.regular};
   & p {
     font-family: inherit;
