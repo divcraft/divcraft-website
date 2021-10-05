@@ -18,7 +18,7 @@ export const MenuButton = styled.div`
     display: block;
     width: 28px;
     height: 2px;
-    background-color: ${({ theme: { colors } }) => colors.blue.sky};
+    background-color: ${({ theme: { colors } }) => colors.yellow.regular};
     &::before {
       content: '';
       transition: all 0.3s;
@@ -27,7 +27,7 @@ export const MenuButton = styled.div`
       right: 0;
       width: 19px;
       height: 2px;
-      background-color: ${({ theme: { colors } }) => colors.blue.sky};
+      background-color: ${({ theme: { colors } }) => colors.yellow.regular};
     }
     &::after {
       content: '';
@@ -37,7 +37,7 @@ export const MenuButton = styled.div`
       right: 0;
       width: 19px;
       height: 2px;
-      background-color: ${({ theme: { colors } }) => colors.blue.sky};
+      background-color: ${({ theme: { colors } }) => colors.yellow.regular};
     }
     ${({ isClicked }) =>
       isClicked &&
