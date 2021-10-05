@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
-import { Wrapper, TitleHeader, Paragraph } from 'components';
+import { Wrapper, TitleHeader, Paragraph, SectionBar } from 'components';
 import { StaticImage } from 'gatsby-plugin-image';
 import {
   SectionContainer,
@@ -25,6 +25,7 @@ const ProfitsSection = () => {
   }, [controls, inView]);
   return (
     <SectionContainer>
+      <SectionBar pattern="top" />
       <BackgroundImage>
         <Wrapper>
           <AniFlexContainer
@@ -49,25 +50,33 @@ const ProfitsSection = () => {
             </ImageContainer>
             <ContentContainer>
               <TitleHeader color="yellow">
-                Obserwuj jak Twoja rozpoznawalność w internecie rośnie
+                Dzięki lepszej rozpoznawalności firmy w Internecie:
               </TitleHeader>
               <List>
                 <ListItem>
                   <Paragraph color="white">
-                    docieraj z ofertą do klientów
+                    znajdziesz nowych klientów
                   </Paragraph>
                 </ListItem>
                 <ListItem>
-                  <Paragraph color="white">obserwuj trendy na rynku</Paragraph>
+                  <Paragraph color="white">
+                    zwiększysz konwersję na stronie
+                  </Paragraph>
                 </ListItem>
                 <ListItem>
-                  <Paragraph color="white">pozyskuj nowe kontakty</Paragraph>
+                  <Paragraph color="white">wyprzedzisz konkurencję</Paragraph>
+                </ListItem>
+                <ListItem>
+                  <Paragraph color="white">
+                    sprzedaż więcej i szybciej
+                  </Paragraph>
                 </ListItem>
               </List>
             </ContentContainer>
           </AniFlexContainer>
         </Wrapper>
       </BackgroundImage>
+      <SectionBar pattern="bottom" />
     </SectionContainer>
   );
 };

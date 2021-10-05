@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 
 export const SectionContainer = styled.section`
   padding: 50px 0;
-  background: ${({ theme: { gradient } }) => gradient};
+  background-color: ${({ theme: { colors } }) => colors.blue.sky};
+  @media (min-width: 769px) {
+    padding: 70px 0;
+  }
 `;
 
 export const TitleAligner = styled.div`

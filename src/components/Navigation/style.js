@@ -6,16 +6,18 @@ export const Navigation = styled.nav`
   left: 0;
   width: 100%;
   height: 0;
-  background-color: rgba(53, 106, 140, 0.9);
-  transition: all 0.5s;
+  background-color: rgba(37, 120, 184, 0.9);
+  transition: height 0.5s;
   overflow: hidden;
   @media (min-width: 769px) {
     transition: none;
-    position: relative;
-    top: auto;
+    position: absolute;
+    top: 0;
     left: auto;
+    right: 2.5vw;
     width: auto;
-    height: auto;
+    height: inherit;
+    line-height: 60px;
     background-color: transparent;
   }
   ${({ isClicked }) =>
@@ -70,27 +72,28 @@ export const Navigation = styled.nav`
         display: block;
         border: 3px solid ${({ theme: { colors } }) => colors.yellow.regular};
         height: 70px;
-        background-color: white;
+        background-color: ${({ theme: { colors } }) => colors.blue.sky};
         line-height: 65px;
         text-decoration: none;
         color: black;
         font-size: 24px;
-        font-weight: 500;
         &:hover,
         &.active {
           background-color: ${({ theme: { colors } }) => colors.yellow.regular};
           color: black;
-          @media (min-width: 769px) {
-            background-color: transparent;
-          }
         }
         @media (min-width: 769px) {
-          color: ${({ theme: { colors } }) => colors.blue.regular};
+          color: ${({ theme: { colors } }) => colors.yellow.regular};
           font-size: 20px;
           border: none;
           height: auto;
           line-height: inherit;
           background-color: transparent;
+          &:hover,
+          &.active {
+            color: white;
+            background-color: transparent;
+          }
         }
       }
     }

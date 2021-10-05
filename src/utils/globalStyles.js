@@ -8,53 +8,66 @@ export const GlobalStyle = createGlobalStyle`
    };
    section {
      background: white;
+     position: relative;
    }
    h1, h2, footer * {
-     font-family: 'Raleway', sans-serif;
-   }
-   p, a, h1::before, button, form * {
-    font-family: 'Roboto', sans-serif;
+     font-family: 'Gibson', sans-serif;
+     font-weight: 200;
+    }
+    p, a, button, form * {
+      font-family: 'Raleway', sans-serif;
+    } 
+    h1::before {
+      font-family: 'Roboto', sans-serif; 
+      font-weight: 300;
    } 
    h1, h2 {
-      font-weight: 400;
-      line-height: 1.3;  
+      line-height: 1.25;  
       margin-top: 0;
       margin-bottom: 12px;
-    };
-    p, a {
-      font-weight: 300;
     };
     p { 
+      color: #3b3b3b;
       font-size: 20px;
-      line-height: 1.5;  
+      line-height: 1.45;  
       margin-top: 0;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
       &:last-child {
         margin-bottom: 0;
       }
    };
+   .blue {
+     color: #2578b8;
+   }
+   .yellow {
+     color: #fcc049;
+   }
 `;
 
 export const theme = {
   colors: {
     gray: {
-      lighter: '#fdfdfd',
-      light: '#ECECEC',
-      dark: '#545454',
+      lighter: '#fdfdfd', // deprecated in v2
+      light: '#ececec',
+      dark: '#565656',
       darker: '#3b3b3b',
+      darkest: '#202020',
     },
     blue: {
-      regular: '#356A8C',
-      dark: '#395f78',
+      sky: '#f3faff',
+      regular: '#2578b8',
+      dark: '#22689e',
     },
     yellow: {
-      regular: '#FFDD00',
-      dark: '#f2d201',
+      regular: '#fcc049',
+      dark: '#f8b225',
     },
   },
   boxshadow: {
     light: '0 3px 6px #c6c6c6',
-    dark: '0 3px 6px #545454',
+    dark: '0 3px 6px #565656',
   },
-  gradient: 'linear-gradient(135deg, white, #cce1ff)',
+  gradients: {
+    dark: 'linear-gradient(135deg, #565656, #202020)',
+  },
 };

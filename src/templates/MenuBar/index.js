@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Logo, MenuButton, Navigation, Wrapper } from 'components';
-import { MenuContainer, FlexContainer } from './style';
+import { Logo, MenuButton, Navigation } from 'components';
+import { MenuContainer } from './style';
 
 const MenuBar = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -9,13 +9,9 @@ const MenuBar = () => {
   };
   return (
     <MenuContainer>
-      <Wrapper>
-        <FlexContainer>
-          <Logo />
-          <Navigation isClicked={isClicked} onClick={handleClick} />
-          <MenuButton isClicked={isClicked} onClick={handleClick} />
-        </FlexContainer>
-      </Wrapper>
+      <Logo />
+      <Navigation isClicked={isClicked} onClick={handleClick} />
+      <MenuButton isClicked={isClicked} onClick={handleClick} />
     </MenuContainer>
   );
 };

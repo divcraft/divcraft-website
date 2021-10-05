@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  padding: 30px 0 0;
-  @media (min-width: 769px) {
-    padding: 0;
-  }
+  margin: 40px 0 30px;
 `;
 
 export const ContactTileContainer = styled.div`
@@ -55,6 +52,8 @@ export const Description = styled.p`
 `;
 
 export const Content = styled.p`
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: white;
   grid-area: contentx;
   font-size: 22px;

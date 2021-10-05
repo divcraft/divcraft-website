@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 
 export const AniSectionContainer = styled(motion.section)`
   padding: 50px 0;
-  background: ${({ theme: { gradient } }) => gradient};
+  background-color: ${({ theme: { colors } }) => colors.blue.sky};
+  @media (min-width: 901px) {
+    padding: 100px 0;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -21,24 +24,45 @@ export const ContentContainer = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const ImageContainer = styled.div`
   width: 100%;
-  padding: 2% 10%;
+  margin: 20px 0;
   grid-area: img;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  position: relative;
   @media (min-width: 901px) {
-    padding: 0;
+    margin: 0;
     align-self: center;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    border: solid 5px ${({ theme: { colors } }) => colors.yellow.regular};
   }
 `;
 
 export const TitleContainer = styled.div`
   grid-area: title;
+  @media (min-width: 901px) {
+    padding-right: 10%;
+  }
 `;
 
 export const Paragraph1 = styled.p`
   grid-area: par1;
+  @media (min-width: 901px) {
+    padding-right: 10%;
+  }
 `;
 
 export const Paragraph2 = styled.p`
   grid-area: par2;
+  @media (min-width: 901px) {
+    padding-right: 10%;
+  }
 `;

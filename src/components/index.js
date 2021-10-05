@@ -4,5 +4,7 @@ export { default as Logo } from './Logo';
 export { default as TitleHeader } from './TitleHeader';
 export { default as Paragraph } from './Paragraph';
 export { default as Button } from './Button';
+export { default as SectionBar } from './SectionBar';
+export { default as CornerLines } from './CornerLines';
 export * from './Wrapper';
 export * from './Image';

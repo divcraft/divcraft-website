@@ -1,9 +1,12 @@
 import React from 'react';
-import { Wrapper, Button } from 'components';
+import { StaticImage } from 'gatsby-plugin-image';
+import { Wrapper, Button, SectionBar } from 'components';
 import {
   SectionContainer,
   AniBackgroundContainer,
   ContentContainer,
+  ImageContainer,
+  AnimationContainer,
   AniTitle,
   AniSubTitle,
   AniButtonContainer,
@@ -12,63 +15,23 @@ import {
 const HeroSection = () => {
   return (
     <SectionContainer>
-      <AniBackgroundContainer
-        initial={{
-          height: 0,
-          y: 200,
-        }}
-        animate={{
-          height: 'inherit',
-          y: 0,
-        }}
-        transition={{
-          ease: 'easeInOut',
-          duration: 0.8,
-          delay: 0.4,
-        }}
-      >
+      <AniBackgroundContainer>
         <Wrapper>
           <ContentContainer>
-            <AniTitle
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              transition={{ ease: 'easeOut', duration: 0.6, delay: 1 }}
-            >
-              Pomagamy młodym biznesom rozwinąć się w sieci
-            </AniTitle>
-            <AniSubTitle
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              transition={{
-                ease: 'easeOut',
-                duration: 0.6,
-                delay: 1.2,
-              }}
-            >
+            <AniTitle>Pomagamy młodym biznesom rozwinąć się w sieci</AniTitle>
+            <ImageContainer>
+              <AnimationContainer>
+                <StaticImage
+                  src="../../images/hero-image.svg"
+                  alt="Stwórzmy razem stronę internetową"
+                />
+              </AnimationContainer>
+            </ImageContainer>
+            <AniSubTitle>
               Stwórzmy razem stronę internetową, która nada nowy wymiar twojej
               firmie
             </AniSubTitle>
-            <AniButtonContainer
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              transition={{
-                ease: 'easeOut',
-                duration: 0.6,
-                delay: 1.6,
-              }}
-            >
+            <AniButtonContainer>
               <Button to="/portfolio" pattern="gatsbyLink">
                 Zobacz portfolio
               </Button>
@@ -76,6 +39,7 @@ const HeroSection = () => {
           </ContentContainer>
         </Wrapper>
       </AniBackgroundContainer>
+      <SectionBar pattern="bottom" />
     </SectionContainer>
   );
 };

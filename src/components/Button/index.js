@@ -17,7 +17,7 @@ const Button = ({ pattern, children, ...props }) => {
           fixed
           padding-box
           content-box
-          #356A8C
+          #2578b8
         "
       >
         {children}

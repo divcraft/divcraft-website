@@ -19,7 +19,6 @@ export const Form = styled.form`
   & input,
   & textarea {
     line-height: 1.5;
-    font-weight: 300;
   }
   & input,
   & textarea {

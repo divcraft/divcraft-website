@@ -8,16 +8,42 @@ const OurPhilosophySection = () => {
       <Wrapper>
         <TitleHeader color="yellow">Nasza filozofia</TitleHeader>
         <Paragraph color="white">
-          But I must explain to you how all this mistaken idea of denouncing
-          pleasure and praising pain was born and I will give you a complete
-          account of the system, and expound the actual teachings of the great
-          explorer of the truth, the master-builder of human happiness. No one
-          rejects, dislikes, or avoids pleasure itself, because it is pleasure,
-          but because those who do not know how to pursue pleasure rationally
-          encounter consequences that are extremely painful. Nor again is there
-          anyone who loves or pursues or desires to obtain pain of itself,
-          because it is pain, but because.
+          Rozumiemy, jak wiele wyzwań ma przed sobą przedsiębiorca, który
+          próbuje swoich sił w Polsce. Dlatego maksymalnie upraszczamy firmom
+          dotarcie do potencjalnych klientów relatywnie niskim kosztem. Chcemy
+          również kreować wizerunki naszych zleceniodawców, jako ekspertów w
+          swoich dziedzinach, osób godnych zaufania, świadczących usługi na
+          najwyższym poziomie jakości.
         </Paragraph>
+        <Paragraph color="white">
+          Nie jesteśmy agencją, która powiela schematy i produkuje setki
+          identycznych witryny. Jesteśmy twórcami, którzy do swojej pracy dodają
+          pasję i zaangażowanie. W ten sposób{' '}
+          <span className="yellow">divcraft</span> tworzy internetowe strony dla
+          firm, które pozwalają przedsiębiorcom:
+        </Paragraph>
+        <ul>
+          <li>
+            <Paragraph color="white">
+              budować w internecie wizerunek eksperta i lidera branży
+            </Paragraph>
+          </li>
+          <li>
+            <Paragraph color="white">
+              dotrzeć do nowych klientów i wzmocnić relację z istniejącymi
+            </Paragraph>
+          </li>
+          <li>
+            <Paragraph color="white">
+              zwiększyć sprzedaż, przy jednoczesnej redukcji kosztów promocji
+            </Paragraph>
+          </li>
+          <li>
+            <Paragraph color="white">
+              wyprzedzić konkurencję i podbić rynek
+            </Paragraph>
+          </li>
+        </ul>
       </Wrapper>
     </SectionContainer>
   );

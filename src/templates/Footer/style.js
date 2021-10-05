@@ -1,9 +1,26 @@
 import styled from 'styled-components';
 
-export const FooterContainer = styled.footer`
+export const SocialsContainer = styled.div`
+  border-top: solid 5px ${({ theme: { colors } }) => colors.gray.darkest};
+  background-color: ${({ theme: { colors } }) => colors.gray.darker};
+  display: flex;
+  justify-content: center;
+`;
+
+export const SocialsItem = styled.div`
+  padding: 15px 20px;
+  font-size: 40px;
+  color: ${({ theme: { colors } }) => colors.gray.darkest};
+  &:hover {
+    color: ${({ theme: { colors } }) => colors.yellow.regular};
+    background-color: ${({ theme: { colors } }) => colors.gray.darkest};
+  }
+`;
+
+export const ContentContainer = styled.footer`
   text-align: center;
   padding: 20px 0;
-  background-color: ${({ theme: { colors } }) => colors.gray.darker};
+  background-color: ${({ theme: { colors } }) => colors.gray.darkest};
   color: ${({ theme: { colors } }) => colors.yellow.regular};
   & p {
     font-family: inherit;

@@ -1,8 +1,11 @@
 import styled, { css } from 'styled-components';
 
 export const MenuButton = styled.div`
-  width: 27px;
-  height: 27px;
+  position: absolute;
+  top: 15px;
+  right: 2.5vw;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -13,9 +16,9 @@ export const MenuButton = styled.div`
     transition: all 0.3s;
     position: relative;
     display: block;
-    width: 27px;
+    width: 28px;
     height: 2px;
-    background-color: ${({ theme: { colors } }) => colors.blue.regular};
+    background-color: ${({ theme: { colors } }) => colors.yellow.regular};
     &::before {
       content: '';
       transition: all 0.3s;
@@ -24,7 +27,7 @@ export const MenuButton = styled.div`
       right: 0;
       width: 19px;
       height: 2px;
-      background-color: black;
+      background-color: ${({ theme: { colors } }) => colors.yellow.regular};
     }
     &::after {
       content: '';
@@ -34,22 +37,21 @@ export const MenuButton = styled.div`
       right: 0;
       width: 19px;
       height: 2px;
-      background-color: black;
+      background-color: ${({ theme: { colors } }) => colors.yellow.regular};
     }
     ${({ isClicked }) =>
       isClicked &&
       css`
-        background-color: white;
+        height: 0;
         &::before {
           transform: rotate(-45deg);
-          bottom: 0;
           width: 23px;
+          bottom: -1px;
         }
         &::after {
           transform: rotate(45deg);
-          top: 0;
           width: 23px;
-          background-color: ${({ theme: { colors } }) => colors.blue.regular};
+          top: -1px;
         }
       `}
   }
