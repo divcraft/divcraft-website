@@ -6,19 +6,21 @@ export const SectionContainer = styled.section`
 `;
 
 export const BackgroundImage = styled.div`
-  padding: 50px 0;
+  padding: 110px 0;
   background-color: ${({ theme: { colors } }) => colors.blue.regular};
-
-  /* background-image: url('/backgrounds/profits-bg-768.jpg');
+  background-image: url('/backgrounds/profits-bg-400.jpg');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover; */
-  @media (min-width: 769px) {
-    /* background-image: url('/backgrounds/profits-bg-1200.jpg'); */
+  background-size: cover;
+  @media (min-width: 401px) {
+    background-image: url('/backgrounds/profits-bg-768.jpg');
   }
-  @media (min-width: 1201px) {
-    /* background-image: url('/backgrounds/profits-bg-1920.jpg'); */
+  @media (min-width: 769px) {
+    background-image: url('/backgrounds/profits-bg-1366.jpg');
+  }
+  @media (min-width: 1367px) {
+    background-image: url('/backgrounds/profits-bg-1920.jpg');
   }
 `;
 
