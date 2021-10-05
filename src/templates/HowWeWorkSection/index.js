@@ -13,17 +13,12 @@ const HowWeWorkSection = () => {
   return (
     <SectionContainer>
       <Wrapper>
-        <TitleHeader color="blue">Jak działamy?</TitleHeader>
+        <TitleHeader color="blue">Spójrz, jak pracujemy</TitleHeader>
         <Paragraph color="black">
-          But I must explain to you how all this mistaken idea of denouncing
-          pleasure and praising pain was born and I will give you a complete
-          account of the system, and expound the actual teachings of the great
-          explorer of the truth, the master-builder of human happiness. No one
-          rejects, dislikes, or avoids pleasure itself, because it is pleasure,
-          but because those who do not know how to pursue pleasure rationally
-          encounter consequences that are extremely painful. Nor again is there
-          anyone who loves or pursues or desires to obtain pain of itself,
-          because it is pain, but because.
+          W całym projekcie decydujące słowo należy do Ciebie. Dla wygody prace
+          podzieliliśmy na etapy. Na początku prosimy o Twoje sugestie, a pod
+          koniec - o akceptację naszych działań lub uwagi. Odkryj, co dzieje się
+          w poszczególnych fazach tworzenia Twojej firmowej strony internetowej:
         </Paragraph>
       </Wrapper>
       <WorkStepsContainer>
@@ -32,51 +27,48 @@ const HowWeWorkSection = () => {
             <Tile>
               <TileTitle>wstępna konsultacja z klientem</TileTitle>
               <TileDescription>
-                But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give
-                you a.
+                Poznajemy Twój biznes i oczekiwania w stosunku do firmowej
+                strony. Zadajemy dużo pytań, aby jak najszybciej trafić
+                dokładnie w Twoje preferencje. you a.
               </TileDescription>
             </Tile>
             <Tile>
               <TileTitle>tworzenie architektury informacji</TileTitle>
               <TileDescription>
-                But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give
-                you a.But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give
-                you a.
+                Ustalamy liczbę podstron, ich wzajemne powiązania, styl
+                komunikacji, tworzymy treści. Wszystko z myślą o maksymalnym
+                komforcie użytkowania Twojego potencjalnego klienta.
               </TileDescription>
             </Tile>
             <Tile>
               <TileTitle>tworzenie projektu graficznego</TileTitle>
               <TileDescription>
-                But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give
-                you a.
+                Wybieramy kolory i fonty, tworzymy dedykowane elementy
+                graficzne. Ten etap jest dla naszych Zleceniodawców bardzo
+                emocjonujący, bo witryna po raz pierwszy “nabiera kształtów”.
               </TileDescription>
             </Tile>
             <Tile>
               <TileTitle>tworzenie kodu źródłowego strony</TileTitle>
               <TileDescription>
-                But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give
-                you a.
+                Korzystamy z najnowszych technologii po to, aby Twoja strona
+                internetowa była szybka i przyjazna urządzeniom mobilnym.
               </TileDescription>
             </Tile>
             <Tile>
               <TileTitle>publikacja storny na serwerze</TileTitle>
               <TileDescription>
-                But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give
-                you a.
+                Nowa strona internetowa Twojej firmy po raz pierwszy trafia do
+                Sieci. Pojawiają się pierwsi użytkownicy. Gratulujemy, właśnie
+                rozpoczął się kolejny rozdział dla Twojego biznesu.
               </TileDescription>
             </Tile>
             <Tile>
               <TileTitle>finalizacja projektu z klientem</TileTitle>
               <TileDescription>
-                But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give
-                you a.
+                Kiedy jesteś zadowolony z efektów naszej pracy, przechodzimy do
+                zamknięcia projektu. Dostaniesz od nas instrukcje oraz wskazówki
+                jak obsługiwać Twoją nową stronę.
               </TileDescription>
             </Tile>
           </TileList>

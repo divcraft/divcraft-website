@@ -16,15 +16,13 @@ const AboutUsSection = () => {
       <Wrapper>
         <TitleHeader color="blue">Kim jesteśmy?</TitleHeader>
         <p>
-          But I must explain to you how all this mistaken idea of denouncing
-          pleasure and praising pain was born and I will give you a complete
-          account of the system, and expound the actual teachings of the great
-          explorer of the truth, the master-builder of human happiness. No one
-          rejects, dislikes, or avoids pleasure itself, because it is pleasure,
-          but because those who do not know how to pursue pleasure rationally
-          encounter consequences that are extremely painful. Nor again is there
-          anyone who loves or pursues or desires to obtain pain of itself,
-          because it is pain, but because.
+          Zajmujemy się tworzeniem profesjonalnych stron internetowych,
+          pomagając małym i średnim firmom postawić pierwsze kroki w Internecie.
+          Nazwa Divcraft powstała z połączenia dwóch słów: "div", czyli
+          najpopularniejszego znacznika języka HTML, który wykorzystywany jest
+          do tworzenia stron internetowych oraz "craft", co rozumiemy, jako
+          rzemiosło. W ten sposób podkreślamy, że każdy nasz projekt jest
+          unikalny i idealnie dopasowany do potrzeb oraz oczekiwań klienta.
         </p>
         <UserContainer>
           <ImageContainer>
@@ -41,11 +39,13 @@ const AboutUsSection = () => {
           <BlueText>założyciel divcraft</BlueText>
         </UserContainer>
         <p>
-          But I must explain to you how all this mistaken idea of denouncing
-          pleasure and praising pain was born and I will give you a complete
-          account of the system, and expound the actual teachings of the great
-          explorer of the truth, the master-builder of human happiness. No one
-          rejects, dislikes, or.
+          Od 2018 roku zajmuje się profesjonalnym tworzeniem projektów
+          graficznych oraz stron internetowych. Interesuję się projektowaniem
+          architektury informacji, UX/UI, programowaniem w technologii
+          react.js/gatsby.js, zagadnieniami związanymi z hostingiem i
+          utrzymaniem infrastruktury www. Wierzę, że usługi
+          <span className="blue"> divcraft</span> zwiększą rozpoznawalność
+          Twojej firmy w internecie. Czy jesteś gotowy na więcej?
         </p>
       </Wrapper>
     </SectionContainer>

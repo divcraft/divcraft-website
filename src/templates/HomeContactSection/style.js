@@ -33,7 +33,6 @@ export const GridContainer = styled.div`
     & a {
       grid-area: button;
       margin: 0;
-      margin-top: 15px;
     }
     & div {
       grid-area: img;

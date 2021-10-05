@@ -29,13 +29,19 @@ export const GlobalStyle = createGlobalStyle`
     p { 
       color: #3b3b3b;
       font-size: 20px;
-      line-height: 1.5;  
+      line-height: 1.45;  
       margin-top: 0;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
       &:last-child {
         margin-bottom: 0;
       }
    };
+   .blue {
+     color: #2578b8;
+   }
+   .yellow {
+     color: #fcc049;
+   }
 `;
 
 export const theme = {

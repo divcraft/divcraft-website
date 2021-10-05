@@ -46,8 +46,8 @@ const IntroductionSection = () => {
             />
           </ImageContainer>
           <Paragraph2>
-            W <strong>divcraft</strong> tworzymy strony internetowe idealnie
-            dopasowane do Zleceniodawców. Po to, aby Twoja strona była
+            W <span className="blue">divcraft</span> tworzymy strony internetowe
+            idealnie dopasowane do Zleceniodawców. Po to, aby Twoja strona była
             funkcjonalnym narzędziem marketingowym. Unikalny projekt graficzny
             wyróżnia Cię na tle konkurencji. Zaawansowany UX design zapewnia
             wygodę obsługi. Czy tak wyobrażasz sobie stronę internetową Twojej

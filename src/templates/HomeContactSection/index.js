@@ -47,7 +47,7 @@ const HomeContactSection = () => {
             />
           </ImageContainer>
           <Button to="/kontakt" pattern="gatsbyLink">
-            Napisz do nas
+            Porozmawiajmy
           </Button>
         </GridContainer>
       </Wrapper>
