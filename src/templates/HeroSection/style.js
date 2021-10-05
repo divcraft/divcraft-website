@@ -64,7 +64,7 @@ export const ImageContainer = styled.div`
     position: absolute;
     top: 50%;
     right: 0;
-    animation: ${moveCloud} 15s infinite linear;
+    animation: ${moveCloud} 20s infinite linear;
   }
   &::after {
     opacity: 0.8;
@@ -73,7 +73,7 @@ export const ImageContainer = styled.div`
     position: absolute;
     top: 20%;
     right: 0;
-    animation: ${moveCloud} 25s infinite linear;
+    animation: ${moveCloud} 30s infinite linear;
   }
   @media (min-width: 769px) {
     grid-area: imgx;

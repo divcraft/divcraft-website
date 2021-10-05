@@ -59,9 +59,8 @@ export const theme = {
   },
   boxshadow: {
     light: '0 3px 6px #c6c6c6',
-    dark: '0 3px 6px #545454',
+    dark: '0 3px 6px #7e7e7e',
   },
-  gradient: 'linear-gradient(135deg, white, #cce1ff)',
   gradients: {
     dark: 'linear-gradient(135deg, #565656, #202020)',
   },

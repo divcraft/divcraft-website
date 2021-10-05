@@ -13,7 +13,9 @@ export const ArticleContainer = styled.article`
   }
   &:nth-child(even) {
     background-color: ${({ theme: { colors } }) => colors.blue.regular};
-    & h2,
+    & h2 {
+      color: ${({ theme: { colors } }) => colors.yellow.regular};
+    }
     & p {
       color: white;
     }
