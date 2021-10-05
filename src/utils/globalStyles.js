@@ -51,7 +51,7 @@ export const theme = {
       light: '#ececec',
       dark: '#565656',
       darker: '#3b3b3b',
-      darkest: '#2e2e2e',
+      darkest: '#202020',
     },
     blue: {
       sky: '#f3faff',
