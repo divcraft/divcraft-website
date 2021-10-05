@@ -23,9 +23,9 @@ export const AniBackgroundContainer = styled(motion.div)`
     background-image: url('/backgrounds/hero-bg-768.jpg');
   }
   @media (min-width: 769px) {
-    background-image: url('/backgrounds/hero-bg-1400.jpg');
+    background-image: url('/backgrounds/hero-bg-1366.jpg');
   }
-  @media (min-width: 1401px) {
+  @media (min-width: 1367px) {
     background-image: url('/backgrounds/hero-bg-1920.jpg');
   }
 `;

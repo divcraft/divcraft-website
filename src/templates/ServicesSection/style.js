@@ -7,17 +7,21 @@ export const SectionContainer = styled.section`
 `;
 
 export const BackgroundImage = styled.div`
-  padding: 50px 0;
+  padding: 110px 0;
   height: 100%;
-  background-image: url('/backgrounds/services-bg-768.jpg');
+  background-image: url('/backgrounds/services-bg-400.jpg');
   background-position: center;
   background-size: cover !important;
   background-attachment: fixed !important;
   background-repeat: repeat;
-  @media (min-width: 769px) {
-    background-image: url('/backgrounds/services-bg-1200.jpg');
+  @media (min-width: 401px) {
+    background-image: url('/backgrounds/services-bg-768.jpg');
   }
-  @media (min-width: 1201px) {
+  @media (min-width: 769px) {
+    background-image: url('/backgrounds/services-bg-1366.jpg');
+  }
+
+  @media (min-width: 1367px) {
     background-image: url('/backgrounds/services-bg-1920.jpg');
   }
 `;
@@ -31,7 +35,7 @@ export const ContentContainer = styled.div`
 
 export const ImageContainer = styled.span`
   display: block;
-  @media (min-width: 769px) {
+  @media (min-width: 901px) {
     width: 50%;
   }
 `;

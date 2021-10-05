@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
-import { Wrapper, TitleHeader, Paragraph, Image } from 'components';
+import { Wrapper, TitleHeader, Paragraph, Image, SectionBar } from 'components';
 import {
   SectionContainer,
   BackgroundImage,
@@ -13,30 +13,30 @@ import {
 
 const servicesData = [
   {
-    title: 'Oryginalny projekt graficzny',
+    title: 'Wybierz unikalny projekt graficzny',
     description:
-      'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself.',
+      'Tylko od wyglądu witryny zależy, czy użytkownik w ogóle zacznie ją eksplorować. Dlatego Twoja strona firmowa od razu powinna przykuwać uwagę.',
     imgSrc: '/illustrations/design-image.svg',
     imgAlt: 'projekt graficzny',
   },
   {
-    title: 'Dynamiczna edycja treści',
+    title: 'Zmieniaj i dodawaj treści',
     description:
-      'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself.',
+      'Jeśli  w przyszłości zechcesz odświeżyć wygląd strony lub zmienić styl komunikacji, zrobisz to wszystko sam za pomocą kilku kliknięć myszką. ',
     imgSrc: '/illustrations/content-image.svg',
     imgAlt: 'edycja treści',
   },
   {
-    title: 'Wysoka prędkość wczytywania',
+    title: 'Szybka strona to dobra strona',
     description:
-      'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself.',
+      'Strony, które ładują się szybciej, zajmują lepsze miejsca w wynikach wyszukiwania Google. Każdy nasz projekt jest w pełni responsywny, czyli zoptymalizowany do przeglądania na komputerze, smartfonie czy tablecie.',
     imgSrc: '/illustrations/time-image.svg',
     imgAlt: 'wczytywanie strony',
   },
   {
-    title: 'Dostęp do narzędzi analitycznych',
+    title: 'Analizuj, by stać się najlepszym',
     description:
-      'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself.',
+      'Narzędzia analityczne zbierają dane o Twoich potencjalnych klientach. Wykorzystasz je chociażby w ulepszeniu obsługi, albo zwiększeniu efektywności reklam AdWords.',
     imgSrc: '/illustrations/analytics-image.svg',
     imgAlt: 'analiza danych',
   },
@@ -86,11 +86,13 @@ const ServicesSection = () => {
   return (
     <>
       <SectionContainer>
+        <SectionBar pattern="top" />
         <BackgroundImage>
           <Wrapper>
             <List>{services}</List>
           </Wrapper>
         </BackgroundImage>
+        <SectionBar pattern="bottom" />
       </SectionContainer>
     </>
   );
