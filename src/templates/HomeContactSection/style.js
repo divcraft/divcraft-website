@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 
 export const AniSectionContainer = styled(motion.section)`
   padding: 50px 0;
-  background: ${({ theme: { gradient } }) => gradient};
+  background-color: ${({ theme: { colors } }) => colors.blue.sky};
+  @media (min-width: 901px) {
+    padding: 100px 0;
+  }
 `;
 
 export const GridContainer = styled.div`
