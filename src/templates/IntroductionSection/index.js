@@ -1,10 +1,8 @@
-import React from 'react'; // ,{ useEffect }
+import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-// import { useInView } from 'react-intersection-observer';
-// import { useAnimation } from 'framer-motion';
 import { Wrapper, TitleHeader, CornerLines } from 'components';
 import {
-  AniSectionContainer,
+  SectionContainer,
   ContentContainer,
   ImageContainer,
   TitleContainer,
@@ -13,17 +11,8 @@ import {
 } from './style';
 
 const IntroductionSection = () => {
-  // const [ref, inView] = useInView({
-  //   threshold: 0.3,
-  // });
-  // const controls = useAnimation();
-  // useEffect(() => {
-  //   if (inView) {
-  //     controls.start('visible');
-  //   }
-  // }, [controls, inView]);
   return (
-    <AniSectionContainer>
+    <SectionContainer>
       <CornerLines pattern="top" />
       <Wrapper>
         <ContentContainer>
@@ -56,7 +45,7 @@ const IntroductionSection = () => {
         </ContentContainer>
       </Wrapper>
       <CornerLines pattern="bottom" />
-    </AniSectionContainer>
+    </SectionContainer>
   );
 };
 

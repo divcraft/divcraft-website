@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
-export const AniSectionContainer = styled(motion.section)`
+export const SectionContainer = styled.section`
   padding: 50px 0;
   background-color: ${({ theme: { colors } }) => colors.blue.sky};
   @media (min-width: 901px) {

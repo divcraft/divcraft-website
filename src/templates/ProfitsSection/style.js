@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
 export const SectionContainer = styled.section`
   padding: 0;
@@ -24,7 +23,7 @@ export const BackgroundImage = styled.div`
   }
 `;
 
-export const AniFlexContainer = styled(motion.div)`
+export const FlexContainer = styled.div`
   @media (min-width: 769px) {
     display: flex;
     align-items: center;

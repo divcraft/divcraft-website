@@ -13,6 +13,9 @@ export const Main = styled.main`
   margin-top: 60px;
   & * {
     scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;
 

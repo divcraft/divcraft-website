@@ -1,34 +1,10 @@
-import React, { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { useAnimation } from 'framer-motion';
+import React from 'react';
 import { Wrapper, TitleHeader, Image, Button, CornerLines } from 'components';
-import { AniSectionContainer, GridContainer, ImageContainer } from './style';
+import { SectionContainer, GridContainer, ImageContainer } from './style';
 
 const HomeContactSection = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-  });
-  const controls = useAnimation();
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
   return (
-    <AniSectionContainer
-      ref={ref}
-      animate={controls}
-      initial="hidden"
-      transition={{ duration: 0.8, delay: 0.2 }}
-      variants={{
-        hidden: {
-          opacity: 0,
-        },
-        visible: {
-          opacity: 1,
-        },
-      }}
-    >
+    <SectionContainer>
       <CornerLines pattern="top" />
       <Wrapper>
         <GridContainer>
@@ -52,7 +28,7 @@ const HomeContactSection = () => {
         </GridContainer>
       </Wrapper>
       <CornerLines pattern="bottom" />
-    </AniSectionContainer>
+    </SectionContainer>
   );
 };
 

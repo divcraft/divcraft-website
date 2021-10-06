@@ -46,7 +46,7 @@ const ServicesSection = () => {
   const services = servicesData.map((item, index) => {
     const { title, description, imgSrc, imgAlt } = item;
     const [ref, inView] = useInView({
-      threshold: 0.3,
+      threshold: 0.25,
     });
     const controls = useAnimation();
     const isOdd = index === 0 || index === 2;
@@ -58,10 +58,9 @@ const ServicesSection = () => {
     return (
       <AniListItem
         key={imgSrc}
-        ref={ref}
         animate={controls}
         initial="hidden"
-        transition={{ duration: 0.6, delay: 0.2 }}
+        transition={{ duration: 0.6 }}
         variants={{
           hidden: {
             opacity: 0,
@@ -73,7 +72,7 @@ const ServicesSection = () => {
           },
         }}
       >
-        <ImageContainer>
+        <ImageContainer ref={ref}>
           <Image src={imgSrc} alt={imgAlt} />
         </ImageContainer>
         <ContentContainer>

@@ -84,7 +84,7 @@ export const ImageContainer = styled.div`
 export const AnimationContainer = styled.div`
   overflow: hidden;
   & > div {
-    animation: ${dropImage} 1.4s 0.8s cubic-bezier(0.44, 1.55, 0.12, 0.74) both;
+    animation: ${dropImage} 1.4s 1.2s cubic-bezier(0.44, 1.55, 0.12, 0.74) both;
   }
 `;
 
@@ -92,7 +92,7 @@ export const AniTitle = styled(motion.h1)`
   position: relative;
   margin-bottom: 0;
   font-family: 'Gibson', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   color: white;
   font-size: 32px;
   padding-bottom: 30px;

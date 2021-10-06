@@ -45,7 +45,7 @@ const technologiesData = [
 
 const TechnologiesSection = () => {
   const [ref, inView] = useInView({
-    threshold: 0.5,
+    threshold: 0.35,
   });
   const controls = useAnimation();
   useEffect(() => {
@@ -57,10 +57,9 @@ const TechnologiesSection = () => {
     return (
       <AniTile
         key={item.imgSrc}
-        ref={ref}
         animate={controls}
         initial="hidden"
-        transition={{ duration: 0.4, delay: 0.2 + index * 0.2 }}
+        transition={{ duration: 0.4, delay: 0 + index * 0.2 }}
         variants={{
           hidden: {
             opacity: 0,
@@ -84,7 +83,7 @@ const TechnologiesSection = () => {
             Technologie wykorzystywane do tworzenia naszych stron
           </TitleHeader>
         </TitleAligner>
-        <TileContainer>{technologies}</TileContainer>
+        <TileContainer ref={ref}>{technologies}</TileContainer>
       </Wrapper>
       <CornerLines pattern="bottom" />
     </SectionContainer>
