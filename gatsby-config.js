@@ -10,13 +10,28 @@ module.exports = {
     siteUrl: `https://www.divcraft.pl/`,
   },
   plugins: [
+    // {
+    //   resolve: `gatsby-plugin-google-gtag`,
+    //   options: {
+    //     trackingIds: [process.env.GOOGLE_ANALYTICS_ID],
+    //     pluginConfig: {
+    //       head: false,
+    //     },
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        trackingIds: [process.env.GOOGLE_ANALYTICS_ID],
-        pluginConfig: {
-          head: false,
+        googleAnalytics: {
+          trackingId: process.env.GOOGLE_ANALYTICS_ID,
+          cookieName: 'gatsby-gdpr-google-analytics',
+          anonymize: true,
         },
+        // googleTagManager: {
+        //   trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        //   cookieName: 'gatsby-gdpr-google-tagmanager',
+        // },
+        environments: ['production', 'development'],
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -33,7 +48,7 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          breakpoints: [400, 800, 1400, 1920],
+          breakpoints: [400, 768, 1366, 1920],
           placeholder: 'none',
         },
       },

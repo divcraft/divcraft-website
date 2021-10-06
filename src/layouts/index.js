@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from 'utils';
 import { MenuBar, Footer } from 'templates';
+import { CookiesBanner } from 'components';
 import { Header, Main, OverflowWrapper } from './style';
 
 const MainLayout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
     <OverflowWrapper>
+      <CookiesBanner />
       <Header>
         <MenuBar />
       </Header>

@@ -57,6 +57,7 @@ const ServicesSection = () => {
     }, [controls, inView]);
     return (
       <AniListItem
+        key={imgSrc}
         ref={ref}
         animate={controls}
         initial="hidden"

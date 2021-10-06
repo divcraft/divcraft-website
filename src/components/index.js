@@ -6,5 +6,6 @@ export { default as Paragraph } from './Paragraph';
 export { default as Button } from './Button';
 export { default as SectionBar } from './SectionBar';
 export { default as CornerLines } from './CornerLines';
+export { default as CookiesBanner } from './CookiesBanner';
 export * from './Wrapper';
 export * from './Image';
