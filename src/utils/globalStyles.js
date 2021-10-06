@@ -10,8 +10,8 @@ export const GlobalStyle = createGlobalStyle`
      background: white;
      position: relative;
    }
-   h1, h2, footer * {
-     font-family: 'Gibson', sans-serif;
+   footer * {
+    font-family: 'Gibson', sans-serif;
      font-weight: 200;
     }
     p, a, button, form * {
@@ -20,11 +20,13 @@ export const GlobalStyle = createGlobalStyle`
     h1::before {
       font-family: 'Roboto', sans-serif; 
       font-weight: 300;
-   } 
-   h1, h2 {
-      line-height: 1.25;  
-      margin-top: 0;
-      margin-bottom: 12px;
+    } 
+    h1, h2 {
+      font-family: 'Gibson', sans-serif;
+      font-weight: 300;
+        line-height: 1.25;  
+        margin-top: 0;
+        margin-bottom: 12px;
     };
     p { 
       color: #3b3b3b;

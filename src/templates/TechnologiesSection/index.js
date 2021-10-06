@@ -56,6 +56,7 @@ const TechnologiesSection = () => {
   const technologies = technologiesData.map((item, index) => {
     return (
       <AniTile
+        key={item.imgSrc}
         ref={ref}
         animate={controls}
         initial="hidden"
