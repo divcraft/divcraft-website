@@ -92,7 +92,7 @@ export const AniTitle = styled(motion.h1)`
   position: relative;
   margin-bottom: 0;
   font-family: 'Gibson', sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   color: white;
   font-size: 32px;
   padding-bottom: 30px;

@@ -1,4 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const opacity = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 export const BannerContainer = styled.div`
   position: fixed;
@@ -8,6 +17,7 @@ export const BannerContainer = styled.div`
   bottom: 0;
   padding: 10px 0;
   z-index: 1;
+  animation: ${opacity} 0.2s 1.8s linear both;
 `;
 
 export const FlexContainer = styled.div`
