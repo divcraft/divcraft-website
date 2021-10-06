@@ -10,15 +10,6 @@ module.exports = {
     siteUrl: `https://www.divcraft.pl/`,
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-google-gtag`,
-    //   options: {
-    //     trackingIds: [process.env.GOOGLE_ANALYTICS_ID],
-    //     pluginConfig: {
-    //       head: false,
-    //     },
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
@@ -27,10 +18,6 @@ module.exports = {
           cookieName: 'gatsby-gdpr-google-analytics',
           anonymize: true,
         },
-        // googleTagManager: {
-        //   trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        //   cookieName: 'gatsby-gdpr-google-tagmanager',
-        // },
         environments: ['production', 'development'],
       },
     },
@@ -67,6 +54,7 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
