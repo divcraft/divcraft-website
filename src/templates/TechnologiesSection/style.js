@@ -4,16 +4,48 @@ import { motion } from 'framer-motion';
 export const SectionContainer = styled.section`
   padding: 50px 0;
   background-color: ${({ theme: { colors } }) => colors.blue.sky};
+  position: relative;
+  &::before,
+  &::after {
+    content: '';
+    background-image: url('/corner-lines.svg');
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    @media (min-width: 769px) {
+      width: 245px;
+      height: 245px;
+    }
+    @media (min-width: 1401px) {
+      width: 345px;
+      height: 345px;
+    }
+  }
+  &::before {
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    transform: rotate(180deg);
+    bottom: 0;
+    right: 0;
+  }
   @media (min-width: 769px) {
     padding: 70px 0;
   }
 `;
 
 export const TitleAligner = styled.div`
+  position: relative;
+  z-index: 1;
   text-align: center;
 `;
 
 export const TileContainer = styled.div`
+  position: relative;
+  z-index: 1;
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, calc(50% - 5px));

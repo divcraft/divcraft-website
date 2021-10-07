@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
-import { Wrapper, TitleHeader, Image, Button, CornerLines } from 'components';
+import { Wrapper, TitleHeader, Image, Button } from 'components';
 import { SectionContainer, GridContainer, AniImageContainer } from './style';
 
 const HomeContactSection = () => {
@@ -16,7 +16,6 @@ const HomeContactSection = () => {
   }, [controls, inView]);
   return (
     <SectionContainer>
-      <CornerLines pattern="top" />
       <Wrapper>
         <GridContainer>
           <TitleHeader color="blue">Masz pytania? Pomysły?</TitleHeader>
@@ -51,7 +50,6 @@ const HomeContactSection = () => {
           </Button>
         </GridContainer>
       </Wrapper>
-      <CornerLines pattern="bottom" />
     </SectionContainer>
   );
 };

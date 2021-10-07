@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
-import { Wrapper, TitleHeader, Image, CornerLines } from 'components';
+import { Wrapper, TitleHeader, Image } from 'components';
 import {
   SectionContainer,
   TitleAligner,
@@ -76,7 +76,6 @@ const TechnologiesSection = () => {
   });
   return (
     <SectionContainer>
-      <CornerLines pattern="top" />
       <Wrapper>
         <TitleAligner>
           <TitleHeader color="black">
@@ -85,7 +84,6 @@ const TechnologiesSection = () => {
         </TitleAligner>
         <TileContainer ref={ref}>{technologies}</TileContainer>
       </Wrapper>
-      <CornerLines pattern="bottom" />
     </SectionContainer>
   );
 };

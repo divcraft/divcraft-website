@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Wrapper, TitleHeader, CornerLines } from 'components';
+import { Wrapper, TitleHeader } from 'components';
 import {
   SectionContainer,
   ContentContainer,
@@ -24,7 +24,6 @@ const IntroductionSection = () => {
   }, [controls, inView]);
   return (
     <SectionContainer>
-      <CornerLines pattern="top" />
       <Wrapper>
         <ContentContainer>
           <TitleContainer>
@@ -68,7 +67,6 @@ const IntroductionSection = () => {
           </Paragraph2>
         </ContentContainer>
       </Wrapper>
-      <CornerLines pattern="bottom" />
     </SectionContainer>
   );
 };
