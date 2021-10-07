@@ -44,7 +44,6 @@ export const ContentContainer = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr auto auto auto 1fr;
-    grid-column-gap: 20px;
     grid-template-areas:
       '. img'
       'title img'
