@@ -1,0 +1,46 @@
+import React, { useState, useEffect } from 'react';
+import Cookies from 'js-cookie';
+import { TitleHeader, Button } from 'components';
+import {
+  PopupBackgound,
+  PopupContainer,
+  TitleContainer,
+  ButtonContainer,
+  CloseButton,
+} from './style';
+
+const DiscountPopup = () => {
+  const hideDiscountPopup = Cookies.get('hide-discount-popup');
+  const [hidePopup, setHidePopup] = useState(true);
+  const handleButton = () => {
+    Cookies.set('hide-discount-popup', true);
+    setHidePopup(true);
+    return true;
+  };
+  document.body.style.overflow = hidePopup ? 'auto' : 'hidden';
+  useEffect(() => {
+    setTimeout(() => setHidePopup(hideDiscountPopup), 5000);
+  }, []);
+  return (
+    !hidePopup && (
+      <PopupBackgound>
+        <PopupContainer>
+          <CloseButton onClick={handleButton} />
+          <TitleContainer>
+            <TitleHeader color="white">
+              Pierwszy raz tutaj? Skorzystaj z naszej zniżki!
+            </TitleHeader>
+          </TitleContainer>
+          <p>Otrzymaj aż 30% rabatu na nasze usługi</p>
+          <ButtonContainer>
+            <Button pattern="gatsbyLink" onClick={handleButton} to="/promocja">
+              Szczegóły
+            </Button>
+          </ButtonContainer>
+        </PopupContainer>
+      </PopupBackgound>
+    )
+  );
+};
+
+export default DiscountPopup;
