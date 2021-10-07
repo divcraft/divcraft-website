@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Wrapper, TitleHeader, CornerLines } from 'components';
 import {
   SectionContainer,
   ContentContainer,
-  ImageContainer,
+  AniImageContainer,
   TitleContainer,
   Paragraph1,
   Paragraph2,
 } from './style';
 
 const IntroductionSection = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
+  const controls = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
   return (
     <SectionContainer>
       <CornerLines pattern="top" />
@@ -28,12 +39,25 @@ const IntroductionSection = () => {
             wygrać z konkurencją. Ale taki potencjał mają tylko profesjonalnie
             wykonane serwisy.
           </Paragraph1>
-          <ImageContainer>
+          <AniImageContainer
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: {
+                opacity: 0,
+              },
+              visible: {
+                opacity: 1,
+              },
+            }}
+          >
             <StaticImage
               src="../../images/introduction-image.jpg"
               alt="nowoczesne strony www"
             />
-          </ImageContainer>
+          </AniImageContainer>
           <Paragraph2>
             W <span className="blue">divcraft</span> tworzymy strony internetowe
             idealnie dopasowane do Zleceniodawców. Po to, aby Twoja strona była

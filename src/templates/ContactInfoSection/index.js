@@ -13,13 +13,12 @@ const ContactInfoSection = () => {
   return (
     <SectionContainer>
       <Wrapper>
-        <TitleHeader color="blue">Masz pytania?</TitleHeader>
+        <TitleHeader color="blue">Jak możemy Ci pomóc?</TitleHeader>
         <p>
-          But I must explain to you how all this mistaken idea of denouncing
-          pleasure and praising pain was born and I will give you a complete
-          account of the system, and expound the actual teachings of the great
-          explorer of the truth, the master-builder of human happiness. No one
-          rejects, dislikes, or.
+          Porozmawiajmy o tym, jak ma wyglądać strona internetowa Twojej firmy!
+          Zrealizujemy wyznaczone przez Ciebie cele lub zaprojektujemy skuteczne
+          rozwiązania. Bo Twój sukces jest nas naszym sukcesem. Sprawdź, jak
+          wspólnie możemy go osiągnąć.
         </p>
         <ContactTileContainer>
           <ContactTile href="mailto:kontakt@divcraft.pl">

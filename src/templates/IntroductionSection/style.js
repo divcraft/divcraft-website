@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const SectionContainer = styled.section`
   padding: 50px 0;
@@ -23,7 +24,7 @@ export const ContentContainer = styled.div`
   }
 `;
 
-export const ImageContainer = styled.div`
+export const AniImageContainer = styled(motion.div)`
   width: 100%;
   margin: 20px 0;
   grid-area: img;

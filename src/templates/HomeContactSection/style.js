@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const SectionContainer = styled.section`
   padding: 50px 0;
@@ -40,7 +41,7 @@ export const GridContainer = styled.div`
   }
 `;
 
-export const ImageContainer = styled.div`
+export const AniImageContainer = styled(motion.div)`
   padding: 10%;
   @media (min-width: 901px) {
     padding: 20px;

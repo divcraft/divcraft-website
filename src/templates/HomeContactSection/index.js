@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
 import { Wrapper, TitleHeader, Image, Button, CornerLines } from 'components';
-import { SectionContainer, GridContainer, ImageContainer } from './style';
+import { SectionContainer, GridContainer, AniImageContainer } from './style';
 
 const HomeContactSection = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
+  const controls = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
   return (
     <SectionContainer>
       <CornerLines pattern="top" />
@@ -16,12 +27,25 @@ const HomeContactSection = () => {
             niezobowiązująco porozmawiać o Twojej nowej stronie firmowej? Bo my
             bardzo!
           </p>
-          <ImageContainer>
+          <AniImageContainer
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: {
+                opacity: 0,
+              },
+              visible: {
+                opacity: 1,
+              },
+            }}
+          >
             <Image
               src="/illustrations/questions-image.svg"
               alt="skontaktuj się"
             />
-          </ImageContainer>
+          </AniImageContainer>
           <Button to="/kontakt" pattern="gatsbyLink">
             Porozmawiajmy
           </Button>
