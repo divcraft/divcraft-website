@@ -7,5 +7,6 @@ export { default as Button } from './Button';
 export { default as SectionBar } from './SectionBar';
 export { default as CookiesBanner } from './CookiesBanner';
 export { default as DiscountPopup } from './DiscountPopup';
+export { default as DiscountCircle } from './DiscountCircle';
 export * from './Wrapper';
 export * from './Image';

@@ -33,7 +33,9 @@ const DiscountPopup = () => {
               Pierwszy raz tutaj? Skorzystaj z naszej zniżki!
             </TitleHeader>
           </TitleContainer>
-          <p>Otrzymaj aż 30% rabatu na nasze usługi</p>
+          <p>
+            Otrzymaj aż <strong>30% rabatu</strong> na nasze usługi
+          </p>
           <ButtonContainer>
             <Button pattern="gatsbyLink" onClick={handleButton} to="/promocja">
               Szczegóły
