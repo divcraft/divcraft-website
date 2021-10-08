@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Wrapper, TitleHeader, Button, DiscountFormPopup } from 'components';
-import { displayDiscountTime } from 'utils';
+import { displayDiscountTime, FormContext } from 'utils';
 import {
   SectionContainer,
   FlexContainer,
@@ -13,7 +13,7 @@ import {
 } from './style';
 
 const DiscountSection = () => {
-  const [showForm, setshowForm] = useState(false);
+  const [showForm, setShowForm] = useContext(FormContext);
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
@@ -22,10 +22,13 @@ const DiscountSection = () => {
     if (inView) {
       controls.start('visible');
     }
+    return () => {
+      if (showForm) setShowForm(false);
+    };
   }, [controls, inView]);
   return (
     <SectionContainer>
-      {showForm && <DiscountFormPopup />}
+      <DiscountFormPopup showForm={showForm} />
       <Wrapper>
         <FlexContainer>
           <div>
@@ -64,7 +67,7 @@ const DiscountSection = () => {
           <TimeCounter>
             {displayDiscountTime('2021-10-31 23:59:59')}
           </TimeCounter>
-          <Button pattern="button" onClick={() => setshowForm(!showForm)}>
+          <Button pattern="button" onClick={() => setShowForm(!showForm)}>
             Otrzymaj zniżkę
           </Button>
         </Wrapper>
