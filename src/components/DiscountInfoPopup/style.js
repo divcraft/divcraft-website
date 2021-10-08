@@ -32,7 +32,7 @@ export const PopupContainer = styled.div`
   text-align: center;
   p {
     margin: 30px auto;
-    max-width: 230px;
+    max-width: 300px;
   }
 `;
 

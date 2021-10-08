@@ -9,7 +9,7 @@ import {
   CloseButton,
 } from './style';
 
-const DiscountPopup = () => {
+const DiscountInfoPopup = () => {
   const hideDiscountPopup = Cookies.get('hide-discount-popup');
   const [hidePopup, setHidePopup] = useState(true);
   const handleButton = () => {
@@ -34,11 +34,12 @@ const DiscountPopup = () => {
             </TitleHeader>
           </TitleContainer>
           <p>
-            Otrzymaj aż <strong>30% rabatu</strong> na nasze usługi
+            Zapisz się teraz i otrzymaj aż <strong>30% rabatu</strong> na nasze
+            usługi
           </p>
           <ButtonContainer>
             <Button pattern="gatsbyLink" onClick={handleButton} to="/promocja">
-              Szczegóły
+              Poznaj szczegóły
             </Button>
           </ButtonContainer>
         </PopupContainer>
@@ -47,4 +48,4 @@ const DiscountPopup = () => {
   );
 };
 
-export default DiscountPopup;
+export default DiscountInfoPopup;

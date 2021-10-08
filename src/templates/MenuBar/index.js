@@ -11,7 +11,7 @@ const MenuBar = () => {
   return (
     <MenuContainer>
       <Logo />
-      <Navigation isClicked={isClicked} onClick={handleClick} />
+      <Navigation isClicked={isClicked} />
       <MenuButton isClicked={isClicked} onClick={handleClick} />
     </MenuContainer>
   );
