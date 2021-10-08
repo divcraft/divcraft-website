@@ -17,7 +17,9 @@ const DiscountPopup = () => {
     setHidePopup(true);
     return true;
   };
-  document.body.style.overflow = hidePopup ? 'auto' : 'hidden';
+  useEffect(() => {
+    document.body.style.overflow = hidePopup ? 'auto' : 'hidden';
+  }, [hidePopup]);
   useEffect(() => {
     setTimeout(() => setHidePopup(hideDiscountPopup), 5000);
   }, []);
