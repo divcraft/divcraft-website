@@ -17,16 +17,16 @@ const MainLayout = ({ children }) => {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <OverflowWrapper>
-          <DiscountInfoPopup />
-          <DiscountFormPopup />
-          <DiscountCircle />
-          <CookiesBanner />
           <Header>
             <MenuBar />
           </Header>
           <Main>{children}</Main>
           <Footer />
         </OverflowWrapper>
+        <DiscountCircle />
+        <CookiesBanner />
+        <DiscountFormPopup />
+        <DiscountInfoPopup />
       </ThemeProvider>
     </ContextStore>
   );

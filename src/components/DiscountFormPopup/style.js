@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PopupContainer = styled.div`
-  z-index: 2;
+  z-index: 1;
   position: fixed;
   left: 50%;
   top: 50%;
