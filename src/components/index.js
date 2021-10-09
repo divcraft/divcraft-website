@@ -10,5 +10,6 @@ export { default as DiscountInfoPopup } from './DiscountInfoPopup';
 export { default as DiscountFormPopup } from './DiscountFormPopup';
 export { default as DiscountCircle } from './DiscountCircle';
 export { default as HideFormButton } from './HideFormButton';
+export { default as Form } from './Form';
 export * from './Wrapper';
 export * from './Image';

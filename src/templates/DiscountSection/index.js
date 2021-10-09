@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Wrapper, TitleHeader, Button, DiscountFormPopup } from 'components';
+import { Wrapper, TitleHeader, Button } from 'components';
 import { displayDiscountTime, FormContext } from 'utils';
 import {
   SectionContainer,
@@ -28,7 +28,6 @@ const DiscountSection = () => {
   }, [controls, inView]);
   return (
     <SectionContainer>
-      <DiscountFormPopup showForm={showForm} />
       <Wrapper>
         <FlexContainer>
           <div>

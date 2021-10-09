@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
 export const PopupContainer = styled.div`
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background: white;
-  padding: 20px;
-  width: 85%;
-  max-width: 700px;
+  padding: 25px;
+  width: 90%;
+  max-width: 500px;
+  background-color: ${({ theme: { colors } }) => colors.gray.light};
   box-shadow: ${({ theme: { boxshadow } }) => boxshadow.dark};
 `;
 

@@ -12,47 +12,6 @@ export const FormContainer = styled.div`
   }
 `;
 
-export const Form = styled.form`
-  width: 100%;
-  display: block;
-  & label,
-  & input,
-  & textarea {
-    line-height: 1.5;
-  }
-  & input,
-  & textarea {
-    width: 100%;
-    margin-top: 3px;
-    padding: 10px;
-    border: none;
-    box-shadow: ${({ theme: { boxshadow } }) => boxshadow.light};
-  }
-  @media (min-width: 769px) {
-    width: 50%;
-    display: inline-block;
-  }
-`;
-
-export const FormItem = styled.div`
-  margin-top: 10px;
-`;
-
-export const FormLabel = styled.label`
-  color: ${({ theme: { colors } }) => colors.gray.dark};
-`;
-
-export const FormInput = styled.input`
-  @media (min-width: 769px) {
-    max-width: 345px;
-  }
-`;
-
-export const FormTextarea = styled.textarea`
-  height: 340px;
-  resize: none;
-`;
-
 export const FormImageContainer = styled.div`
   width: 60%;
   margin-left: auto;

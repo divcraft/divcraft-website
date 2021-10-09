@@ -1,41 +1,32 @@
 import React from 'react';
-import { Wrapper, Image, Button } from 'components';
-import {
-  SectionContainer,
-  FormContainer,
-  Form,
-  FormItem,
-  FormLabel,
-  FormInput,
-  FormTextarea,
-  FormImageContainer,
-} from './style';
+import { Wrapper, Image, Button, Form } from 'components';
+import { SectionContainer, FormContainer, FormImageContainer } from './style';
 
 const ContactFormSection = () => {
   return (
     <SectionContainer>
       <FormContainer>
         <Wrapper>
-          <Form noValidate="novalidate">
-            <FormItem>
-              <FormLabel htmlFor="name">
+          <Form pattern="contactForm">
+            <div>
+              <label htmlFor="contactFormName">
                 <div>Imię</div>
-                <FormInput id="name" type="text" />
-              </FormLabel>
-            </FormItem>
-            <FormItem>
-              <FormLabel htmlFor="email">
+                <input id="contactFormName" type="text" />
+              </label>
+            </div>
+            <div>
+              <label htmlFor="contactFormEmail">
                 <div>Adres email</div>
-                <FormInput id="email" type="email" />
-              </FormLabel>
-            </FormItem>
-            <FormItem>
-              <FormLabel htmlFor="text">
+                <input id="contactFormEmail" type="email" />
+              </label>
+            </div>
+            <div>
+              <label htmlFor="contactFormText">
                 <div>Jak możemy Ci pomóc?</div>
-                <FormTextarea id="text" />
-              </FormLabel>
-            </FormItem>
-            <FormItem>
+                <textarea id="contactFormText" />
+              </label>
+            </div>
+            <div>
               <Button
                 type="submit"
                 onClick={e => e.preventDefault()}
@@ -43,7 +34,7 @@ const ContactFormSection = () => {
               >
                 Wyślij
               </Button>
-            </FormItem>
+            </div>
           </Form>
           <FormImageContainer>
             <Image

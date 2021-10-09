@@ -8,7 +8,10 @@ const Paragraph = ({ color, children }) => {
 
 Paragraph.propTypes = {
   color: PropTypes.string.isRequired,
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.instanceOf(Object),
+  ]).isRequired,
 };
 
 export default Paragraph;
