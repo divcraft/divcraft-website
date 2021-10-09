@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
-import { TitleHeader, Button } from 'components';
+import { TitleHeader, Button, HideFormButton } from 'components';
 import {
   PopupBackgound,
   PopupContainer,
   TitleContainer,
   ButtonContainer,
-  CloseButton,
 } from './style';
 
 const DiscountInfoPopup = () => {
@@ -27,14 +26,14 @@ const DiscountInfoPopup = () => {
     !hidePopup && (
       <PopupBackgound>
         <PopupContainer>
-          <CloseButton onClick={handleButton} />
+          <HideFormButton pattern="yellow" onClick={handleButton} />
           <TitleContainer>
             <TitleHeader color="white">
               Pierwszy raz tutaj? Skorzystaj z naszej zniżki!
             </TitleHeader>
           </TitleContainer>
           <p>
-            Zapisz się teraz i otrzymaj aż <strong>30% rabatu</strong> na nasze
+            Przygotowaliśmy dla Ciebie aż <strong>30% rabatu</strong> na nasze
             usługi
           </p>
           <ButtonContainer>

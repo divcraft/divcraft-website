@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { FormContext } from 'utils';
+import { HideFormButton } from 'components';
 import { PopupContainer } from './style';
 
 const DiscountFormPopup = () => {
@@ -7,9 +8,11 @@ const DiscountFormPopup = () => {
   return (
     showForm && (
       <PopupContainer>
-        <button onClick={() => setShowForm(!showForm)} type="button">
-          hide
-        </button>
+        <HideFormButton
+          pattern="black"
+          onClick={() => setShowForm(!showForm)}
+          type="button"
+        />
         <div>discount form popup</div>
       </PopupContainer>
     )

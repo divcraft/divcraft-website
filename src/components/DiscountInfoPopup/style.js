@@ -62,31 +62,3 @@ export const ButtonContainer = styled.div`
     margin: auto;
   }
 `;
-
-export const CloseButton = styled.button`
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 30px;
-  height: 30px;
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    left: 4px;
-    top: 14px;
-    height: 2px;
-    width: 23px;
-    background-color: ${({ theme: { colors } }) => colors.yellow.regular};
-    transform-origin: center;
-  }
-  &::before {
-    transform: rotate(-45deg);
-  }
-  &::after {
-    transform: rotate(45deg);
-  }
-`;
