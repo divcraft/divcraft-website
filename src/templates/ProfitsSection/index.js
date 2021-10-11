@@ -60,7 +60,7 @@ const ProfitsSection = () => {
                 </ListItem>
                 <ListItem>
                   <Paragraph color="white">
-                    zwiększysz konwersję na stronie
+                    zwiększysz zasięg Twojej marki
                   </Paragraph>
                 </ListItem>
                 <ListItem>

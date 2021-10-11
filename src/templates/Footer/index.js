@@ -21,7 +21,11 @@ const Footer = () => {
   return (
     <footer>
       <SocialsContainer>
-        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+        <a
+          href="https://facebook.com/divcraftx"
+          target="_blank"
+          rel="noreferrer"
+        >
           <SocialsItem>
             <FontAwesomeIcon icon={faFacebookSquare} />
           </SocialsItem>
