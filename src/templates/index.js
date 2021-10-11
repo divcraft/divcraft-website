@@ -12,4 +12,3 @@ export { default as OurPhilosophySection } from './OurPhilosophySection';
 export { default as HowWeWorkSection } from './HowWeWorkSection';
 export { default as ContactInfoSection } from './ContactInfoSection';
 export { default as ContactFormSection } from './ContactFormSection';
-export { default as DiscountSection } from './DiscountSection';
