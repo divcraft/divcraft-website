@@ -18,12 +18,11 @@ const AboutUsSection = () => {
         <p>
           Zajmujemy się tworzeniem profesjonalnych stron internetowych,
           pomagając małym i średnim firmom postawić pierwsze kroki w Internecie.
-          To, co kryje się pod marką <span className="blue">divcraft</span>{' '}
-          należy zrozumieć jako jednoosobową inicjatywę gospodarczą,
-          wspomagającą się w realizowaniu zleceń pracą innych wykwalifikowanych
-          ludzi . We współpracy z innymi grafikami i copywrighterami tworzymy
-          grupę osób, które biorą czynny udział w tworzeniu naszych stron.
-          Całość naszych prac jest realizowana w pełni zdalnie.
+          Nazwa Divcraft powstała z połączenia dwóch słów: "div", czyli
+          najpopularniejszego znacznika języka HTML, który wykorzystywany jest
+          do tworzenia stron internetowych oraz "craft", co rozumiemy, jako
+          rzemiosło. W ten sposób podkreślamy, że każdy nasz projekt jest
+          unikalny i idealnie dopasowany do potrzeb oraz oczekiwań klienta.
         </p>
         <UserContainer>
           <ImageContainer>
@@ -40,29 +39,13 @@ const AboutUsSection = () => {
           <BlueText>założyciel divcraft</BlueText>
         </UserContainer>
         <p>
-          Swoją przygodę ze stronami zacząłem w marcu 2018 roku. Rok później
-          udało mi się ukończyć studia inżynieryjne na Akademii Morskiej w
-          Szczecinie (specjalizacja geoinformatyka). Od tamtego czasu ciągle
-          zgłębiam wiedzę z takich dziedzin jak:
-          <ul>
-            <li>tworzenie projektów graficznych</li>
-            <li>programowanie stron i aplikacji internetowych</li>
-            <li>hosting i utrzymanie infrastruktury www</li>
-            <li>projektowanie architektury informacji</li>
-            <li>projektowanie doświadczeń użytkownika</li>
-          </ul>
-        </p>
-        <p>
-          Moją główną rolą jest organizacja pracy oraz kontakt z klientami.
-          Zajmuję się też realizowaniem prac twórczych, takich jak m.in.
-          tworzenie grafik i kodu źródłowego.{' '}
-          <span className="blue">divcraft</span> to dla mnie przedsięwzięcie
-          pozwalające realizować się w sposób kreatywny oraz zarabiać na swojej
-          pasji. Dzięki temu jestem również w stanie obserwować to, w jaki
-          sposób moje projekty rosną i stają się użyteczne dla społeczeństwa.
-          Budzi to we mnie ogromną satysfakcję. Mogę też w ten sposób generować
-          zlecenia dla innych, dokładając tym samym małą cegiełkę w budowaniu
-          wspólnej gospodarki.
+          Od 2018 roku zajmuje się profesjonalnym tworzeniem projektów
+          graficznych oraz stron internetowych. Interesuję się projektowaniem
+          architektury informacji, UX/UI, programowaniem w technologii
+          react.js/gatsby.js, zagadnieniami związanymi z hostingiem i
+          utrzymaniem infrastruktury www. Wierzę, że usługi
+          <span className="blue"> divcraft</span> zwiększą rozpoznawalność
+          Twojej firmy w internecie. Czy jesteś gotowy na więcej?
         </p>
       </Wrapper>
     </SectionContainer>

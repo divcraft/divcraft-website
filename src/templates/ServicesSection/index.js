@@ -15,28 +15,28 @@ const servicesData = [
   {
     title: 'Wybierz unikalny projekt graficzny',
     description:
-      'Każdy z naszych projektów posiada unikatowy styl, którego nie spotkasz nigdzie indziej. Przedstaw nam swoją wizję, upodobania i ulubione kolory, a my zajmiemy się resztą.',
+      'Tylko od wyglądu witryny zależy, czy użytkownik w ogóle zacznie ją eksplorować. Dlatego Twoja strona firmowa od razu powinna przykuwać uwagę.',
     imgSrc: '/illustrations/design-image.svg',
     imgAlt: 'projekt graficzny',
   },
   {
     title: 'Zmieniaj i dodawaj treści',
     description:
-      'Prowadzisz blog? Dodajesz relacje z wydarzeń publicznych? A może chcesz po prostu odświeżyć wydgląd dodając nowe zdjęcia? To wszystko zrobisz sam za pomocą kilku kliknięć myszką.',
+      'Jeśli  w przyszłości zechcesz odświeżyć wygląd strony lub zmienić styl komunikacji, zrobisz to wszystko sam za pomocą kilku kliknięć myszką. ',
     imgSrc: '/illustrations/content-image.svg',
     imgAlt: 'edycja treści',
   },
   {
     title: 'Szybka strona to dobra strona',
     description:
-      'Dbamy o to, żeby nasze stony ładowały się tak szybko jak to możliwe. Dzięki nowoczesnym technikom optymalizacji każdy nasz projekt jest w pełni dostosowany do przeglądania na komputerze, smartfonie oraz tablecie.',
+      'Strony, które ładują się szybciej, zajmują lepsze miejsca w wynikach wyszukiwania Google. Każdy nasz projekt jest w pełni responsywny, czyli zoptymalizowany do przeglądania na komputerze, smartfonie czy tablecie.',
     imgSrc: '/illustrations/time-image.svg',
     imgAlt: 'wczytywanie strony',
   },
   {
     title: 'Analizuj, by stać się najlepszym',
     description:
-      'Dowiedz się w jakich miastach, o jakich porach dnia oraz na jakich urządzeniach odwiedzana jest Twoja strona. A to tylko część możliwości, jakie dają nasze narzędzia analityczne.',
+      'Narzędzia analityczne zbierają dane o Twoich potencjalnych klientach. Wykorzystasz je chociażby w ulepszeniu obsługi, albo zwiększeniu efektywności reklam AdWords.',
     imgSrc: '/illustrations/analytics-image.svg',
     imgAlt: 'analiza danych',
   },

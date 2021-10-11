@@ -35,9 +35,8 @@ const IntroductionSection = () => {
             Strony internetowe firm to praktyczne narzędzia do zdobywania
             klientów. Przez 24h na dobę, 7 dni w tygodniu i całymi latami budują
             wizerunek przedsiębiorcy, ułatwiają sprzedaż usług, pozwalając
-            wygrać z konkurencją. Potencjał, jaki daje profesjonalnie wykonany
-            serwis przekłada się w sposób wymierny na wyniki wizerunkowe i
-            finansowe.
+            wygrać z konkurencją. Ale taki potencjał mają tylko profesjonalnie
+            wykonane serwisy.
           </Paragraph1>
           <AniImageContainer
             ref={ref}
@@ -60,10 +59,11 @@ const IntroductionSection = () => {
           </AniImageContainer>
           <Paragraph2>
             W <span className="blue">divcraft</span> tworzymy strony internetowe
-            idealnie dopasowane do naszych zleceniodawców. Unikalny projekt
-            graficzny wyróżnia Cię na tle konkurencji. Starannie budowane
-            doświadczenie użytkownika sprawia, że klienci odwiedzą Ciebie
-            ponownie. Czy tak wyobrażasz sobie stronę internetową Twojej firmy?
+            idealnie dopasowane do Zleceniodawców. Po to, aby Twoja strona była
+            funkcjonalnym narzędziem marketingowym. Unikalny projekt graficzny
+            wyróżnia Cię na tle konkurencji. Zaawansowany UX design zapewnia
+            wygodę obsługi. Czy tak wyobrażasz sobie stronę internetową Twojej
+            firmy?
           </Paragraph2>
         </ContentContainer>
       </Wrapper>
