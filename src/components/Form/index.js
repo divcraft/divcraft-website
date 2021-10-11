@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Form as StyledForm } from './style';
 
-const Form = ({ children, pattern }) => {
+const Form = ({ children, pattern, ...props }) => {
   return (
-    <StyledForm pattern={pattern} noValidate="novalidate">
+    <StyledForm pattern={pattern} {...props} noValidate="novalidate">
       {children}
     </StyledForm>
   );

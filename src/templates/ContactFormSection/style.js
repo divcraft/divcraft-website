@@ -16,6 +16,7 @@ export const FormImageContainer = styled.div`
   width: 60%;
   margin-left: auto;
   margin-right: 5%;
+  margin-top: 20px;
   transform: translateY(-15px);
   @media (min-width: 769px) {
     transform: translateY(-20%);
