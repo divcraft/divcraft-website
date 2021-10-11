@@ -48,4 +48,12 @@ export const Form = styled.form`
         }
       }
     `}
+  ${({ pattern }) =>
+    pattern === 'discountForm' &&
+    css`
+      & button {
+        width: 100%;
+        margin-top: 15px;
+      }
+    `}
 `;

@@ -36,7 +36,7 @@ const servicesData = [
   {
     title: 'Analizuj, by stać się najlepszym',
     description:
-      'Dowiedz się w jakich miastach, o jakich porach dnia oraz na jakich urządzeniach odwiedzana jest Twoja strona. A to tylko część możliwości, jakie dają nasze narzędzia analityczne.',
+      'Dowiedz się w jakich miastach, o jakich porach dnia oraz na jakich urządzeniach odwiedzana jest Twoja strona. A to tylko część możliwości, jakie dają nasze narzędzia analizacyjne.',
     imgSrc: '/illustrations/analytics-image.svg',
     imgAlt: 'analiza danych',
   },
