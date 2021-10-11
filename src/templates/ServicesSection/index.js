@@ -36,7 +36,7 @@ const servicesData = [
   {
     title: 'Analizuj, by stać się najlepszym',
     description:
-      'Narzędzia analityczne zbierają dane o Twoich potencjalnych klientach. Wykorzystasz je chociażby w ulepszeniu obsługi, albo zwiększeniu efektywności reklam AdWords.',
+      'Dowiedz się w jakich miastach, o jakich porach dnia oraz na jakich urządzeniach odwiedzana jest Twoja strona. A to tylko część możliwości, jakie dają nasze narzędzia analityczne.',
     imgSrc: '/illustrations/analytics-image.svg',
     imgAlt: 'analiza danych',
   },

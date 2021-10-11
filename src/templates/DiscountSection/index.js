@@ -35,8 +35,8 @@ const DiscountSection = () => {
             <p>
               Start firmy jest najtrudniejszy. Aby Ci go ułatwić, w październiku
               przygotowaliśmy aż 30% rabatu na nasze usługi. Jak widać, na
-              jesień spadają nie tylko liście. Ale pośpiesz się, bo ta oferta
-              skończy się już za:
+              jesień spadają nie tylko liście. Ale pospiesz się, bo ta oferta
+              skończy się już niedługo!
             </p>
           </div>
           <AniImageContainer
