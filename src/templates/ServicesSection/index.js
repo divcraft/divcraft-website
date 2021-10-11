@@ -15,28 +15,28 @@ const servicesData = [
   {
     title: 'Wybierz unikalny projekt graficzny',
     description:
-      'Tylko od wyglądu witryny zależy, czy użytkownik w ogóle zacznie ją eksplorować. Dlatego Twoja strona firmowa od razu powinna przykuwać uwagę.',
+      'Każdy z naszych projektów posiada unikatowy styl, którego nie spotkasz nigdzie indziej. Przedstaw nam swoją wizję, upodobania i ulubione kolory, a my zajmiemy się resztą.',
     imgSrc: '/illustrations/design-image.svg',
     imgAlt: 'projekt graficzny',
   },
   {
     title: 'Zmieniaj i dodawaj treści',
     description:
-      'Jeśli  w przyszłości zechcesz odświeżyć wygląd strony lub zmienić styl komunikacji, zrobisz to wszystko sam za pomocą kilku kliknięć myszką. ',
+      'Prowadzisz blog? Dodajesz relacje z wydarzeń publicznych? A może chcesz po prostu odświeżyć wydgląd dodając nowe zdjęcia? To wszystko zrobisz sam za pomocą kilku kliknięć myszką.',
     imgSrc: '/illustrations/content-image.svg',
     imgAlt: 'edycja treści',
   },
   {
     title: 'Szybka strona to dobra strona',
     description:
-      'Strony, które ładują się szybciej, zajmują lepsze miejsca w wynikach wyszukiwania Google. Każdy nasz projekt jest w pełni responsywny, czyli zoptymalizowany do przeglądania na komputerze, smartfonie czy tablecie.',
+      'Dbamy o to, żeby nasze stony ładowały się tak szybko jak to możliwe. Dzięki nowoczesnym technikom optymalizacji każdy nasz projekt jest w pełni dostosowany do przeglądania na komputerze, smartfonie oraz tablecie.',
     imgSrc: '/illustrations/time-image.svg',
     imgAlt: 'wczytywanie strony',
   },
   {
     title: 'Analizuj, by stać się najlepszym',
     description:
-      'Narzędzia analityczne zbierają dane o Twoich potencjalnych klientach. Wykorzystasz je chociażby w ulepszeniu obsługi, albo zwiększeniu efektywności reklam AdWords.',
+      'Dowiedz się w jakich miastach, o jakich porach dnia oraz na jakich urządzeniach odwiedzana jest Twoja strona. A to tylko część możliwości, jakie dają nasze narzędzia analizacyjne.',
     imgSrc: '/illustrations/analytics-image.svg',
     imgAlt: 'analiza danych',
   },
