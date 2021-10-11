@@ -7,9 +7,9 @@ import {
   ContentContainer,
   ImageContainer,
   AnimationContainer,
-  AniTitle,
-  AniSubTitle,
-  AniButtonContainer,
+  Title,
+  SubTitle,
+  ButtonContainer,
 } from './style';
 
 const HeroSection = () => {
@@ -18,7 +18,7 @@ const HeroSection = () => {
       <AniBackgroundContainer>
         <Wrapper>
           <ContentContainer>
-            <AniTitle>Pomagamy młodym biznesom rozwinąć się w sieci</AniTitle>
+            <Title>Pomagamy młodym biznesom rozwinąć się w sieci</Title>
             <ImageContainer>
               <AnimationContainer>
                 <StaticImage
@@ -27,15 +27,15 @@ const HeroSection = () => {
                 />
               </AnimationContainer>
             </ImageContainer>
-            <AniSubTitle>
+            <SubTitle>
               Stwórzmy razem stronę internetową, która nada nowy wymiar twojej
               firmie
-            </AniSubTitle>
-            <AniButtonContainer>
+            </SubTitle>
+            <ButtonContainer>
               <Button to="/portfolio" pattern="gatsbyLink">
                 Zobacz portfolio
               </Button>
-            </AniButtonContainer>
+            </ButtonContainer>
           </ContentContainer>
         </Wrapper>
       </AniBackgroundContainer>

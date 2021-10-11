@@ -23,12 +23,10 @@ export const ContentContainer = styled.footer`
   background-color: ${({ theme: { colors } }) => colors.gray.darkest};
   color: ${({ theme: { colors } }) => colors.yellow.regular};
   & p {
-    font-family: inherit;
     margin: 0;
     font-size: 20px;
   }
   & a {
-    font-family: inherit;
     font-size: 20px;
     color: ${({ theme: { colors } }) => colors.yellow.regular};
     text-decoration: none;

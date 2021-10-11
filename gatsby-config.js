@@ -6,7 +6,7 @@ module.exports = {
     description: `Stwórzmy razem stronę internetową, która nada nowy wymiar twojej
     firmie`,
     author: `Tomasz Ogonowski (divcraft)`,
-    image: `/ogImage.jpg`,
+    image: `/og-image.jpg`,
     siteUrl: `https://www.divcraft.pl/`,
   },
   plugins: [

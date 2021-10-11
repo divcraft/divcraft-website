@@ -11,8 +11,7 @@ export const GlobalStyle = createGlobalStyle`
      position: relative;
    }
    footer * {
-    font-family: 'Gibson', sans-serif;
-     font-weight: 200;
+    font-family: 'Raleway', sans-serif;
     }
     p, a, button, form * {
       font-family: 'Raleway', sans-serif;

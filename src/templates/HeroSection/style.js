@@ -59,7 +59,7 @@ export const ImageContainer = styled.div`
   position: relative;
   &::before {
     opacity: 0.8;
-    content: url('/cloud-big.svg');
+    content: url('/elements/cloud-big.svg');
     width: auto;
     position: absolute;
     top: 50%;
@@ -68,7 +68,7 @@ export const ImageContainer = styled.div`
   }
   &::after {
     opacity: 0.8;
-    content: url('/cloud-small.svg');
+    content: url('/elements/cloud-small.svg');
     width: auto;
     position: absolute;
     top: 20%;
@@ -88,11 +88,11 @@ export const AnimationContainer = styled.div`
   }
 `;
 
-export const AniTitle = styled(motion.h1)`
+export const Title = styled.h1`
   position: relative;
   margin-bottom: 0;
   font-family: 'Gibson', sans-serif;
-  font-weight: 500;
+  font-weight: 500 !important;
   color: white;
   font-size: 32px;
   padding-bottom: 30px;
@@ -128,7 +128,7 @@ export const AniTitle = styled(motion.h1)`
   }
 `;
 
-export const AniSubTitle = styled(motion.h2)`
+export const SubTitle = styled.h2`
   color: ${({ theme: { colors } }) => colors.yellow.regular};
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
@@ -143,7 +143,7 @@ export const AniSubTitle = styled(motion.h2)`
   }
 `;
 
-export const AniButtonContainer = styled(motion.div)`
+export const ButtonContainer = styled.div`
   align-self: flex-end;
   justify-self: center;
   @media (min-width: 769px) {

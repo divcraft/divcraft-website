@@ -8,7 +8,7 @@ export const SectionContainer = styled.section`
   &::before,
   &::after {
     content: '';
-    background-image: url('/corner-lines.svg');
+    background-image: url('/elements/corner-lines.svg');
     background-position: center;
     background-size: contain;
     position: absolute;
