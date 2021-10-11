@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
 
 export const MenuButton = styled.div`
+  cursor: pointer;
   position: absolute;
   top: 15px;
   right: 2.5vw;
   width: 28px;
   height: 28px;
-  cursor: pointer;
   display: flex;
   align-items: center;
   @media (min-width: 769px) {
