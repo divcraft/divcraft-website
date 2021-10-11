@@ -29,7 +29,7 @@ const HowWeWorkSection = () => {
               <TileDescription>
                 Poznajemy Twój biznes i oczekiwania w stosunku do firmowej
                 strony. Zadajemy dużo pytań, aby jak najszybciej trafić
-                dokładnie w Twoje preferencje. you a.
+                dokładnie w Twoje preferencje.
               </TileDescription>
             </Tile>
             <Tile>
@@ -67,7 +67,7 @@ const HowWeWorkSection = () => {
               <TileTitle>finalizacja projektu z klientem</TileTitle>
               <TileDescription>
                 Kiedy jesteś zadowolony z efektów naszej pracy, przechodzimy do
-                zamknięcia projektu. Dostaniesz od nas instrukcje oraz wskazówki
+                zamknięcia projektu. Dostajesz od nas instrukcje oraz wskazówki
                 jak obsługiwać Twoją nową stronę.
               </TileDescription>
             </Tile>
