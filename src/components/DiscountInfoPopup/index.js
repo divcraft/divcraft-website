@@ -12,7 +12,7 @@ const DiscountInfoPopup = () => {
   const hideDiscountPopup = Cookies.get('hide-discount-popup');
   const [hidePopup, setHidePopup] = useState(true);
   const handleButton = () => {
-    Cookies.set('hide-discount-popup', true);
+    Cookies.set('hide-discount-popup', true, { sameSite: 'Strict' });
     setHidePopup(true);
     return true;
   };

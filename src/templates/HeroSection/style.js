@@ -92,7 +92,7 @@ export const Title = styled.h1`
   position: relative;
   margin-bottom: 0;
   font-family: 'Gibson', sans-serif;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   color: white;
   font-size: 32px;
   padding-bottom: 30px;

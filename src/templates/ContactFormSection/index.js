@@ -29,7 +29,7 @@ const ContactFormSection = () => {
     validationSchema,
     validateOnChange: false,
     onSubmit: (values, { resetForm }) => {
-      const api = process.env.REACT_APP_CONTACT_FORM_API;
+      const api = process.env.GATSBY_CONTACT_FORM_API;
       if (emailSent) setEmailSent(null);
       Axios.post(api, JSON.stringify(values))
         .then(() => {

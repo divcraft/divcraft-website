@@ -8,8 +8,11 @@ const CookiesBanner = () => {
   const [cookiesAllowed, setCookiesAllowed] = useState(allowCookies);
   const handleButton = e => {
     e.preventDefault();
-    Cookies.set('allow-cookies', true, { expires: 365 });
-    Cookies.set('gatsby-gdpr-google-analytics', true, { expires: 365 });
+    Cookies.set('allow-cookies', true, { expires: 365, sameSite: 'Strict' });
+    Cookies.set('gatsby-gdpr-google-analytics', true, {
+      expires: 365,
+      sameSite: 'Strict',
+    });
     setCookiesAllowed(!cookiesAllowed);
   };
   return (
