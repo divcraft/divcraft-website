@@ -3,12 +3,7 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme, ContextStore } from 'utils';
 import { MenuBar, Footer } from 'templates';
-import {
-  CookiesBanner,
-  DiscountInfoPopup,
-  DiscountCircle,
-  DiscountFormPopup,
-} from 'components';
+import { CookiesBanner } from 'components';
 import { Header, Main, OverflowWrapper } from './style';
 
 const MainLayout = ({ children }) => {
@@ -24,10 +19,7 @@ const MainLayout = ({ children }) => {
           <Footer />
         </OverflowWrapper>
         <div>
-          <DiscountCircle />
           <CookiesBanner />
-          <DiscountFormPopup />
-          <DiscountInfoPopup />
         </div>
       </ThemeProvider>
     </ContextStore>
