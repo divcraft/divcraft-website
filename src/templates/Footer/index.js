@@ -40,7 +40,7 @@ const Footer = () => {
           </SocialsItem>
         </a>
         <a
-          href="https://pl.pinterest.com/divcraftx/"
+          href="https://pl.pinterest.com/divcraftx/pins/"
           target="_blank"
           rel="noreferrer"
         >

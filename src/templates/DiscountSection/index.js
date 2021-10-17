@@ -34,9 +34,10 @@ const DiscountSection = () => {
             <TitleHeader color="blue">30% rabatu na start!</TitleHeader>
             <p>
               Start firmy jest najtrudniejszy. Aby Ci go ułatwić, w październiku
-              przygotowaliśmy aż 30% rabatu na nasze usługi. Jak widać, na
-              jesień spadają nie tylko liście. Ale pospiesz się, bo ta oferta
-              skończy się już niedługo!
+              przygotowaliśmy aż 30% rabatu na nasze usługi. Wystarczy, że
+              odezwiesz się do nas przed końcem miesiąca i zgłosisz chęć
+              współpracy. Jak widać, na jesień spadają nie tylko liście. Ale
+              pospiesz się, bo ta oferta skończy się już niedługo!
             </p>
           </div>
           <AniImageContainer

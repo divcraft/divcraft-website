@@ -18,12 +18,12 @@ const AboutUsSection = () => {
         <p>
           Zajmujemy się tworzeniem profesjonalnych stron internetowych,
           pomagając małym i średnim firmom postawić pierwsze kroki w Internecie.
-          To, co kryje się pod marką <span className="blue">divcraft</span>{' '}
-          należy zrozumieć jako jednoosobową inicjatywę gospodarczą,
-          wspomagającą się w realizowaniu zleceń pracą innych wykwalifikowanych
-          ludzi . We współpracy z innymi grafikami i copywrighterami tworzymy
-          grupę osób, które biorą czynny udział w tworzeniu naszych stron.
-          Całość naszych prac jest realizowana w pełni zdalnie.
+          To, co kryje się pod marką <span className="blue">divcraft</span>, to
+          jednoosobowa inicjatywa gospodarcza, wspomagająca się w realizowaniu
+          zleceń pracą innych wykwalifikowanych ludzi . We współpracy z innymi
+          grafikami i copywrighterami tworzymy grupę osób, które biorą czynny
+          udział w tworzeniu naszych stron. Całość naszych prac jest realizowana
+          w pełni zdalnie.
         </p>
         <UserContainer>
           <ImageContainer>
