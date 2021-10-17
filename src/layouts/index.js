@@ -23,10 +23,12 @@ const MainLayout = ({ children }) => {
           <Main>{children}</Main>
           <Footer />
         </OverflowWrapper>
-        <DiscountCircle />
-        <CookiesBanner />
-        <DiscountFormPopup />
-        <DiscountInfoPopup />
+        <div>
+          <DiscountCircle />
+          <CookiesBanner />
+          <DiscountFormPopup />
+          <DiscountInfoPopup />
+        </div>
       </ThemeProvider>
     </ContextStore>
   );

@@ -9,7 +9,7 @@ const opacity = keyframes`
   }
 `;
 
-export const BannerContainer = styled.div`
+export const BannerContainer = styled.section`
   position: fixed;
   background-color: rgba(32, 32, 32, 0.9);
   left: 0;

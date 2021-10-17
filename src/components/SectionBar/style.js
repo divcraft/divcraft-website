@@ -26,7 +26,7 @@ export const Gradient = styled.div`
 
 export const White = styled.div`
   background-color: ${({ theme: { colors } }) => colors.blue.sky};
-  clip-path: polygon(0% 0%, 100% 0%, calc(100% - 70px) 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, calc(100% - 60px) 100%, 0% 100%);
   height: 60px;
   width: calc(70px + 5%);
 `;

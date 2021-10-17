@@ -41,7 +41,6 @@ export const CircleLinkContainer = styled(AniLink)`
     right: auto;
     top: 16px;
     left: calc(40vw + 10px);
-    z-index: 2;
     height: 30px;
     width: auto;
     border-radius: 3px;

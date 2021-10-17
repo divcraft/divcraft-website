@@ -22,9 +22,6 @@ const DiscountSection = () => {
     if (inView) {
       controls.start('visible');
     }
-    return () => {
-      if (showForm) setShowForm(false);
-    };
   }, [controls, inView]);
   return (
     <SectionContainer>
