@@ -12,7 +12,7 @@ const Form = ({ children, pattern, ...props }) => {
 
 Form.propTypes = {
   children: PropTypes.instanceOf(Object).isRequired,
-  pattern: PropTypes.oneOf(['contactForm']).isRequired,
+  pattern: PropTypes.oneOf(['contactForm', 'discountForm']).isRequired,
 };
 
 export default Form;
