@@ -17,7 +17,7 @@ const HowWeWorkSection = () => {
         <Paragraph color="black">
           W całym projekcie decydujące słowo należy do Ciebie. Dla wygody prace
           podzieliliśmy na etapy. Na początku prosimy o Twoje sugestie, a pod
-          koniec - o akceptację naszych działań lub uwagi. Odkryj, co dzieje się
+          koniec — o akceptację naszych działań lub uwagi. Odkryj, co dzieje się
           w poszczególnych fazach tworzenia Twojej firmowej strony internetowej:
         </Paragraph>
       </Wrapper>
@@ -45,7 +45,7 @@ const HowWeWorkSection = () => {
               <TileDescription>
                 Wybieramy kolory i fonty, tworzymy dedykowane elementy
                 graficzne. Ten etap jest dla naszych Zleceniodawców bardzo
-                emocjonujący, bo witryna po raz pierwszy “nabiera kształtów”.
+                emocjonujący, bo witryna po raz pierwszy „nabiera kształtów”.
               </TileDescription>
             </Tile>
             <Tile>
@@ -56,7 +56,7 @@ const HowWeWorkSection = () => {
               </TileDescription>
             </Tile>
             <Tile>
-              <TileTitle>publikacja storny na serwerze</TileTitle>
+              <TileTitle>publikacja strony na serwerze</TileTitle>
               <TileDescription>
                 Nowa strona internetowa Twojej firmy po raz pierwszy trafia do
                 Sieci. Pojawiają się pierwsi użytkownicy. Gratulujemy, właśnie

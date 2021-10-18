@@ -22,14 +22,14 @@ const servicesData = [
   {
     title: 'Zmieniaj i dodawaj treści',
     description:
-      'Prowadzisz blog? Dodajesz relacje z wydarzeń publicznych? A może chcesz po prostu odświeżyć wydgląd dodając nowe zdjęcia? To wszystko zrobisz sam za pomocą kilku kliknięć myszką.',
+      'Prowadzisz blog? Dodajesz relacje z wydarzeń publicznych? A może chcesz po prostu odświeżyć wygląd, dodając nowe zdjęcia? To wszystko zrobisz sam za pomocą kilku kliknięć myszką.',
     imgSrc: '/illustrations/content-image.svg',
     imgAlt: 'edycja treści',
   },
   {
     title: 'Szybka strona to dobra strona',
     description:
-      'Dbamy o to, żeby nasze stony ładowały się tak szybko jak to możliwe. Dzięki nowoczesnym technikom optymalizacji każdy nasz projekt jest w pełni dostosowany do przeglądania na komputerze, smartfonie oraz tablecie.',
+      'Dbamy o to, żeby nasze strony ładowały się tak szybko, jak to możliwe. Dzięki nowoczesnym technikom optymalizacji każdy nasz projekt jest w pełni dostosowany do przeglądania na komputerze, smartfonie oraz tablecie.',
     imgSrc: '/illustrations/time-image.svg',
     imgAlt: 'wczytywanie strony',
   },

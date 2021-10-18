@@ -22,9 +22,9 @@ const HomeContactSection = () => {
           <p>
             Czekamy na Ciebie! Skontaktuj się z nami, jeżeli czujesz, że możemy
             Ci pomóc. Profesjonalną konsultację zawsze otrzymasz gratis.
-            Wystarczy wypełnić krótki formularz zgłoszeniowy. Chciałbyś
-            niezobowiązująco porozmawiać o Twojej nowej stronie firmowej? Bo my
-            bardzo!
+            Wystarczy, że do nas zadzwonisz, napiszesz lub wypełnisz krótki
+            formularz zgłoszeniowy. Chciałbyś niezobowiązująco porozmawiać o
+            Twojej nowej stronie firmowej? Bo my bardzo!
           </p>
           <AniImageContainer
             ref={ref}

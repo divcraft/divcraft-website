@@ -33,10 +33,10 @@ const IntroductionSection = () => {
           </TitleContainer>
           <Paragraph1>
             Strony internetowe firm to praktyczne narzędzia do zdobywania
-            klientów. Przez 24h na dobę, 7 dni w tygodniu i całymi latami budują
-            wizerunek przedsiębiorcy, ułatwiają sprzedaż usług, pozwalając
-            wygrać z konkurencją. Potencjał, jaki daje profesjonalnie wykonany
-            serwis przekłada się w sposób wymierny na wyniki wizerunkowe i
+            klientów. Przez 24 godziny na dobę, 7 dni w tygodniu budują Twój
+            wizerunek przedsiębiorcy. Ułatwiają sprzedaż usług, pozwalając
+            wygrać z konkurencją. Potencjał, jaki dają profesjonalnie wykonane
+            serwisy, przekłada się w sposób wymierny na wyniki wizerunkowe i
             finansowe.
           </Paragraph1>
           <AniImageContainer
@@ -62,8 +62,8 @@ const IntroductionSection = () => {
             W <span className="blue">divcraft</span> tworzymy strony internetowe
             idealnie dopasowane do naszych zleceniodawców. Unikalny projekt
             graficzny wyróżnia Cię na tle konkurencji. Starannie budowane
-            doświadczenie użytkownika sprawia, że klienci odwiedzą Ciebie
-            ponownie. Czy tak wyobrażasz sobie stronę internetową Twojej firmy?
+            doświadczenie użytkownika sprawia, że klienci odwiedzą Cię ponownie.
+            Czy tak wyobrażasz sobie stronę internetową Twojej firmy?
           </Paragraph2>
         </ContentContainer>
       </Wrapper>

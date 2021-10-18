@@ -20,8 +20,8 @@ const AboutUsSection = () => {
           pomagając małym i średnim firmom postawić pierwsze kroki w Internecie.
           To, co kryje się pod marką <span className="blue">divcraft</span>, to
           jednoosobowa inicjatywa gospodarcza, wspomagająca się w realizowaniu
-          zleceń pracą innych wykwalifikowanych ludzi . We współpracy z innymi
-          grafikami i copywrighterami tworzymy grupę osób, które biorą czynny
+          zleceń pracą innych wykwalifikowanych ludzi. We współpracy z innymi
+          grafikami i copywriterami tworzymy grupę osób, które biorą czynny
           udział w tworzeniu naszych stron. Całość naszych prac jest realizowana
           w pełni zdalnie.
         </p>
