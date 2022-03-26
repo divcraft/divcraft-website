@@ -6,9 +6,10 @@ orbs:
 jobs:
   build:
     docker:
-      - image: 'cimg/base:stable'
+      - image: cimg/node:17.7.2
     steps:
       - checkout
+      - run: node --version
       - run: npm i
       - run: npm run build
       - aws-s3/copy:
