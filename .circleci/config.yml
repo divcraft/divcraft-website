@@ -1,0 +1,17 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.0.1
+  aws-s3: circleci/aws-s3@2.0
+workflows:
+  main:
+    jobs:
+      - node/run:
+          post-steps:
+            - run: npm run build
+            - aws-s3/copy:
+                from: ./public
+                to: s3://divcraft
+                arguments: --recursive
+					filters:
+            branches:
+              only: main
