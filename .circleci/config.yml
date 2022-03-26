@@ -3,28 +3,31 @@ orbs:
   node: circleci/node@5.0.1
   aws-s3: circleci/aws-s3@2.0
   aws-cloudfront: topmonks/aws-cloudfront@1.0.0
-workflows:
-  build_and_deploy:
-    jobs:
-      - build
 jobs:
   build:
     docker:
-      - image: cimg/node:17.7.2
+      - image: 'cimg/base:stable'
     steps:
-      - node/run:
-          filters:
-            branches:
-              only: main
-          post-steps:
-            - run: npm run build
-            - aws-s3/copy:
-                from: ./public
-                to: s3://divcraft
-                arguments: --recursive
-            - aws-cloudfront/invalidate:
-                paths: /* 
-                distribution_id: E3DXX4LRNC47DH 
+      - checkout
+      - run: npm i
+      - run: npm run build
+      - aws-s3/copy:
+          from: ./public
+          to: s3://divcraft
+          arguments: --recursive
+      - aws-cloudfront/invalidate:
+          paths: /* 
+          distribution_id: E3DXX4LRNC47DH 
+
+workflows:
+  build_and_deploy:
+    jobs:
+    - build:
+      filters:
+        branches:
+          only: main
+
+
 
 
 
