@@ -6,6 +6,9 @@ workflows:
   main:
     jobs:
       - node/run:
+          filters:
+            branches:
+              only: main
           post-steps:
             - run: npm run build
             - aws-s3/copy:
