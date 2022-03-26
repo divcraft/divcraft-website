@@ -1,9 +1,9 @@
 version: 2.1
 orbs:
-  aws-s3: circleci/aws-s3@2.0
+  aws-s3: circleci/aws-s3@3.0.0
   aws-cloudfront: topmonks/aws-cloudfront@1.0.0
 parameters:
-  run_workflow_build_and_deploy:
+  run_workflow_build_deploy:
     default: true
     type: boolean
 jobs:
@@ -24,8 +24,8 @@ jobs:
           distribution_id: E3DXX4LRNC47DH 
 
 workflows:
-  build_and_deploy:
-    when: << pipeline.parameters.run_workflow_build_and_deploy >>
+  build_deploy:
+    when: << pipeline.parameters.run_workflow_build_deploy >>
     jobs:
     - build:
       filters:
