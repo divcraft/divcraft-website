@@ -28,7 +28,7 @@ const AboutUsSection = () => {
         <UserContainer>
           <ImageContainer>
             <StaticImage
-              src="../../images/profile-photo.jpg"
+              src="../../images/profile-photo.png"
               alt="Tomasz Ogonowski"
             />
           </ImageContainer>
