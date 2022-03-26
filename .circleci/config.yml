@@ -12,6 +12,3 @@ workflows:
                 from: ./public
                 to: s3://divcraft
                 arguments: --recursive
-        filters:
-          branches:
-            only: main
