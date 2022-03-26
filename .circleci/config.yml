@@ -4,7 +4,7 @@ orbs:
   aws-s3: circleci/aws-s3@2.0
   aws-cloudfront: topmonks/aws-cloudfront@1.0.0
 workflows:
-  main:
+  build:
     jobs:
       - node/run:
           filters:
